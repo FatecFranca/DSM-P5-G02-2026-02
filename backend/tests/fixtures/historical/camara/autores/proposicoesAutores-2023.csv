@@ -1,0 +1,6 @@
+"idProposicao";"uriProposicao";"idDeputadoAutor";"uriAutor";"codTipoAutor";"tipoAutor";"nomeAutor";"siglaPartidoAutor";"uriPartidoAutor";"siglaUFAutor";"ordemAssinatura";"proponente"
+"1001";"https://dadosabertos.camara.leg.br/api/v2/proposicoes/1001";"101";"https://dadosabertos.camara.leg.br/api/v2/deputados/101";"10000";"Deputado(a)";"Deputado Um";"AAA";"";"SP";"1";"1"
+"1001";"https://dadosabertos.camara.leg.br/api/v2/proposicoes/1001";"102";"https://dadosabertos.camara.leg.br/api/v2/deputados/102";"10000";"Deputado(a)";"Deputado Dois";"BBB";"";"RJ";"2";"0"
+"1004";"https://dadosabertos.camara.leg.br/api/v2/proposicoes/1004";"101";"https://dadosabertos.camara.leg.br/api/v2/deputados/101";"10000";"Deputado(a)";"Deputado Um";"AAA";"";"SP";"1";"1"
+"1002";"https://dadosabertos.camara.leg.br/api/v2/proposicoes/1002";"";"https://dadosabertos.camara.leg.br/api/v2/orgaos/55";"40000";"Orgao do Poder Legislativo";"Comissao Ficticia";"";"";"";"1";"1"
+"1003";"https://dadosabertos.camara.leg.br/api/v2/proposicoes/1003";"101";"https://dadosabertos.camara.leg.br/api/v2/deputados/101";"10000";"Deputado(a)";"Deputado Um";"AAA";"";"SP";"1";"1"
