@@ -1,0 +1,833 @@
+{
+  "model_name": "linear_svc_balanced",
+  "model_version": "experimental-1",
+  "training_date": "2026-09-09T02:33:23.892347+00:00",
+  "source": "CAMARA",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "classes": [
+    {
+      "index": 0,
+      "code": "34",
+      "name": "Administração Pública",
+      "documents": 10263
+    },
+    {
+      "index": 1,
+      "code": "35",
+      "name": "Arte, Cultura e Religião",
+      "documents": 1425
+    },
+    {
+      "index": 2,
+      "code": "37",
+      "name": "Comunicações",
+      "documents": 3573
+    },
+    {
+      "index": 3,
+      "code": "39",
+      "name": "Esporte e Lazer",
+      "documents": 1128
+    },
+    {
+      "index": 4,
+      "code": "40",
+      "name": "Economia",
+      "documents": 2621
+    },
+    {
+      "index": 5,
+      "code": "41",
+      "name": "Cidades e Desenvolvimento Urbano",
+      "documents": 2180
+    },
+    {
+      "index": 6,
+      "code": "42",
+      "name": "Direito Civil e Processual Civil",
+      "documents": 1179
+    },
+    {
+      "index": 7,
+      "code": "43",
+      "name": "Direito Penal e Processual Penal",
+      "documents": 2477
+    },
+    {
+      "index": 8,
+      "code": "44",
+      "name": "Direitos Humanos e Minorias",
+      "documents": 10415
+    },
+    {
+      "index": 9,
+      "code": "46",
+      "name": "Educação",
+      "documents": 4689
+    },
+    {
+      "index": 10,
+      "code": "48",
+      "name": "Meio Ambiente e Desenvolvimento Sustentável",
+      "documents": 3781
+    },
+    {
+      "index": 11,
+      "code": "51",
+      "name": "Estrutura Fundiária",
+      "documents": 624
+    },
+    {
+      "index": 12,
+      "code": "52",
+      "name": "Previdência e Assistência Social",
+      "documents": 2052
+    },
+    {
+      "index": 13,
+      "code": "53",
+      "name": "Processo Legislativo e Atuação Parlamentar",
+      "documents": 493
+    },
+    {
+      "index": 14,
+      "code": "54",
+      "name": "Energia, Recursos Hídricos e Minerais",
+      "documents": 1825
+    },
+    {
+      "index": 15,
+      "code": "55",
+      "name": "Relações Internacionais e Comércio Exterior",
+      "documents": 1282
+    },
+    {
+      "index": 16,
+      "code": "56",
+      "name": "Saúde",
+      "documents": 7756
+    },
+    {
+      "index": 17,
+      "code": "57",
+      "name": "Defesa e Segurança",
+      "documents": 4963
+    },
+    {
+      "index": 18,
+      "code": "58",
+      "name": "Trabalho e Emprego",
+      "documents": 3028
+    },
+    {
+      "index": 19,
+      "code": "60",
+      "name": "Turismo",
+      "documents": 355
+    },
+    {
+      "index": 20,
+      "code": "61",
+      "name": "Viação, Transporte e Mobilidade",
+      "documents": 2788
+    },
+    {
+      "index": 21,
+      "code": "62",
+      "name": "Ciência, Tecnologia e Inovação",
+      "documents": 1226
+    },
+    {
+      "index": 22,
+      "code": "64",
+      "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+      "documents": 5130
+    },
+    {
+      "index": 23,
+      "code": "66",
+      "name": "Indústria, Comércio e Serviços",
+      "documents": 2411
+    },
+    {
+      "index": 24,
+      "code": "67",
+      "name": "Direito e Defesa do Consumidor",
+      "documents": 1220
+    },
+    {
+      "index": 25,
+      "code": "68",
+      "name": "Direito Constitucional",
+      "documents": 113
+    },
+    {
+      "index": 26,
+      "code": "70",
+      "name": "Finanças Públicas e Orçamento",
+      "documents": 5868
+    },
+    {
+      "index": 27,
+      "code": "72",
+      "name": "Homenagens e Datas Comemorativas",
+      "documents": 1522
+    },
+    {
+      "index": 28,
+      "code": "74",
+      "name": "Política, Partidos e Eleições",
+      "documents": 377
+    },
+    {
+      "index": 29,
+      "code": "76",
+      "name": "Direito e Justiça",
+      "documents": 741
+    },
+    {
+      "index": 30,
+      "code": "85",
+      "name": "Ciências Exatas e da Terra",
+      "documents": 8
+    },
+    {
+      "index": 31,
+      "code": "86",
+      "name": "Ciências Sociais e Humanas",
+      "documents": 17
+    }
+  ],
+  "class_count": 32,
+  "train_documents": 31179,
+  "validation_documents": 6681,
+  "test_documents": 6681,
+  "random_seed": 42,
+  "tfidf_config": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.98,
+    "max_features": 150000,
+    "sublinear_tf": true,
+    "lowercase": true,
+    "strip_accents": null,
+    "stop_words": null,
+    "dtype": "float32"
+  },
+  "model_config": {
+    "algorithm": "LinearSVC",
+    "class_weight": "balanced",
+    "C": 1.0,
+    "max_iter": 3000,
+    "threshold": 0.0
+  },
+  "validation_metrics": {
+    "precision_micro": 0.7462386414419783,
+    "recall_micro": 0.763119811105187,
+    "f1_micro": 0.7545848239502918,
+    "precision_macro": 0.679844782666081,
+    "recall_macro": 0.656243319117892,
+    "f1_macro": 0.664974668088084,
+    "subset_accuracy": 0.4291273761412962,
+    "hamming_loss": 0.03048289926657686,
+    "jaccard_samples": 0.6880872196206728,
+    "per_class": [
+      {
+        "code": "34",
+        "support": 1539,
+        "precision": 0.636259977194983,
+        "recall": 0.7251461988304093,
+        "f1": 0.6778013969025205
+      },
+      {
+        "code": "35",
+        "support": 214,
+        "precision": 0.74,
+        "recall": 0.6915887850467289,
+        "f1": 0.714975845410628
+      },
+      {
+        "code": "37",
+        "support": 536,
+        "precision": 0.9037328094302554,
+        "recall": 0.8582089552238806,
+        "f1": 0.8803827751196173
+      },
+      {
+        "code": "39",
+        "support": 170,
+        "precision": 0.8402777777777778,
+        "recall": 0.711764705882353,
+        "f1": 0.7707006369426752
+      },
+      {
+        "code": "40",
+        "support": 393,
+        "precision": 0.5,
+        "recall": 0.5597964376590331,
+        "f1": 0.5282112845138055
+      },
+      {
+        "code": "41",
+        "support": 327,
+        "precision": 0.6097560975609756,
+        "recall": 0.6116207951070336,
+        "f1": 0.6106870229007634
+      },
+      {
+        "code": "42",
+        "support": 177,
+        "precision": 0.6625766871165644,
+        "recall": 0.6101694915254238,
+        "f1": 0.6352941176470588
+      },
+      {
+        "code": "43",
+        "support": 372,
+        "precision": 0.7956403269754768,
+        "recall": 0.7849462365591398,
+        "f1": 0.790257104194858
+      },
+      {
+        "code": "44",
+        "support": 1559,
+        "precision": 0.7601753287413902,
+        "recall": 0.7787042976266838,
+        "f1": 0.7693282636248415
+      },
+      {
+        "code": "46",
+        "support": 703,
+        "precision": 0.8931623931623932,
+        "recall": 0.8918918918918919,
+        "f1": 0.892526690391459
+      },
+      {
+        "code": "48",
+        "support": 567,
+        "precision": 0.8097826086956522,
+        "recall": 0.7883597883597884,
+        "f1": 0.7989276139410187
+      },
+      {
+        "code": "51",
+        "support": 94,
+        "precision": 0.6666666666666666,
+        "recall": 0.6595744680851063,
+        "f1": 0.6631016042780749
+      },
+      {
+        "code": "52",
+        "support": 308,
+        "precision": 0.7295597484276729,
+        "recall": 0.7532467532467533,
+        "f1": 0.7412140575079872
+      },
+      {
+        "code": "53",
+        "support": 74,
+        "precision": 0.7704918032786885,
+        "recall": 0.6351351351351351,
+        "f1": 0.6962962962962963
+      },
+      {
+        "code": "54",
+        "support": 274,
+        "precision": 0.855072463768116,
+        "recall": 0.8613138686131386,
+        "f1": 0.8581818181818182
+      },
+      {
+        "code": "55",
+        "support": 192,
+        "precision": 0.7688172043010753,
+        "recall": 0.7447916666666666,
+        "f1": 0.7566137566137566
+      },
+      {
+        "code": "56",
+        "support": 1163,
+        "precision": 0.8824577025823687,
+        "recall": 0.8521066208082545,
+        "f1": 0.8670166229221348
+      },
+      {
+        "code": "57",
+        "support": 744,
+        "precision": 0.7027707808564232,
+        "recall": 0.75,
+        "f1": 0.7256176853055917
+      },
+      {
+        "code": "58",
+        "support": 454,
+        "precision": 0.6723404255319149,
+        "recall": 0.6960352422907489,
+        "f1": 0.683982683982684
+      },
+      {
+        "code": "60",
+        "support": 54,
+        "precision": 0.8571428571428571,
+        "recall": 0.6666666666666666,
+        "f1": 0.75
+      },
+      {
+        "code": "61",
+        "support": 419,
+        "precision": 0.8713592233009708,
+        "recall": 0.8568019093078759,
+        "f1": 0.8640192539109507
+      },
+      {
+        "code": "62",
+        "support": 184,
+        "precision": 0.6855670103092784,
+        "recall": 0.7228260869565217,
+        "f1": 0.7037037037037037
+      },
+      {
+        "code": "64",
+        "support": 770,
+        "precision": 0.879948914431673,
+        "recall": 0.8948051948051948,
+        "f1": 0.8873148744365744
+      },
+      {
+        "code": "66",
+        "support": 362,
+        "precision": 0.5283505154639175,
+        "recall": 0.5662983425414365,
+        "f1": 0.5466666666666666
+      },
+      {
+        "code": "67",
+        "support": 183,
+        "precision": 0.5935828877005348,
+        "recall": 0.6065573770491803,
+        "f1": 0.6
+      },
+      {
+        "code": "68",
+        "support": 17,
+        "precision": 0.5,
+        "recall": 0.23529411764705882,
+        "f1": 0.32
+      },
+      {
+        "code": "70",
+        "support": 880,
+        "precision": 0.6970954356846473,
+        "recall": 0.7636363636363637,
+        "f1": 0.7288503253796096
+      },
+      {
+        "code": "72",
+        "support": 228,
+        "precision": 0.9254385964912281,
+        "recall": 0.9254385964912281,
+        "f1": 0.9254385964912281
+      },
+      {
+        "code": "74",
+        "support": 57,
+        "precision": 0.6904761904761905,
+        "recall": 0.5087719298245614,
+        "f1": 0.5858585858585859
+      },
+      {
+        "code": "76",
+        "support": 111,
+        "precision": 0.32653061224489793,
+        "recall": 0.2882882882882883,
+        "f1": 0.3062200956937799
+      },
+      {
+        "code": "85",
+        "support": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      {
+        "code": "86",
+        "support": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      }
+    ]
+  },
+  "test_metrics": {
+    "precision_micro": 0.7480602805132797,
+    "recall_micro": 0.7634384041419218,
+    "f1_micro": 0.7556711131208079,
+    "precision_macro": 0.6798677706485536,
+    "recall_macro": 0.6618114753536644,
+    "f1_macro": 0.6684060079710841,
+    "subset_accuracy": 0.4259841341116599,
+    "hamming_loss": 0.030328543631192934,
+    "jaccard_samples": 0.6889546403803251,
+    "per_class": [
+      {
+        "code": "34",
+        "support": 1539,
+        "precision": 0.6433886662850601,
+        "recall": 0.7303443794671864,
+        "f1": 0.6841144248326233,
+        "name": "Administração Pública",
+        "dataset_support": 10263,
+        "train_support": 7185,
+        "validation_support": 1539
+      },
+      {
+        "code": "35",
+        "support": 214,
+        "precision": 0.7419354838709677,
+        "recall": 0.7523364485981309,
+        "f1": 0.7470997679814385,
+        "name": "Arte, Cultura e Religião",
+        "dataset_support": 1425,
+        "train_support": 997,
+        "validation_support": 214
+      },
+      {
+        "code": "37",
+        "support": 536,
+        "precision": 0.8886792452830189,
+        "recall": 0.878731343283582,
+        "f1": 0.8836772983114447,
+        "name": "Comunicações",
+        "dataset_support": 3573,
+        "train_support": 2501,
+        "validation_support": 536
+      },
+      {
+        "code": "39",
+        "support": 169,
+        "precision": 0.8417721518987342,
+        "recall": 0.7869822485207101,
+        "f1": 0.8134556574923547,
+        "name": "Esporte e Lazer",
+        "dataset_support": 1128,
+        "train_support": 789,
+        "validation_support": 170
+      },
+      {
+        "code": "40",
+        "support": 393,
+        "precision": 0.5501113585746102,
+        "recall": 0.628498727735369,
+        "f1": 0.5866983372921615,
+        "name": "Economia",
+        "dataset_support": 2621,
+        "train_support": 1835,
+        "validation_support": 393
+      },
+      {
+        "code": "41",
+        "support": 327,
+        "precision": 0.5870786516853933,
+        "recall": 0.6391437308868502,
+        "f1": 0.6120058565153733,
+        "name": "Cidades e Desenvolvimento Urbano",
+        "dataset_support": 2180,
+        "train_support": 1526,
+        "validation_support": 327
+      },
+      {
+        "code": "42",
+        "support": 177,
+        "precision": 0.6242424242424243,
+        "recall": 0.5819209039548022,
+        "f1": 0.6023391812865497,
+        "name": "Direito Civil e Processual Civil",
+        "dataset_support": 1179,
+        "train_support": 825,
+        "validation_support": 177
+      },
+      {
+        "code": "43",
+        "support": 372,
+        "precision": 0.8121546961325967,
+        "recall": 0.7903225806451613,
+        "f1": 0.8010899182561307,
+        "name": "Direito Penal e Processual Penal",
+        "dataset_support": 2477,
+        "train_support": 1733,
+        "validation_support": 372
+      },
+      {
+        "code": "44",
+        "support": 1561,
+        "precision": 0.7651177593889242,
+        "recall": 0.7700192184497118,
+        "f1": 0.7675606641123882,
+        "name": "Direitos Humanos e Minorias",
+        "dataset_support": 10415,
+        "train_support": 7295,
+        "validation_support": 1559
+      },
+      {
+        "code": "46",
+        "support": 704,
+        "precision": 0.9117647058823529,
+        "recall": 0.8806818181818182,
+        "f1": 0.8959537572254336,
+        "name": "Educação",
+        "dataset_support": 4689,
+        "train_support": 3282,
+        "validation_support": 703
+      },
+      {
+        "code": "48",
+        "support": 567,
+        "precision": 0.7749140893470791,
+        "recall": 0.7954144620811288,
+        "f1": 0.7850304612706701,
+        "name": "Meio Ambiente e Desenvolvimento Sustentável",
+        "dataset_support": 3781,
+        "train_support": 2647,
+        "validation_support": 567
+      },
+      {
+        "code": "51",
+        "support": 94,
+        "precision": 0.6224489795918368,
+        "recall": 0.648936170212766,
+        "f1": 0.6354166666666666,
+        "name": "Estrutura Fundiária",
+        "dataset_support": 624,
+        "train_support": 436,
+        "validation_support": 94
+      },
+      {
+        "code": "52",
+        "support": 308,
+        "precision": 0.7619047619047619,
+        "recall": 0.7272727272727273,
+        "f1": 0.7441860465116279,
+        "name": "Previdência e Assistência Social",
+        "dataset_support": 2052,
+        "train_support": 1436,
+        "validation_support": 308
+      },
+      {
+        "code": "53",
+        "support": 74,
+        "precision": 0.7333333333333333,
+        "recall": 0.7432432432432432,
+        "f1": 0.738255033557047,
+        "name": "Processo Legislativo e Atuação Parlamentar",
+        "dataset_support": 493,
+        "train_support": 345,
+        "validation_support": 74
+      },
+      {
+        "code": "54",
+        "support": 274,
+        "precision": 0.8587360594795539,
+        "recall": 0.843065693430657,
+        "f1": 0.850828729281768,
+        "name": "Energia, Recursos Hídricos e Minerais",
+        "dataset_support": 1825,
+        "train_support": 1277,
+        "validation_support": 274
+      },
+      {
+        "code": "55",
+        "support": 193,
+        "precision": 0.7740112994350282,
+        "recall": 0.7098445595854922,
+        "f1": 0.7405405405405405,
+        "name": "Relações Internacionais e Comércio Exterior",
+        "dataset_support": 1282,
+        "train_support": 897,
+        "validation_support": 192
+      },
+      {
+        "code": "56",
+        "support": 1164,
+        "precision": 0.8775153105861767,
+        "recall": 0.8616838487972509,
+        "f1": 0.8695275249241439,
+        "name": "Saúde",
+        "dataset_support": 7756,
+        "train_support": 5429,
+        "validation_support": 1163
+      },
+      {
+        "code": "57",
+        "support": 745,
+        "precision": 0.7303664921465969,
+        "recall": 0.748993288590604,
+        "f1": 0.7395626242544732,
+        "name": "Defesa e Segurança",
+        "dataset_support": 4963,
+        "train_support": 3474,
+        "validation_support": 744
+      },
+      {
+        "code": "58",
+        "support": 454,
+        "precision": 0.672686230248307,
+        "recall": 0.6563876651982379,
+        "f1": 0.6644370122630993,
+        "name": "Trabalho e Emprego",
+        "dataset_support": 3028,
+        "train_support": 2120,
+        "validation_support": 454
+      },
+      {
+        "code": "60",
+        "support": 53,
+        "precision": 0.918918918918919,
+        "recall": 0.6415094339622641,
+        "f1": 0.7555555555555555,
+        "name": "Turismo",
+        "dataset_support": 355,
+        "train_support": 248,
+        "validation_support": 54
+      },
+      {
+        "code": "61",
+        "support": 418,
+        "precision": 0.8557692307692307,
+        "recall": 0.8516746411483254,
+        "f1": 0.8537170263788969,
+        "name": "Viação, Transporte e Mobilidade",
+        "dataset_support": 2788,
+        "train_support": 1951,
+        "validation_support": 419
+      },
+      {
+        "code": "62",
+        "support": 184,
+        "precision": 0.7428571428571429,
+        "recall": 0.7065217391304348,
+        "f1": 0.724233983286908,
+        "name": "Ciência, Tecnologia e Inovação",
+        "dataset_support": 1226,
+        "train_support": 858,
+        "validation_support": 184
+      },
+      {
+        "code": "64",
+        "support": 770,
+        "precision": 0.883419689119171,
+        "recall": 0.8857142857142857,
+        "f1": 0.8845654993514915,
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+        "dataset_support": 5130,
+        "train_support": 3590,
+        "validation_support": 770
+      },
+      {
+        "code": "66",
+        "support": 362,
+        "precision": 0.5143540669856459,
+        "recall": 0.5939226519337016,
+        "f1": 0.5512820512820513,
+        "name": "Indústria, Comércio e Serviços",
+        "dataset_support": 2411,
+        "train_support": 1687,
+        "validation_support": 362
+      },
+      {
+        "code": "67",
+        "support": 183,
+        "precision": 0.639344262295082,
+        "recall": 0.639344262295082,
+        "f1": 0.639344262295082,
+        "name": "Direito e Defesa do Consumidor",
+        "dataset_support": 1220,
+        "train_support": 854,
+        "validation_support": 183
+      },
+      {
+        "code": "68",
+        "support": 17,
+        "precision": 0.4,
+        "recall": 0.23529411764705882,
+        "f1": 0.2962962962962963,
+        "name": "Direito Constitucional",
+        "dataset_support": 113,
+        "train_support": 79,
+        "validation_support": 17
+      },
+      {
+        "code": "70",
+        "support": 880,
+        "precision": 0.6705020920502092,
+        "recall": 0.7284090909090909,
+        "f1": 0.6982570806100218,
+        "name": "Finanças Públicas e Orçamento",
+        "dataset_support": 5868,
+        "train_support": 4108,
+        "validation_support": 880
+      },
+      {
+        "code": "72",
+        "support": 229,
+        "precision": 0.8917748917748918,
+        "recall": 0.8995633187772926,
+        "f1": 0.8956521739130435,
+        "name": "Homenagens e Datas Comemorativas",
+        "dataset_support": 1522,
+        "train_support": 1065,
+        "validation_support": 228
+      },
+      {
+        "code": "74",
+        "support": 57,
+        "precision": 0.7333333333333333,
+        "recall": 0.5789473684210527,
+        "f1": 0.6470588235294118,
+        "name": "Política, Partidos e Eleições",
+        "dataset_support": 377,
+        "train_support": 263,
+        "validation_support": 57
+      },
+      {
+        "code": "76",
+        "support": 111,
+        "precision": 0.3333333333333333,
+        "recall": 0.24324324324324326,
+        "f1": 0.28125,
+        "name": "Direito e Justiça",
+        "dataset_support": 741,
+        "train_support": 519,
+        "validation_support": 111
+      },
+      {
+        "code": "85",
+        "support": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "name": "Ciências Exatas e da Terra",
+        "dataset_support": 8,
+        "train_support": 5,
+        "validation_support": 1
+      },
+      {
+        "code": "86",
+        "support": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "name": "Ciências Sociais e Humanas",
+        "dataset_support": 17,
+        "train_support": 11,
+        "validation_support": 3
+      }
+    ]
+  }
+}

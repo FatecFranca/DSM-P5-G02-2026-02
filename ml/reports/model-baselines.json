@@ -1,0 +1,3165 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-09T02:33:23.892347+00:00",
+    "model_version": "experimental-1",
+    "source": "CAMARA",
+    "years": [
+      2023,
+      2024,
+      2025
+    ],
+    "random_seed": 42,
+    "split_algorithm": "alocação gulosa determinística por grupo, balanceando tamanho e prevalência multi-label aproximadamente",
+    "selection_rule": "maior F1 micro em validation; desempate por F1 macro e menor tempo de treino",
+    "test_policy": "test avaliado uma vez, somente após seleção por validation",
+    "python_version": "3.12.10",
+    "scikit_learn_version": "1.9.0"
+  },
+  "dataset": {
+    "documents": 44541,
+    "classes": 32,
+    "average_labels": 1.9652,
+    "taxonomy": [
+      {
+        "index": 0,
+        "code": "34",
+        "name": "Administração Pública",
+        "documents": 10263
+      },
+      {
+        "index": 1,
+        "code": "35",
+        "name": "Arte, Cultura e Religião",
+        "documents": 1425
+      },
+      {
+        "index": 2,
+        "code": "37",
+        "name": "Comunicações",
+        "documents": 3573
+      },
+      {
+        "index": 3,
+        "code": "39",
+        "name": "Esporte e Lazer",
+        "documents": 1128
+      },
+      {
+        "index": 4,
+        "code": "40",
+        "name": "Economia",
+        "documents": 2621
+      },
+      {
+        "index": 5,
+        "code": "41",
+        "name": "Cidades e Desenvolvimento Urbano",
+        "documents": 2180
+      },
+      {
+        "index": 6,
+        "code": "42",
+        "name": "Direito Civil e Processual Civil",
+        "documents": 1179
+      },
+      {
+        "index": 7,
+        "code": "43",
+        "name": "Direito Penal e Processual Penal",
+        "documents": 2477
+      },
+      {
+        "index": 8,
+        "code": "44",
+        "name": "Direitos Humanos e Minorias",
+        "documents": 10415
+      },
+      {
+        "index": 9,
+        "code": "46",
+        "name": "Educação",
+        "documents": 4689
+      },
+      {
+        "index": 10,
+        "code": "48",
+        "name": "Meio Ambiente e Desenvolvimento Sustentável",
+        "documents": 3781
+      },
+      {
+        "index": 11,
+        "code": "51",
+        "name": "Estrutura Fundiária",
+        "documents": 624
+      },
+      {
+        "index": 12,
+        "code": "52",
+        "name": "Previdência e Assistência Social",
+        "documents": 2052
+      },
+      {
+        "index": 13,
+        "code": "53",
+        "name": "Processo Legislativo e Atuação Parlamentar",
+        "documents": 493
+      },
+      {
+        "index": 14,
+        "code": "54",
+        "name": "Energia, Recursos Hídricos e Minerais",
+        "documents": 1825
+      },
+      {
+        "index": 15,
+        "code": "55",
+        "name": "Relações Internacionais e Comércio Exterior",
+        "documents": 1282
+      },
+      {
+        "index": 16,
+        "code": "56",
+        "name": "Saúde",
+        "documents": 7756
+      },
+      {
+        "index": 17,
+        "code": "57",
+        "name": "Defesa e Segurança",
+        "documents": 4963
+      },
+      {
+        "index": 18,
+        "code": "58",
+        "name": "Trabalho e Emprego",
+        "documents": 3028
+      },
+      {
+        "index": 19,
+        "code": "60",
+        "name": "Turismo",
+        "documents": 355
+      },
+      {
+        "index": 20,
+        "code": "61",
+        "name": "Viação, Transporte e Mobilidade",
+        "documents": 2788
+      },
+      {
+        "index": 21,
+        "code": "62",
+        "name": "Ciência, Tecnologia e Inovação",
+        "documents": 1226
+      },
+      {
+        "index": 22,
+        "code": "64",
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+        "documents": 5130
+      },
+      {
+        "index": 23,
+        "code": "66",
+        "name": "Indústria, Comércio e Serviços",
+        "documents": 2411
+      },
+      {
+        "index": 24,
+        "code": "67",
+        "name": "Direito e Defesa do Consumidor",
+        "documents": 1220
+      },
+      {
+        "index": 25,
+        "code": "68",
+        "name": "Direito Constitucional",
+        "documents": 113
+      },
+      {
+        "index": 26,
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento",
+        "documents": 5868
+      },
+      {
+        "index": 27,
+        "code": "72",
+        "name": "Homenagens e Datas Comemorativas",
+        "documents": 1522
+      },
+      {
+        "index": 28,
+        "code": "74",
+        "name": "Política, Partidos e Eleições",
+        "documents": 377
+      },
+      {
+        "index": 29,
+        "code": "76",
+        "name": "Direito e Justiça",
+        "documents": 741
+      },
+      {
+        "index": 30,
+        "code": "85",
+        "name": "Ciências Exatas e da Terra",
+        "documents": 8
+      },
+      {
+        "index": 31,
+        "code": "86",
+        "name": "Ciências Sociais e Humanas",
+        "documents": 17
+      }
+    ]
+  },
+  "groups": {
+    "groups": 43651,
+    "duplicate_groups": 700,
+    "duplicate_documents": 1590,
+    "conflicting_groups": 367,
+    "conflicting_documents": 882,
+    "conflict_type_count": 309,
+    "conflict_types": [
+      {
+        "label_sets": "44+56 <> 56",
+        "groups": 10
+      },
+      {
+        "label_sets": "34+57 <> 40+57",
+        "groups": 8
+      },
+      {
+        "label_sets": "34 <> 34+58",
+        "groups": 7
+      },
+      {
+        "label_sets": "39+72 <> 72",
+        "groups": 4
+      },
+      {
+        "label_sets": "35+72 <> 72",
+        "groups": 4
+      },
+      {
+        "label_sets": "34+57 <> 57",
+        "groups": 4
+      },
+      {
+        "label_sets": "40+70 <> 70",
+        "groups": 4
+      },
+      {
+        "label_sets": "34 <> 34+57",
+        "groups": 4
+      },
+      {
+        "label_sets": "43 <> 43+57",
+        "groups": 3
+      },
+      {
+        "label_sets": "66 <> 66+70",
+        "groups": 2
+      },
+      {
+        "label_sets": "56 <> 56+70",
+        "groups": 2
+      },
+      {
+        "label_sets": "34+37 <> 37",
+        "groups": 2
+      },
+      {
+        "label_sets": "34+44 <> 44",
+        "groups": 2
+      },
+      {
+        "label_sets": "56+72 <> 72",
+        "groups": 2
+      },
+      {
+        "label_sets": "34+54 <> 54",
+        "groups": 2
+      },
+      {
+        "label_sets": "44+56 <> 44+56+58",
+        "groups": 2
+      },
+      {
+        "label_sets": "64+72 <> 72",
+        "groups": 2
+      },
+      {
+        "label_sets": "34+56+70 <> 56",
+        "groups": 2
+      },
+      {
+        "label_sets": "40+46 <> 44+46+70",
+        "groups": 2
+      },
+      {
+        "label_sets": "34+44+56 <> 44+56",
+        "groups": 2
+      }
+    ]
+  },
+  "split": {
+    "train": {
+      "documents": 31179,
+      "groups": 30582,
+      "percentage": 70.0007,
+      "average_labels": 1.965,
+      "class_distribution": [
+        {
+          "code": "34",
+          "name": "Administração Pública",
+          "documents": 7185,
+          "percentage": 23.0444
+        },
+        {
+          "code": "35",
+          "name": "Arte, Cultura e Religião",
+          "documents": 997,
+          "percentage": 3.1977
+        },
+        {
+          "code": "37",
+          "name": "Comunicações",
+          "documents": 2501,
+          "percentage": 8.0214
+        },
+        {
+          "code": "39",
+          "name": "Esporte e Lazer",
+          "documents": 789,
+          "percentage": 2.5305
+        },
+        {
+          "code": "40",
+          "name": "Economia",
+          "documents": 1835,
+          "percentage": 5.8854
+        },
+        {
+          "code": "41",
+          "name": "Cidades e Desenvolvimento Urbano",
+          "documents": 1526,
+          "percentage": 4.8943
+        },
+        {
+          "code": "42",
+          "name": "Direito Civil e Processual Civil",
+          "documents": 825,
+          "percentage": 2.646
+        },
+        {
+          "code": "43",
+          "name": "Direito Penal e Processual Penal",
+          "documents": 1733,
+          "percentage": 5.5582
+        },
+        {
+          "code": "44",
+          "name": "Direitos Humanos e Minorias",
+          "documents": 7295,
+          "percentage": 23.3972
+        },
+        {
+          "code": "46",
+          "name": "Educação",
+          "documents": 3282,
+          "percentage": 10.5263
+        },
+        {
+          "code": "48",
+          "name": "Meio Ambiente e Desenvolvimento Sustentável",
+          "documents": 2647,
+          "percentage": 8.4897
+        },
+        {
+          "code": "51",
+          "name": "Estrutura Fundiária",
+          "documents": 436,
+          "percentage": 1.3984
+        },
+        {
+          "code": "52",
+          "name": "Previdência e Assistência Social",
+          "documents": 1436,
+          "percentage": 4.6057
+        },
+        {
+          "code": "53",
+          "name": "Processo Legislativo e Atuação Parlamentar",
+          "documents": 345,
+          "percentage": 1.1065
+        },
+        {
+          "code": "54",
+          "name": "Energia, Recursos Hídricos e Minerais",
+          "documents": 1277,
+          "percentage": 4.0957
+        },
+        {
+          "code": "55",
+          "name": "Relações Internacionais e Comércio Exterior",
+          "documents": 897,
+          "percentage": 2.8769
+        },
+        {
+          "code": "56",
+          "name": "Saúde",
+          "documents": 5429,
+          "percentage": 17.4124
+        },
+        {
+          "code": "57",
+          "name": "Defesa e Segurança",
+          "documents": 3474,
+          "percentage": 11.1421
+        },
+        {
+          "code": "58",
+          "name": "Trabalho e Emprego",
+          "documents": 2120,
+          "percentage": 6.7994
+        },
+        {
+          "code": "60",
+          "name": "Turismo",
+          "documents": 248,
+          "percentage": 0.7954
+        },
+        {
+          "code": "61",
+          "name": "Viação, Transporte e Mobilidade",
+          "documents": 1951,
+          "percentage": 6.2574
+        },
+        {
+          "code": "62",
+          "name": "Ciência, Tecnologia e Inovação",
+          "documents": 858,
+          "percentage": 2.7519
+        },
+        {
+          "code": "64",
+          "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+          "documents": 3590,
+          "percentage": 11.5142
+        },
+        {
+          "code": "66",
+          "name": "Indústria, Comércio e Serviços",
+          "documents": 1687,
+          "percentage": 5.4107
+        },
+        {
+          "code": "67",
+          "name": "Direito e Defesa do Consumidor",
+          "documents": 854,
+          "percentage": 2.739
+        },
+        {
+          "code": "68",
+          "name": "Direito Constitucional",
+          "documents": 79,
+          "percentage": 0.2534
+        },
+        {
+          "code": "70",
+          "name": "Finanças Públicas e Orçamento",
+          "documents": 4108,
+          "percentage": 13.1755
+        },
+        {
+          "code": "72",
+          "name": "Homenagens e Datas Comemorativas",
+          "documents": 1065,
+          "percentage": 3.4158
+        },
+        {
+          "code": "74",
+          "name": "Política, Partidos e Eleições",
+          "documents": 263,
+          "percentage": 0.8435
+        },
+        {
+          "code": "76",
+          "name": "Direito e Justiça",
+          "documents": 519,
+          "percentage": 1.6646
+        },
+        {
+          "code": "85",
+          "name": "Ciências Exatas e da Terra",
+          "documents": 5,
+          "percentage": 0.016
+        },
+        {
+          "code": "86",
+          "name": "Ciências Sociais e Humanas",
+          "documents": 11,
+          "percentage": 0.0353
+        }
+      ]
+    },
+    "validation": {
+      "documents": 6681,
+      "groups": 6529,
+      "percentage": 14.9997,
+      "average_labels": 1.9651,
+      "class_distribution": [
+        {
+          "code": "34",
+          "name": "Administração Pública",
+          "documents": 1539,
+          "percentage": 23.0355
+        },
+        {
+          "code": "35",
+          "name": "Arte, Cultura e Religião",
+          "documents": 214,
+          "percentage": 3.2031
+        },
+        {
+          "code": "37",
+          "name": "Comunicações",
+          "documents": 536,
+          "percentage": 8.0228
+        },
+        {
+          "code": "39",
+          "name": "Esporte e Lazer",
+          "documents": 170,
+          "percentage": 2.5445
+        },
+        {
+          "code": "40",
+          "name": "Economia",
+          "documents": 393,
+          "percentage": 5.8824
+        },
+        {
+          "code": "41",
+          "name": "Cidades e Desenvolvimento Urbano",
+          "documents": 327,
+          "percentage": 4.8945
+        },
+        {
+          "code": "42",
+          "name": "Direito Civil e Processual Civil",
+          "documents": 177,
+          "percentage": 2.6493
+        },
+        {
+          "code": "43",
+          "name": "Direito Penal e Processual Penal",
+          "documents": 372,
+          "percentage": 5.568
+        },
+        {
+          "code": "44",
+          "name": "Direitos Humanos e Minorias",
+          "documents": 1559,
+          "percentage": 23.3348
+        },
+        {
+          "code": "46",
+          "name": "Educação",
+          "documents": 703,
+          "percentage": 10.5224
+        },
+        {
+          "code": "48",
+          "name": "Meio Ambiente e Desenvolvimento Sustentável",
+          "documents": 567,
+          "percentage": 8.4868
+        },
+        {
+          "code": "51",
+          "name": "Estrutura Fundiária",
+          "documents": 94,
+          "percentage": 1.407
+        },
+        {
+          "code": "52",
+          "name": "Previdência e Assistência Social",
+          "documents": 308,
+          "percentage": 4.6101
+        },
+        {
+          "code": "53",
+          "name": "Processo Legislativo e Atuação Parlamentar",
+          "documents": 74,
+          "percentage": 1.1076
+        },
+        {
+          "code": "54",
+          "name": "Energia, Recursos Hídricos e Minerais",
+          "documents": 274,
+          "percentage": 4.1012
+        },
+        {
+          "code": "55",
+          "name": "Relações Internacionais e Comércio Exterior",
+          "documents": 192,
+          "percentage": 2.8738
+        },
+        {
+          "code": "56",
+          "name": "Saúde",
+          "documents": 1163,
+          "percentage": 17.4076
+        },
+        {
+          "code": "57",
+          "name": "Defesa e Segurança",
+          "documents": 744,
+          "percentage": 11.1361
+        },
+        {
+          "code": "58",
+          "name": "Trabalho e Emprego",
+          "documents": 454,
+          "percentage": 6.7954
+        },
+        {
+          "code": "60",
+          "name": "Turismo",
+          "documents": 54,
+          "percentage": 0.8083
+        },
+        {
+          "code": "61",
+          "name": "Viação, Transporte e Mobilidade",
+          "documents": 419,
+          "percentage": 6.2715
+        },
+        {
+          "code": "62",
+          "name": "Ciência, Tecnologia e Inovação",
+          "documents": 184,
+          "percentage": 2.7541
+        },
+        {
+          "code": "64",
+          "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+          "documents": 770,
+          "percentage": 11.5252
+        },
+        {
+          "code": "66",
+          "name": "Indústria, Comércio e Serviços",
+          "documents": 362,
+          "percentage": 5.4184
+        },
+        {
+          "code": "67",
+          "name": "Direito e Defesa do Consumidor",
+          "documents": 183,
+          "percentage": 2.7391
+        },
+        {
+          "code": "68",
+          "name": "Direito Constitucional",
+          "documents": 17,
+          "percentage": 0.2545
+        },
+        {
+          "code": "70",
+          "name": "Finanças Públicas e Orçamento",
+          "documents": 880,
+          "percentage": 13.1717
+        },
+        {
+          "code": "72",
+          "name": "Homenagens e Datas Comemorativas",
+          "documents": 228,
+          "percentage": 3.4127
+        },
+        {
+          "code": "74",
+          "name": "Política, Partidos e Eleições",
+          "documents": 57,
+          "percentage": 0.8532
+        },
+        {
+          "code": "76",
+          "name": "Direito e Justiça",
+          "documents": 111,
+          "percentage": 1.6614
+        },
+        {
+          "code": "85",
+          "name": "Ciências Exatas e da Terra",
+          "documents": 1,
+          "percentage": 0.015
+        },
+        {
+          "code": "86",
+          "name": "Ciências Sociais e Humanas",
+          "documents": 3,
+          "percentage": 0.0449
+        }
+      ]
+    },
+    "test": {
+      "documents": 6681,
+      "groups": 6540,
+      "percentage": 14.9997,
+      "average_labels": 1.9659,
+      "class_distribution": [
+        {
+          "code": "34",
+          "name": "Administração Pública",
+          "documents": 1539,
+          "percentage": 23.0355
+        },
+        {
+          "code": "35",
+          "name": "Arte, Cultura e Religião",
+          "documents": 214,
+          "percentage": 3.2031
+        },
+        {
+          "code": "37",
+          "name": "Comunicações",
+          "documents": 536,
+          "percentage": 8.0228
+        },
+        {
+          "code": "39",
+          "name": "Esporte e Lazer",
+          "documents": 169,
+          "percentage": 2.5296
+        },
+        {
+          "code": "40",
+          "name": "Economia",
+          "documents": 393,
+          "percentage": 5.8824
+        },
+        {
+          "code": "41",
+          "name": "Cidades e Desenvolvimento Urbano",
+          "documents": 327,
+          "percentage": 4.8945
+        },
+        {
+          "code": "42",
+          "name": "Direito Civil e Processual Civil",
+          "documents": 177,
+          "percentage": 2.6493
+        },
+        {
+          "code": "43",
+          "name": "Direito Penal e Processual Penal",
+          "documents": 372,
+          "percentage": 5.568
+        },
+        {
+          "code": "44",
+          "name": "Direitos Humanos e Minorias",
+          "documents": 1561,
+          "percentage": 23.3648
+        },
+        {
+          "code": "46",
+          "name": "Educação",
+          "documents": 704,
+          "percentage": 10.5373
+        },
+        {
+          "code": "48",
+          "name": "Meio Ambiente e Desenvolvimento Sustentável",
+          "documents": 567,
+          "percentage": 8.4868
+        },
+        {
+          "code": "51",
+          "name": "Estrutura Fundiária",
+          "documents": 94,
+          "percentage": 1.407
+        },
+        {
+          "code": "52",
+          "name": "Previdência e Assistência Social",
+          "documents": 308,
+          "percentage": 4.6101
+        },
+        {
+          "code": "53",
+          "name": "Processo Legislativo e Atuação Parlamentar",
+          "documents": 74,
+          "percentage": 1.1076
+        },
+        {
+          "code": "54",
+          "name": "Energia, Recursos Hídricos e Minerais",
+          "documents": 274,
+          "percentage": 4.1012
+        },
+        {
+          "code": "55",
+          "name": "Relações Internacionais e Comércio Exterior",
+          "documents": 193,
+          "percentage": 2.8888
+        },
+        {
+          "code": "56",
+          "name": "Saúde",
+          "documents": 1164,
+          "percentage": 17.4225
+        },
+        {
+          "code": "57",
+          "name": "Defesa e Segurança",
+          "documents": 745,
+          "percentage": 11.151
+        },
+        {
+          "code": "58",
+          "name": "Trabalho e Emprego",
+          "documents": 454,
+          "percentage": 6.7954
+        },
+        {
+          "code": "60",
+          "name": "Turismo",
+          "documents": 53,
+          "percentage": 0.7933
+        },
+        {
+          "code": "61",
+          "name": "Viação, Transporte e Mobilidade",
+          "documents": 418,
+          "percentage": 6.2565
+        },
+        {
+          "code": "62",
+          "name": "Ciência, Tecnologia e Inovação",
+          "documents": 184,
+          "percentage": 2.7541
+        },
+        {
+          "code": "64",
+          "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+          "documents": 770,
+          "percentage": 11.5252
+        },
+        {
+          "code": "66",
+          "name": "Indústria, Comércio e Serviços",
+          "documents": 362,
+          "percentage": 5.4184
+        },
+        {
+          "code": "67",
+          "name": "Direito e Defesa do Consumidor",
+          "documents": 183,
+          "percentage": 2.7391
+        },
+        {
+          "code": "68",
+          "name": "Direito Constitucional",
+          "documents": 17,
+          "percentage": 0.2545
+        },
+        {
+          "code": "70",
+          "name": "Finanças Públicas e Orçamento",
+          "documents": 880,
+          "percentage": 13.1717
+        },
+        {
+          "code": "72",
+          "name": "Homenagens e Datas Comemorativas",
+          "documents": 229,
+          "percentage": 3.4276
+        },
+        {
+          "code": "74",
+          "name": "Política, Partidos e Eleições",
+          "documents": 57,
+          "percentage": 0.8532
+        },
+        {
+          "code": "76",
+          "name": "Direito e Justiça",
+          "documents": 111,
+          "percentage": 1.6614
+        },
+        {
+          "code": "85",
+          "name": "Ciências Exatas e da Terra",
+          "documents": 2,
+          "percentage": 0.0299
+        },
+        {
+          "code": "86",
+          "name": "Ciências Sociais e Humanas",
+          "documents": 3,
+          "percentage": 0.0449
+        }
+      ]
+    },
+    "intersections": {
+      "train_validation": 0,
+      "train_test": 0,
+      "validation_test": 0
+    }
+  },
+  "tfidf": {
+    "config": {
+      "ngram_range": [
+        1,
+        2
+      ],
+      "min_df": 2,
+      "max_df": 0.98,
+      "max_features": 150000,
+      "sublinear_tf": true,
+      "lowercase": true,
+      "strip_accents": null,
+      "stop_words": null,
+      "dtype": "float32"
+    },
+    "features": 70096,
+    "fit_seconds": 3.561770899919793,
+    "fit_scope": "TRAIN somente; validation e test usam apenas transform",
+    "stopwords_experiment": "Não executado: scikit-learn não fornece lista portuguesa; nenhum recurso externo é baixado em runtime."
+  },
+  "models": [
+    {
+      "name": "logistic_regression",
+      "config": {
+        "algorithm": "LogisticRegression",
+        "class_weight": null,
+        "solver": "liblinear",
+        "max_iter": 500,
+        "C": 1.0,
+        "threshold": 0.5
+      },
+      "training_seconds": 15.490757000166923,
+      "validation_inference_seconds": 0.10859710001386702,
+      "validation_metrics": {
+        "precision_micro": 0.9207373271889401,
+        "recall_micro": 0.5326376723284333,
+        "f1_micro": 0.6748697162709901,
+        "precision_macro": 0.8333671411962591,
+        "recall_macro": 0.406476004354586,
+        "f1_macro": 0.5247943370605906,
+        "subset_accuracy": 0.4250860649603353,
+        "hamming_loss": 0.031516614279299505,
+        "jaccard_samples": 0.6001222371900414,
+        "per_class": [
+          {
+            "code": "34",
+            "support": 1539,
+            "precision": 0.8412698412698413,
+            "recall": 0.4821312540610786,
+            "f1": 0.6129698471705907
+          },
+          {
+            "code": "35",
+            "support": 214,
+            "precision": 0.9611650485436893,
+            "recall": 0.46261682242990654,
+            "f1": 0.6246056782334385
+          },
+          {
+            "code": "37",
+            "support": 536,
+            "precision": 0.9848484848484849,
+            "recall": 0.7276119402985075,
+            "f1": 0.8369098712446352
+          },
+          {
+            "code": "39",
+            "support": 170,
+            "precision": 0.987012987012987,
+            "recall": 0.4470588235294118,
+            "f1": 0.6153846153846154
+          },
+          {
+            "code": "40",
+            "support": 393,
+            "precision": 0.7727272727272727,
+            "recall": 0.21628498727735368,
+            "f1": 0.3379721669980119
+          },
+          {
+            "code": "41",
+            "support": 327,
+            "precision": 0.9487179487179487,
+            "recall": 0.3394495412844037,
+            "f1": 0.5
+          },
+          {
+            "code": "42",
+            "support": 177,
+            "precision": 0.9152542372881356,
+            "recall": 0.3050847457627119,
+            "f1": 0.4576271186440678
+          },
+          {
+            "code": "43",
+            "support": 372,
+            "precision": 0.9504504504504504,
+            "recall": 0.5672043010752689,
+            "f1": 0.7104377104377104
+          },
+          {
+            "code": "44",
+            "support": 1559,
+            "precision": 0.9071358748778103,
+            "recall": 0.5952533675432969,
+            "f1": 0.7188226181254841
+          },
+          {
+            "code": "46",
+            "support": 703,
+            "precision": 0.959409594095941,
+            "recall": 0.7396870554765291,
+            "f1": 0.8353413654618473
+          },
+          {
+            "code": "48",
+            "support": 567,
+            "precision": 0.9642857142857143,
+            "recall": 0.5238095238095238,
+            "f1": 0.6788571428571428
+          },
+          {
+            "code": "51",
+            "support": 94,
+            "precision": 1.0,
+            "recall": 0.11702127659574468,
+            "f1": 0.20952380952380953
+          },
+          {
+            "code": "52",
+            "support": 308,
+            "precision": 0.9428571428571428,
+            "recall": 0.5357142857142857,
+            "f1": 0.6832298136645962
+          },
+          {
+            "code": "53",
+            "support": 74,
+            "precision": 1.0,
+            "recall": 0.3918918918918919,
+            "f1": 0.5631067961165048
+          },
+          {
+            "code": "54",
+            "support": 274,
+            "precision": 0.9567567567567568,
+            "recall": 0.6459854014598541,
+            "f1": 0.7712418300653595
+          },
+          {
+            "code": "55",
+            "support": 192,
+            "precision": 0.9375,
+            "recall": 0.390625,
+            "f1": 0.5514705882352942
+          },
+          {
+            "code": "56",
+            "support": 1163,
+            "precision": 0.9654377880184332,
+            "recall": 0.7205503009458297,
+            "f1": 0.8252092565238799
+          },
+          {
+            "code": "57",
+            "support": 744,
+            "precision": 0.8847058823529412,
+            "recall": 0.5053763440860215,
+            "f1": 0.6432848588537211
+          },
+          {
+            "code": "58",
+            "support": 454,
+            "precision": 0.903954802259887,
+            "recall": 0.3524229074889868,
+            "f1": 0.5071315372424723
+          },
+          {
+            "code": "60",
+            "support": 54,
+            "precision": 1.0,
+            "recall": 0.3148148148148148,
+            "f1": 0.4788732394366197
+          },
+          {
+            "code": "61",
+            "support": 419,
+            "precision": 0.9549180327868853,
+            "recall": 0.5560859188544153,
+            "f1": 0.702865761689291
+          },
+          {
+            "code": "62",
+            "support": 184,
+            "precision": 0.9247311827956989,
+            "recall": 0.4673913043478261,
+            "f1": 0.6209386281588448
+          },
+          {
+            "code": "64",
+            "support": 770,
+            "precision": 0.928462709284627,
+            "recall": 0.7922077922077922,
+            "f1": 0.8549404344779257
+          },
+          {
+            "code": "66",
+            "support": 362,
+            "precision": 0.8023255813953488,
+            "recall": 0.19060773480662985,
+            "f1": 0.3080357142857143
+          },
+          {
+            "code": "67",
+            "support": 183,
+            "precision": 0.9423076923076923,
+            "recall": 0.2677595628415301,
+            "f1": 0.41702127659574467
+          },
+          {
+            "code": "68",
+            "support": 17,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "70",
+            "support": 880,
+            "precision": 0.8668076109936576,
+            "recall": 0.4659090909090909,
+            "f1": 0.6060606060606061
+          },
+          {
+            "code": "72",
+            "support": 228,
+            "precision": 0.9647058823529412,
+            "recall": 0.7192982456140351,
+            "f1": 0.8241206030150754
+          },
+          {
+            "code": "74",
+            "support": 57,
+            "precision": 1.0,
+            "recall": 0.14035087719298245,
+            "f1": 0.24615384615384617
+          },
+          {
+            "code": "76",
+            "support": 111,
+            "precision": 0.5,
+            "recall": 0.02702702702702703,
+            "f1": 0.05128205128205128
+          },
+          {
+            "code": "85",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "86",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "logistic_regression_balanced",
+      "config": {
+        "algorithm": "LogisticRegression",
+        "class_weight": "balanced",
+        "solver": "liblinear",
+        "max_iter": 500,
+        "C": 1.0,
+        "threshold": 0.5
+      },
+      "training_seconds": 22.964213700033724,
+      "validation_inference_seconds": 0.10678520007058978,
+      "validation_metrics": {
+        "precision_micro": 0.6566313572446262,
+        "recall_micro": 0.8073729910884302,
+        "f1_micro": 0.7242415960644984,
+        "precision_macro": 0.5819228630077947,
+        "recall_macro": 0.7236986487038347,
+        "f1_macro": 0.6386581222408488,
+        "subset_accuracy": 0.35339021104625057,
+        "hamming_loss": 0.037756323903607246,
+        "jaccard_samples": 0.6530381109186678,
+        "per_class": [
+          {
+            "code": "34",
+            "support": 1539,
+            "precision": 0.600408788962698,
+            "recall": 0.7634827810266407,
+            "f1": 0.6721967963386728
+          },
+          {
+            "code": "35",
+            "support": 214,
+            "precision": 0.5161290322580645,
+            "recall": 0.7476635514018691,
+            "f1": 0.6106870229007634
+          },
+          {
+            "code": "37",
+            "support": 536,
+            "precision": 0.892925430210325,
+            "recall": 0.871268656716418,
+            "f1": 0.8819641170915958
+          },
+          {
+            "code": "39",
+            "support": 170,
+            "precision": 0.751412429378531,
+            "recall": 0.7823529411764706,
+            "f1": 0.7665706051873199
+          },
+          {
+            "code": "40",
+            "support": 393,
+            "precision": 0.40536512667660207,
+            "recall": 0.6921119592875318,
+            "f1": 0.5112781954887218
+          },
+          {
+            "code": "41",
+            "support": 327,
+            "precision": 0.48975409836065575,
+            "recall": 0.7308868501529052,
+            "f1": 0.5865030674846625
+          },
+          {
+            "code": "42",
+            "support": 177,
+            "precision": 0.42295081967213116,
+            "recall": 0.7288135593220338,
+            "f1": 0.5352697095435685
+          },
+          {
+            "code": "43",
+            "support": 372,
+            "precision": 0.6506276150627615,
+            "recall": 0.8360215053763441,
+            "f1": 0.731764705882353
+          },
+          {
+            "code": "44",
+            "support": 1559,
+            "precision": 0.7354877318970676,
+            "recall": 0.7883258499037845,
+            "f1": 0.7609907120743034
+          },
+          {
+            "code": "46",
+            "support": 703,
+            "precision": 0.8805120910384068,
+            "recall": 0.8805120910384068,
+            "f1": 0.8805120910384068
+          },
+          {
+            "code": "48",
+            "support": 567,
+            "precision": 0.7449139280125195,
+            "recall": 0.8395061728395061,
+            "f1": 0.7893864013266998
+          },
+          {
+            "code": "51",
+            "support": 94,
+            "precision": 0.5034965034965035,
+            "recall": 0.7659574468085106,
+            "f1": 0.6075949367088608
+          },
+          {
+            "code": "52",
+            "support": 308,
+            "precision": 0.5865384615384616,
+            "recall": 0.7922077922077922,
+            "f1": 0.6740331491712708
+          },
+          {
+            "code": "53",
+            "support": 74,
+            "precision": 0.65,
+            "recall": 0.7027027027027027,
+            "f1": 0.6753246753246753
+          },
+          {
+            "code": "54",
+            "support": 274,
+            "precision": 0.8235294117647058,
+            "recall": 0.8686131386861314,
+            "f1": 0.8454706927175843
+          },
+          {
+            "code": "55",
+            "support": 192,
+            "precision": 0.616,
+            "recall": 0.8020833333333334,
+            "f1": 0.6968325791855203
+          },
+          {
+            "code": "56",
+            "support": 1163,
+            "precision": 0.8434856175972927,
+            "recall": 0.8572656921754084,
+            "f1": 0.8503198294243071
+          },
+          {
+            "code": "57",
+            "support": 744,
+            "precision": 0.657051282051282,
+            "recall": 0.8266129032258065,
+            "f1": 0.7321428571428571
+          },
+          {
+            "code": "58",
+            "support": 454,
+            "precision": 0.5377503852080123,
+            "recall": 0.7687224669603524,
+            "f1": 0.6328195829555757
+          },
+          {
+            "code": "60",
+            "support": 54,
+            "precision": 0.59375,
+            "recall": 0.7037037037037037,
+            "f1": 0.6440677966101694
+          },
+          {
+            "code": "61",
+            "support": 419,
+            "precision": 0.8341013824884793,
+            "recall": 0.863961813842482,
+            "f1": 0.8487690504103166
+          },
+          {
+            "code": "62",
+            "support": 184,
+            "precision": 0.6367521367521367,
+            "recall": 0.8097826086956522,
+            "f1": 0.7129186602870813
+          },
+          {
+            "code": "64",
+            "support": 770,
+            "precision": 0.8607594936708861,
+            "recall": 0.8831168831168831,
+            "f1": 0.8717948717948718
+          },
+          {
+            "code": "66",
+            "support": 362,
+            "precision": 0.39477726574500765,
+            "recall": 0.7099447513812155,
+            "f1": 0.5074037512339585
+          },
+          {
+            "code": "67",
+            "support": 183,
+            "precision": 0.42813455657492355,
+            "recall": 0.7650273224043715,
+            "f1": 0.5490196078431373
+          },
+          {
+            "code": "68",
+            "support": 17,
+            "precision": 0.25,
+            "recall": 0.4117647058823529,
+            "f1": 0.3111111111111111
+          },
+          {
+            "code": "70",
+            "support": 880,
+            "precision": 0.6379613356766256,
+            "recall": 0.825,
+            "f1": 0.7195242814667988
+          },
+          {
+            "code": "72",
+            "support": 228,
+            "precision": 0.8729508196721312,
+            "recall": 0.9342105263157895,
+            "f1": 0.902542372881356
+          },
+          {
+            "code": "74",
+            "support": 57,
+            "precision": 0.609375,
+            "recall": 0.6842105263157895,
+            "f1": 0.6446280991735537
+          },
+          {
+            "code": "76",
+            "support": 111,
+            "precision": 0.19463087248322147,
+            "recall": 0.5225225225225225,
+            "f1": 0.28361858190709044
+          },
+          {
+            "code": "85",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "86",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "linear_svc_balanced",
+      "config": {
+        "algorithm": "LinearSVC",
+        "class_weight": "balanced",
+        "C": 1.0,
+        "max_iter": 3000,
+        "threshold": 0.0
+      },
+      "training_seconds": 49.094907799968496,
+      "validation_inference_seconds": 0.11568369995802641,
+      "validation_metrics": {
+        "precision_micro": 0.7462386414419783,
+        "recall_micro": 0.763119811105187,
+        "f1_micro": 0.7545848239502918,
+        "precision_macro": 0.679844782666081,
+        "recall_macro": 0.656243319117892,
+        "f1_macro": 0.664974668088084,
+        "subset_accuracy": 0.4291273761412962,
+        "hamming_loss": 0.03048289926657686,
+        "jaccard_samples": 0.6880872196206728,
+        "per_class": [
+          {
+            "code": "34",
+            "support": 1539,
+            "precision": 0.636259977194983,
+            "recall": 0.7251461988304093,
+            "f1": 0.6778013969025205
+          },
+          {
+            "code": "35",
+            "support": 214,
+            "precision": 0.74,
+            "recall": 0.6915887850467289,
+            "f1": 0.714975845410628
+          },
+          {
+            "code": "37",
+            "support": 536,
+            "precision": 0.9037328094302554,
+            "recall": 0.8582089552238806,
+            "f1": 0.8803827751196173
+          },
+          {
+            "code": "39",
+            "support": 170,
+            "precision": 0.8402777777777778,
+            "recall": 0.711764705882353,
+            "f1": 0.7707006369426752
+          },
+          {
+            "code": "40",
+            "support": 393,
+            "precision": 0.5,
+            "recall": 0.5597964376590331,
+            "f1": 0.5282112845138055
+          },
+          {
+            "code": "41",
+            "support": 327,
+            "precision": 0.6097560975609756,
+            "recall": 0.6116207951070336,
+            "f1": 0.6106870229007634
+          },
+          {
+            "code": "42",
+            "support": 177,
+            "precision": 0.6625766871165644,
+            "recall": 0.6101694915254238,
+            "f1": 0.6352941176470588
+          },
+          {
+            "code": "43",
+            "support": 372,
+            "precision": 0.7956403269754768,
+            "recall": 0.7849462365591398,
+            "f1": 0.790257104194858
+          },
+          {
+            "code": "44",
+            "support": 1559,
+            "precision": 0.7601753287413902,
+            "recall": 0.7787042976266838,
+            "f1": 0.7693282636248415
+          },
+          {
+            "code": "46",
+            "support": 703,
+            "precision": 0.8931623931623932,
+            "recall": 0.8918918918918919,
+            "f1": 0.892526690391459
+          },
+          {
+            "code": "48",
+            "support": 567,
+            "precision": 0.8097826086956522,
+            "recall": 0.7883597883597884,
+            "f1": 0.7989276139410187
+          },
+          {
+            "code": "51",
+            "support": 94,
+            "precision": 0.6666666666666666,
+            "recall": 0.6595744680851063,
+            "f1": 0.6631016042780749
+          },
+          {
+            "code": "52",
+            "support": 308,
+            "precision": 0.7295597484276729,
+            "recall": 0.7532467532467533,
+            "f1": 0.7412140575079872
+          },
+          {
+            "code": "53",
+            "support": 74,
+            "precision": 0.7704918032786885,
+            "recall": 0.6351351351351351,
+            "f1": 0.6962962962962963
+          },
+          {
+            "code": "54",
+            "support": 274,
+            "precision": 0.855072463768116,
+            "recall": 0.8613138686131386,
+            "f1": 0.8581818181818182
+          },
+          {
+            "code": "55",
+            "support": 192,
+            "precision": 0.7688172043010753,
+            "recall": 0.7447916666666666,
+            "f1": 0.7566137566137566
+          },
+          {
+            "code": "56",
+            "support": 1163,
+            "precision": 0.8824577025823687,
+            "recall": 0.8521066208082545,
+            "f1": 0.8670166229221348
+          },
+          {
+            "code": "57",
+            "support": 744,
+            "precision": 0.7027707808564232,
+            "recall": 0.75,
+            "f1": 0.7256176853055917
+          },
+          {
+            "code": "58",
+            "support": 454,
+            "precision": 0.6723404255319149,
+            "recall": 0.6960352422907489,
+            "f1": 0.683982683982684
+          },
+          {
+            "code": "60",
+            "support": 54,
+            "precision": 0.8571428571428571,
+            "recall": 0.6666666666666666,
+            "f1": 0.75
+          },
+          {
+            "code": "61",
+            "support": 419,
+            "precision": 0.8713592233009708,
+            "recall": 0.8568019093078759,
+            "f1": 0.8640192539109507
+          },
+          {
+            "code": "62",
+            "support": 184,
+            "precision": 0.6855670103092784,
+            "recall": 0.7228260869565217,
+            "f1": 0.7037037037037037
+          },
+          {
+            "code": "64",
+            "support": 770,
+            "precision": 0.879948914431673,
+            "recall": 0.8948051948051948,
+            "f1": 0.8873148744365744
+          },
+          {
+            "code": "66",
+            "support": 362,
+            "precision": 0.5283505154639175,
+            "recall": 0.5662983425414365,
+            "f1": 0.5466666666666666
+          },
+          {
+            "code": "67",
+            "support": 183,
+            "precision": 0.5935828877005348,
+            "recall": 0.6065573770491803,
+            "f1": 0.6
+          },
+          {
+            "code": "68",
+            "support": 17,
+            "precision": 0.5,
+            "recall": 0.23529411764705882,
+            "f1": 0.32
+          },
+          {
+            "code": "70",
+            "support": 880,
+            "precision": 0.6970954356846473,
+            "recall": 0.7636363636363637,
+            "f1": 0.7288503253796096
+          },
+          {
+            "code": "72",
+            "support": 228,
+            "precision": 0.9254385964912281,
+            "recall": 0.9254385964912281,
+            "f1": 0.9254385964912281
+          },
+          {
+            "code": "74",
+            "support": 57,
+            "precision": 0.6904761904761905,
+            "recall": 0.5087719298245614,
+            "f1": 0.5858585858585859
+          },
+          {
+            "code": "76",
+            "support": 111,
+            "precision": 0.32653061224489793,
+            "recall": 0.2882882882882883,
+            "f1": 0.3062200956937799
+          },
+          {
+            "code": "85",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "86",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "sgd_balanced",
+      "config": {
+        "algorithm": "SGDClassifier",
+        "loss": "log_loss",
+        "class_weight": "balanced",
+        "alpha": 0.0001,
+        "max_iter": 1000,
+        "tol": 0.001,
+        "threshold": 0.5
+      },
+      "training_seconds": 9.532429500017315,
+      "validation_inference_seconds": 0.036209499929100275,
+      "validation_metrics": {
+        "precision_micro": 0.6040112994350283,
+        "recall_micro": 0.8143042120496611,
+        "f1_micro": 0.6935677446560057,
+        "precision_macro": 0.5383713605149313,
+        "recall_macro": 0.7414754939490547,
+        "f1_macro": 0.6103020356888509,
+        "subset_accuracy": 0.31207903008531657,
+        "hamming_loss": 0.04418780871127077,
+        "jaccard_samples": 0.6228463565239497,
+        "per_class": [
+          {
+            "code": "34",
+            "support": 1539,
+            "precision": 0.5765054294175715,
+            "recall": 0.7589343729694606,
+            "f1": 0.6552594670406732
+          },
+          {
+            "code": "35",
+            "support": 214,
+            "precision": 0.4489247311827957,
+            "recall": 0.780373831775701,
+            "f1": 0.5699658703071673
+          },
+          {
+            "code": "37",
+            "support": 536,
+            "precision": 0.9085487077534792,
+            "recall": 0.8526119402985075,
+            "f1": 0.8796920115495669
+          },
+          {
+            "code": "39",
+            "support": 170,
+            "precision": 0.6989795918367347,
+            "recall": 0.8058823529411765,
+            "f1": 0.7486338797814208
+          },
+          {
+            "code": "40",
+            "support": 393,
+            "precision": 0.3568075117370892,
+            "recall": 0.7735368956743003,
+            "f1": 0.4883534136546185
+          },
+          {
+            "code": "41",
+            "support": 327,
+            "precision": 0.44324324324324327,
+            "recall": 0.7522935779816514,
+            "f1": 0.5578231292517006
+          },
+          {
+            "code": "42",
+            "support": 177,
+            "precision": 0.3115124153498871,
+            "recall": 0.7796610169491526,
+            "f1": 0.44516129032258067
+          },
+          {
+            "code": "43",
+            "support": 372,
+            "precision": 0.5920303605313093,
+            "recall": 0.8387096774193549,
+            "f1": 0.6941045606229144
+          },
+          {
+            "code": "44",
+            "support": 1559,
+            "precision": 0.7245080500894454,
+            "recall": 0.7793457344451572,
+            "f1": 0.7509270704573547
+          },
+          {
+            "code": "46",
+            "support": 703,
+            "precision": 0.8787446504992867,
+            "recall": 0.8762446657183499,
+            "f1": 0.8774928774928775
+          },
+          {
+            "code": "48",
+            "support": 567,
+            "precision": 0.71580547112462,
+            "recall": 0.8306878306878307,
+            "f1": 0.7689795918367347
+          },
+          {
+            "code": "51",
+            "support": 94,
+            "precision": 0.4311377245508982,
+            "recall": 0.7659574468085106,
+            "f1": 0.5517241379310345
+          },
+          {
+            "code": "52",
+            "support": 308,
+            "precision": 0.562358276643991,
+            "recall": 0.8051948051948052,
+            "f1": 0.6622162883845126
+          },
+          {
+            "code": "53",
+            "support": 74,
+            "precision": 0.5934065934065934,
+            "recall": 0.7297297297297297,
+            "f1": 0.6545454545454545
+          },
+          {
+            "code": "54",
+            "support": 274,
+            "precision": 0.8292682926829268,
+            "recall": 0.8686131386861314,
+            "f1": 0.8484848484848485
+          },
+          {
+            "code": "55",
+            "support": 192,
+            "precision": 0.5244299674267101,
+            "recall": 0.8385416666666666,
+            "f1": 0.6452905811623246
+          },
+          {
+            "code": "56",
+            "support": 1163,
+            "precision": 0.8289806234203876,
+            "recall": 0.8460877042132416,
+            "f1": 0.8374468085106384
+          },
+          {
+            "code": "57",
+            "support": 744,
+            "precision": 0.6153091265947007,
+            "recall": 0.842741935483871,
+            "f1": 0.711287577992059
+          },
+          {
+            "code": "58",
+            "support": 454,
+            "precision": 0.46350832266325226,
+            "recall": 0.7973568281938326,
+            "f1": 0.5862348178137652
+          },
+          {
+            "code": "60",
+            "support": 54,
+            "precision": 0.4431818181818182,
+            "recall": 0.7222222222222222,
+            "f1": 0.5492957746478874
+          },
+          {
+            "code": "61",
+            "support": 419,
+            "precision": 0.814317673378076,
+            "recall": 0.8687350835322196,
+            "f1": 0.8406466512702079
+          },
+          {
+            "code": "62",
+            "support": 184,
+            "precision": 0.5687022900763359,
+            "recall": 0.8097826086956522,
+            "f1": 0.6681614349775785
+          },
+          {
+            "code": "64",
+            "support": 770,
+            "precision": 0.8735177865612648,
+            "recall": 0.861038961038961,
+            "f1": 0.8672334859385219
+          },
+          {
+            "code": "66",
+            "support": 362,
+            "precision": 0.3372228704784131,
+            "recall": 0.7983425414364641,
+            "f1": 0.4741591468416735
+          },
+          {
+            "code": "67",
+            "support": 183,
+            "precision": 0.35108958837772397,
+            "recall": 0.7923497267759563,
+            "f1": 0.4865771812080537
+          },
+          {
+            "code": "68",
+            "support": 17,
+            "precision": 0.175,
+            "recall": 0.4117647058823529,
+            "f1": 0.24561403508771928
+          },
+          {
+            "code": "70",
+            "support": 880,
+            "precision": 0.6149957877000842,
+            "recall": 0.8295454545454546,
+            "f1": 0.7063376874697629
+          },
+          {
+            "code": "72",
+            "support": 228,
+            "precision": 0.849802371541502,
+            "recall": 0.9429824561403509,
+            "f1": 0.893970893970894
+          },
+          {
+            "code": "74",
+            "support": 57,
+            "precision": 0.5466666666666666,
+            "recall": 0.7192982456140351,
+            "f1": 0.6212121212121212
+          },
+          {
+            "code": "76",
+            "support": 111,
+            "precision": 0.14937759336099585,
+            "recall": 0.6486486486486487,
+            "f1": 0.24283305227655985
+          },
+          {
+            "code": "85",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "86",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "multinomial_nb",
+      "config": {
+        "algorithm": "MultinomialNB",
+        "alpha": 1.0,
+        "threshold": 0.5
+      },
+      "training_seconds": 1.2061975998803973,
+      "validation_inference_seconds": 0.3349884001072496,
+      "validation_metrics": {
+        "precision_micro": 0.9370121619168633,
+        "recall_micro": 0.39317541320740346,
+        "f1_micro": 0.5539220946453483,
+        "precision_macro": 0.7527013976996968,
+        "recall_macro": 0.24751817928621378,
+        "f1_macro": 0.3439758883197054,
+        "subset_accuracy": 0.31567130669061516,
+        "hamming_loss": 0.038888265229756025,
+        "jaccard_samples": 0.4688020755375942,
+        "per_class": [
+          {
+            "code": "34",
+            "support": 1539,
+            "precision": 0.8631732168850073,
+            "recall": 0.3853151397011046,
+            "f1": 0.5327942497753818
+          },
+          {
+            "code": "35",
+            "support": 214,
+            "precision": 1.0,
+            "recall": 0.3037383177570093,
+            "f1": 0.4659498207885305
+          },
+          {
+            "code": "37",
+            "support": 536,
+            "precision": 1.0,
+            "recall": 0.6380597014925373,
+            "f1": 0.7790432801822323
+          },
+          {
+            "code": "39",
+            "support": 170,
+            "precision": 1.0,
+            "recall": 0.11176470588235295,
+            "f1": 0.20105820105820105
+          },
+          {
+            "code": "40",
+            "support": 393,
+            "precision": 0.9090909090909091,
+            "recall": 0.02544529262086514,
+            "f1": 0.04950495049504951
+          },
+          {
+            "code": "41",
+            "support": 327,
+            "precision": 1.0,
+            "recall": 0.1926605504587156,
+            "f1": 0.3230769230769231
+          },
+          {
+            "code": "42",
+            "support": 177,
+            "precision": 1.0,
+            "recall": 0.03954802259887006,
+            "f1": 0.07608695652173914
+          },
+          {
+            "code": "43",
+            "support": 372,
+            "precision": 0.9660194174757282,
+            "recall": 0.5349462365591398,
+            "f1": 0.6885813148788927
+          },
+          {
+            "code": "44",
+            "support": 1559,
+            "precision": 0.9173457508731082,
+            "recall": 0.5054522129570237,
+            "f1": 0.6517783291976841
+          },
+          {
+            "code": "46",
+            "support": 703,
+            "precision": 0.9785714285714285,
+            "recall": 0.5846372688477952,
+            "f1": 0.7319679430097952
+          },
+          {
+            "code": "48",
+            "support": 567,
+            "precision": 0.9567099567099567,
+            "recall": 0.3897707231040564,
+            "f1": 0.5538847117794486
+          },
+          {
+            "code": "51",
+            "support": 94,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "52",
+            "support": 308,
+            "precision": 0.9868421052631579,
+            "recall": 0.2435064935064935,
+            "f1": 0.390625
+          },
+          {
+            "code": "53",
+            "support": 74,
+            "precision": 1.0,
+            "recall": 0.14864864864864866,
+            "f1": 0.25882352941176473
+          },
+          {
+            "code": "54",
+            "support": 274,
+            "precision": 0.9787234042553191,
+            "recall": 0.3357664233576642,
+            "f1": 0.5
+          },
+          {
+            "code": "55",
+            "support": 192,
+            "precision": 1.0,
+            "recall": 0.21354166666666666,
+            "f1": 0.351931330472103
+          },
+          {
+            "code": "56",
+            "support": 1163,
+            "precision": 0.9655172413793104,
+            "recall": 0.650042992261393,
+            "f1": 0.7769784172661871
+          },
+          {
+            "code": "57",
+            "support": 744,
+            "precision": 0.9497716894977168,
+            "recall": 0.27956989247311825,
+            "f1": 0.43198338525441327
+          },
+          {
+            "code": "58",
+            "support": 454,
+            "precision": 0.96875,
+            "recall": 0.20484581497797358,
+            "f1": 0.3381818181818182
+          },
+          {
+            "code": "60",
+            "support": 54,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "61",
+            "support": 419,
+            "precision": 0.9865771812080537,
+            "recall": 0.35083532219570407,
+            "f1": 0.5176056338028169
+          },
+          {
+            "code": "62",
+            "support": 184,
+            "precision": 1.0,
+            "recall": 0.1956521739130435,
+            "f1": 0.32727272727272727
+          },
+          {
+            "code": "64",
+            "support": 770,
+            "precision": 0.8947368421052632,
+            "recall": 0.7506493506493507,
+            "f1": 0.8163841807909604
+          },
+          {
+            "code": "66",
+            "support": 362,
+            "precision": 0.9,
+            "recall": 0.049723756906077346,
+            "f1": 0.09424083769633508
+          },
+          {
+            "code": "67",
+            "support": 183,
+            "precision": 1.0,
+            "recall": 0.04918032786885246,
+            "f1": 0.09375
+          },
+          {
+            "code": "68",
+            "support": 17,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "70",
+            "support": 880,
+            "precision": 0.8854489164086687,
+            "recall": 0.325,
+            "f1": 0.47547797173732337
+          },
+          {
+            "code": "72",
+            "support": 228,
+            "precision": 0.9791666666666666,
+            "recall": 0.41228070175438597,
+            "f1": 0.5802469135802469
+          },
+          {
+            "code": "74",
+            "support": 57,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "76",
+            "support": 111,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "85",
+            "support": 1,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          {
+            "code": "86",
+            "support": 3,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        ]
+      }
+    }
+  ],
+  "class_weight_experiment": {
+    "algorithm": "LogisticRegression",
+    "variants": [
+      "class_weight=None",
+      "class_weight=balanced"
+    ]
+  },
+  "trivial_baseline": {
+    "strategy": "predizer os 2 temas mais frequentes do TRAIN",
+    "validation_metrics": {
+      "precision_micro": 0.23185151923364766,
+      "recall_micro": 0.23596618173509026,
+      "f1_micro": 0.2338907553508739,
+      "precision_macro": 0.014490719952102979,
+      "recall_macro": 0.0625,
+      "f1_macro": 0.023526581656154774,
+      "subset_accuracy": 0.008681335129471637,
+      "hamming_loss": 0.0949287157611136,
+      "jaccard_samples": 0.15121880813394056,
+      "per_class": [
+        {
+          "code": "34",
+          "support": 1539,
+          "precision": 0.23035473731477324,
+          "recall": 1.0,
+          "f1": 0.37445255474452555
+        },
+        {
+          "code": "35",
+          "support": 214,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "37",
+          "support": 536,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "39",
+          "support": 170,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "40",
+          "support": 393,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "41",
+          "support": 327,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "42",
+          "support": 177,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "43",
+          "support": 372,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "44",
+          "support": 1559,
+          "precision": 0.2333483011525221,
+          "recall": 1.0,
+          "f1": 0.37839805825242717
+        },
+        {
+          "code": "46",
+          "support": 703,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "48",
+          "support": 567,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "51",
+          "support": 94,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "52",
+          "support": 308,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "53",
+          "support": 74,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "54",
+          "support": 274,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "55",
+          "support": 192,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "56",
+          "support": 1163,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "57",
+          "support": 744,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "58",
+          "support": 454,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "60",
+          "support": 54,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "61",
+          "support": 419,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "62",
+          "support": 184,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "64",
+          "support": 770,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "66",
+          "support": 362,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "67",
+          "support": 183,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "68",
+          "support": 17,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "70",
+          "support": 880,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "72",
+          "support": 228,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "74",
+          "support": 57,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "76",
+          "support": 111,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "85",
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "86",
+          "support": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ]
+    }
+  },
+  "selected_model": {
+    "name": "linear_svc_balanced",
+    "config": {
+      "algorithm": "LinearSVC",
+      "class_weight": "balanced",
+      "C": 1.0,
+      "max_iter": 3000,
+      "threshold": 0.0
+    },
+    "validation_metrics": {
+      "precision_micro": 0.7462386414419783,
+      "recall_micro": 0.763119811105187,
+      "f1_micro": 0.7545848239502918,
+      "precision_macro": 0.679844782666081,
+      "recall_macro": 0.656243319117892,
+      "f1_macro": 0.664974668088084,
+      "subset_accuracy": 0.4291273761412962,
+      "hamming_loss": 0.03048289926657686,
+      "jaccard_samples": 0.6880872196206728,
+      "per_class": [
+        {
+          "code": "34",
+          "support": 1539,
+          "precision": 0.636259977194983,
+          "recall": 0.7251461988304093,
+          "f1": 0.6778013969025205
+        },
+        {
+          "code": "35",
+          "support": 214,
+          "precision": 0.74,
+          "recall": 0.6915887850467289,
+          "f1": 0.714975845410628
+        },
+        {
+          "code": "37",
+          "support": 536,
+          "precision": 0.9037328094302554,
+          "recall": 0.8582089552238806,
+          "f1": 0.8803827751196173
+        },
+        {
+          "code": "39",
+          "support": 170,
+          "precision": 0.8402777777777778,
+          "recall": 0.711764705882353,
+          "f1": 0.7707006369426752
+        },
+        {
+          "code": "40",
+          "support": 393,
+          "precision": 0.5,
+          "recall": 0.5597964376590331,
+          "f1": 0.5282112845138055
+        },
+        {
+          "code": "41",
+          "support": 327,
+          "precision": 0.6097560975609756,
+          "recall": 0.6116207951070336,
+          "f1": 0.6106870229007634
+        },
+        {
+          "code": "42",
+          "support": 177,
+          "precision": 0.6625766871165644,
+          "recall": 0.6101694915254238,
+          "f1": 0.6352941176470588
+        },
+        {
+          "code": "43",
+          "support": 372,
+          "precision": 0.7956403269754768,
+          "recall": 0.7849462365591398,
+          "f1": 0.790257104194858
+        },
+        {
+          "code": "44",
+          "support": 1559,
+          "precision": 0.7601753287413902,
+          "recall": 0.7787042976266838,
+          "f1": 0.7693282636248415
+        },
+        {
+          "code": "46",
+          "support": 703,
+          "precision": 0.8931623931623932,
+          "recall": 0.8918918918918919,
+          "f1": 0.892526690391459
+        },
+        {
+          "code": "48",
+          "support": 567,
+          "precision": 0.8097826086956522,
+          "recall": 0.7883597883597884,
+          "f1": 0.7989276139410187
+        },
+        {
+          "code": "51",
+          "support": 94,
+          "precision": 0.6666666666666666,
+          "recall": 0.6595744680851063,
+          "f1": 0.6631016042780749
+        },
+        {
+          "code": "52",
+          "support": 308,
+          "precision": 0.7295597484276729,
+          "recall": 0.7532467532467533,
+          "f1": 0.7412140575079872
+        },
+        {
+          "code": "53",
+          "support": 74,
+          "precision": 0.7704918032786885,
+          "recall": 0.6351351351351351,
+          "f1": 0.6962962962962963
+        },
+        {
+          "code": "54",
+          "support": 274,
+          "precision": 0.855072463768116,
+          "recall": 0.8613138686131386,
+          "f1": 0.8581818181818182
+        },
+        {
+          "code": "55",
+          "support": 192,
+          "precision": 0.7688172043010753,
+          "recall": 0.7447916666666666,
+          "f1": 0.7566137566137566
+        },
+        {
+          "code": "56",
+          "support": 1163,
+          "precision": 0.8824577025823687,
+          "recall": 0.8521066208082545,
+          "f1": 0.8670166229221348
+        },
+        {
+          "code": "57",
+          "support": 744,
+          "precision": 0.7027707808564232,
+          "recall": 0.75,
+          "f1": 0.7256176853055917
+        },
+        {
+          "code": "58",
+          "support": 454,
+          "precision": 0.6723404255319149,
+          "recall": 0.6960352422907489,
+          "f1": 0.683982683982684
+        },
+        {
+          "code": "60",
+          "support": 54,
+          "precision": 0.8571428571428571,
+          "recall": 0.6666666666666666,
+          "f1": 0.75
+        },
+        {
+          "code": "61",
+          "support": 419,
+          "precision": 0.8713592233009708,
+          "recall": 0.8568019093078759,
+          "f1": 0.8640192539109507
+        },
+        {
+          "code": "62",
+          "support": 184,
+          "precision": 0.6855670103092784,
+          "recall": 0.7228260869565217,
+          "f1": 0.7037037037037037
+        },
+        {
+          "code": "64",
+          "support": 770,
+          "precision": 0.879948914431673,
+          "recall": 0.8948051948051948,
+          "f1": 0.8873148744365744
+        },
+        {
+          "code": "66",
+          "support": 362,
+          "precision": 0.5283505154639175,
+          "recall": 0.5662983425414365,
+          "f1": 0.5466666666666666
+        },
+        {
+          "code": "67",
+          "support": 183,
+          "precision": 0.5935828877005348,
+          "recall": 0.6065573770491803,
+          "f1": 0.6
+        },
+        {
+          "code": "68",
+          "support": 17,
+          "precision": 0.5,
+          "recall": 0.23529411764705882,
+          "f1": 0.32
+        },
+        {
+          "code": "70",
+          "support": 880,
+          "precision": 0.6970954356846473,
+          "recall": 0.7636363636363637,
+          "f1": 0.7288503253796096
+        },
+        {
+          "code": "72",
+          "support": 228,
+          "precision": 0.9254385964912281,
+          "recall": 0.9254385964912281,
+          "f1": 0.9254385964912281
+        },
+        {
+          "code": "74",
+          "support": 57,
+          "precision": 0.6904761904761905,
+          "recall": 0.5087719298245614,
+          "f1": 0.5858585858585859
+        },
+        {
+          "code": "76",
+          "support": 111,
+          "precision": 0.32653061224489793,
+          "recall": 0.2882882882882883,
+          "f1": 0.3062200956937799
+        },
+        {
+          "code": "85",
+          "support": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        {
+          "code": "86",
+          "support": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      ]
+    },
+    "training_seconds": 49.094907799968496,
+    "reason": "Selecionado exclusivamente por validation conforme F1 micro, F1 macro e tempo; test não participou da escolha."
+  },
+  "test_metrics": {
+    "precision_micro": 0.7480602805132797,
+    "recall_micro": 0.7634384041419218,
+    "f1_micro": 0.7556711131208079,
+    "precision_macro": 0.6798677706485536,
+    "recall_macro": 0.6618114753536644,
+    "f1_macro": 0.6684060079710841,
+    "subset_accuracy": 0.4259841341116599,
+    "hamming_loss": 0.030328543631192934,
+    "jaccard_samples": 0.6889546403803251,
+    "per_class": [
+      {
+        "code": "34",
+        "support": 1539,
+        "precision": 0.6433886662850601,
+        "recall": 0.7303443794671864,
+        "f1": 0.6841144248326233,
+        "name": "Administração Pública",
+        "dataset_support": 10263,
+        "train_support": 7185,
+        "validation_support": 1539
+      },
+      {
+        "code": "35",
+        "support": 214,
+        "precision": 0.7419354838709677,
+        "recall": 0.7523364485981309,
+        "f1": 0.7470997679814385,
+        "name": "Arte, Cultura e Religião",
+        "dataset_support": 1425,
+        "train_support": 997,
+        "validation_support": 214
+      },
+      {
+        "code": "37",
+        "support": 536,
+        "precision": 0.8886792452830189,
+        "recall": 0.878731343283582,
+        "f1": 0.8836772983114447,
+        "name": "Comunicações",
+        "dataset_support": 3573,
+        "train_support": 2501,
+        "validation_support": 536
+      },
+      {
+        "code": "39",
+        "support": 169,
+        "precision": 0.8417721518987342,
+        "recall": 0.7869822485207101,
+        "f1": 0.8134556574923547,
+        "name": "Esporte e Lazer",
+        "dataset_support": 1128,
+        "train_support": 789,
+        "validation_support": 170
+      },
+      {
+        "code": "40",
+        "support": 393,
+        "precision": 0.5501113585746102,
+        "recall": 0.628498727735369,
+        "f1": 0.5866983372921615,
+        "name": "Economia",
+        "dataset_support": 2621,
+        "train_support": 1835,
+        "validation_support": 393
+      },
+      {
+        "code": "41",
+        "support": 327,
+        "precision": 0.5870786516853933,
+        "recall": 0.6391437308868502,
+        "f1": 0.6120058565153733,
+        "name": "Cidades e Desenvolvimento Urbano",
+        "dataset_support": 2180,
+        "train_support": 1526,
+        "validation_support": 327
+      },
+      {
+        "code": "42",
+        "support": 177,
+        "precision": 0.6242424242424243,
+        "recall": 0.5819209039548022,
+        "f1": 0.6023391812865497,
+        "name": "Direito Civil e Processual Civil",
+        "dataset_support": 1179,
+        "train_support": 825,
+        "validation_support": 177
+      },
+      {
+        "code": "43",
+        "support": 372,
+        "precision": 0.8121546961325967,
+        "recall": 0.7903225806451613,
+        "f1": 0.8010899182561307,
+        "name": "Direito Penal e Processual Penal",
+        "dataset_support": 2477,
+        "train_support": 1733,
+        "validation_support": 372
+      },
+      {
+        "code": "44",
+        "support": 1561,
+        "precision": 0.7651177593889242,
+        "recall": 0.7700192184497118,
+        "f1": 0.7675606641123882,
+        "name": "Direitos Humanos e Minorias",
+        "dataset_support": 10415,
+        "train_support": 7295,
+        "validation_support": 1559
+      },
+      {
+        "code": "46",
+        "support": 704,
+        "precision": 0.9117647058823529,
+        "recall": 0.8806818181818182,
+        "f1": 0.8959537572254336,
+        "name": "Educação",
+        "dataset_support": 4689,
+        "train_support": 3282,
+        "validation_support": 703
+      },
+      {
+        "code": "48",
+        "support": 567,
+        "precision": 0.7749140893470791,
+        "recall": 0.7954144620811288,
+        "f1": 0.7850304612706701,
+        "name": "Meio Ambiente e Desenvolvimento Sustentável",
+        "dataset_support": 3781,
+        "train_support": 2647,
+        "validation_support": 567
+      },
+      {
+        "code": "51",
+        "support": 94,
+        "precision": 0.6224489795918368,
+        "recall": 0.648936170212766,
+        "f1": 0.6354166666666666,
+        "name": "Estrutura Fundiária",
+        "dataset_support": 624,
+        "train_support": 436,
+        "validation_support": 94
+      },
+      {
+        "code": "52",
+        "support": 308,
+        "precision": 0.7619047619047619,
+        "recall": 0.7272727272727273,
+        "f1": 0.7441860465116279,
+        "name": "Previdência e Assistência Social",
+        "dataset_support": 2052,
+        "train_support": 1436,
+        "validation_support": 308
+      },
+      {
+        "code": "53",
+        "support": 74,
+        "precision": 0.7333333333333333,
+        "recall": 0.7432432432432432,
+        "f1": 0.738255033557047,
+        "name": "Processo Legislativo e Atuação Parlamentar",
+        "dataset_support": 493,
+        "train_support": 345,
+        "validation_support": 74
+      },
+      {
+        "code": "54",
+        "support": 274,
+        "precision": 0.8587360594795539,
+        "recall": 0.843065693430657,
+        "f1": 0.850828729281768,
+        "name": "Energia, Recursos Hídricos e Minerais",
+        "dataset_support": 1825,
+        "train_support": 1277,
+        "validation_support": 274
+      },
+      {
+        "code": "55",
+        "support": 193,
+        "precision": 0.7740112994350282,
+        "recall": 0.7098445595854922,
+        "f1": 0.7405405405405405,
+        "name": "Relações Internacionais e Comércio Exterior",
+        "dataset_support": 1282,
+        "train_support": 897,
+        "validation_support": 192
+      },
+      {
+        "code": "56",
+        "support": 1164,
+        "precision": 0.8775153105861767,
+        "recall": 0.8616838487972509,
+        "f1": 0.8695275249241439,
+        "name": "Saúde",
+        "dataset_support": 7756,
+        "train_support": 5429,
+        "validation_support": 1163
+      },
+      {
+        "code": "57",
+        "support": 745,
+        "precision": 0.7303664921465969,
+        "recall": 0.748993288590604,
+        "f1": 0.7395626242544732,
+        "name": "Defesa e Segurança",
+        "dataset_support": 4963,
+        "train_support": 3474,
+        "validation_support": 744
+      },
+      {
+        "code": "58",
+        "support": 454,
+        "precision": 0.672686230248307,
+        "recall": 0.6563876651982379,
+        "f1": 0.6644370122630993,
+        "name": "Trabalho e Emprego",
+        "dataset_support": 3028,
+        "train_support": 2120,
+        "validation_support": 454
+      },
+      {
+        "code": "60",
+        "support": 53,
+        "precision": 0.918918918918919,
+        "recall": 0.6415094339622641,
+        "f1": 0.7555555555555555,
+        "name": "Turismo",
+        "dataset_support": 355,
+        "train_support": 248,
+        "validation_support": 54
+      },
+      {
+        "code": "61",
+        "support": 418,
+        "precision": 0.8557692307692307,
+        "recall": 0.8516746411483254,
+        "f1": 0.8537170263788969,
+        "name": "Viação, Transporte e Mobilidade",
+        "dataset_support": 2788,
+        "train_support": 1951,
+        "validation_support": 419
+      },
+      {
+        "code": "62",
+        "support": 184,
+        "precision": 0.7428571428571429,
+        "recall": 0.7065217391304348,
+        "f1": 0.724233983286908,
+        "name": "Ciência, Tecnologia e Inovação",
+        "dataset_support": 1226,
+        "train_support": 858,
+        "validation_support": 184
+      },
+      {
+        "code": "64",
+        "support": 770,
+        "precision": 0.883419689119171,
+        "recall": 0.8857142857142857,
+        "f1": 0.8845654993514915,
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+        "dataset_support": 5130,
+        "train_support": 3590,
+        "validation_support": 770
+      },
+      {
+        "code": "66",
+        "support": 362,
+        "precision": 0.5143540669856459,
+        "recall": 0.5939226519337016,
+        "f1": 0.5512820512820513,
+        "name": "Indústria, Comércio e Serviços",
+        "dataset_support": 2411,
+        "train_support": 1687,
+        "validation_support": 362
+      },
+      {
+        "code": "67",
+        "support": 183,
+        "precision": 0.639344262295082,
+        "recall": 0.639344262295082,
+        "f1": 0.639344262295082,
+        "name": "Direito e Defesa do Consumidor",
+        "dataset_support": 1220,
+        "train_support": 854,
+        "validation_support": 183
+      },
+      {
+        "code": "68",
+        "support": 17,
+        "precision": 0.4,
+        "recall": 0.23529411764705882,
+        "f1": 0.2962962962962963,
+        "name": "Direito Constitucional",
+        "dataset_support": 113,
+        "train_support": 79,
+        "validation_support": 17
+      },
+      {
+        "code": "70",
+        "support": 880,
+        "precision": 0.6705020920502092,
+        "recall": 0.7284090909090909,
+        "f1": 0.6982570806100218,
+        "name": "Finanças Públicas e Orçamento",
+        "dataset_support": 5868,
+        "train_support": 4108,
+        "validation_support": 880
+      },
+      {
+        "code": "72",
+        "support": 229,
+        "precision": 0.8917748917748918,
+        "recall": 0.8995633187772926,
+        "f1": 0.8956521739130435,
+        "name": "Homenagens e Datas Comemorativas",
+        "dataset_support": 1522,
+        "train_support": 1065,
+        "validation_support": 228
+      },
+      {
+        "code": "74",
+        "support": 57,
+        "precision": 0.7333333333333333,
+        "recall": 0.5789473684210527,
+        "f1": 0.6470588235294118,
+        "name": "Política, Partidos e Eleições",
+        "dataset_support": 377,
+        "train_support": 263,
+        "validation_support": 57
+      },
+      {
+        "code": "76",
+        "support": 111,
+        "precision": 0.3333333333333333,
+        "recall": 0.24324324324324326,
+        "f1": 0.28125,
+        "name": "Direito e Justiça",
+        "dataset_support": 741,
+        "train_support": 519,
+        "validation_support": 111
+      },
+      {
+        "code": "85",
+        "support": 2,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "name": "Ciências Exatas e da Terra",
+        "dataset_support": 8,
+        "train_support": 5,
+        "validation_support": 1
+      },
+      {
+        "code": "86",
+        "support": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "name": "Ciências Sociais e Humanas",
+        "dataset_support": 17,
+        "train_support": 11,
+        "validation_support": 3
+      }
+    ]
+  },
+  "test_inference_seconds": 0.13540500006638467,
+  "examples": [
+    {
+      "document_id": "CAMARA:2447275",
+      "ementa": "Solicita informações ao Ministério da Saúde sobre as políticas públicas de prevenção à gravidez na adolescência implementadas no município de Água Azul do Norte, no Estado do Pará.",
+      "official_labels": [
+        "Saúde"
+      ],
+      "predicted_labels": [
+        "Direitos Humanos e Minorias",
+        "Saúde"
+      ]
+    },
+    {
+      "document_id": "CAMARA:2580862",
+      "ementa": "Requer do Excelentíssimo Ministro da Saúde, Senhor Alexandre Padilha, informações sobre a campanha de vacinação contra a gripe.",
+      "official_labels": [
+        "Saúde"
+      ],
+      "predicted_labels": [
+        "Saúde"
+      ]
+    },
+    {
+      "document_id": "CAMARA:2538613",
+      "ementa": "Solicita informações ao Ministro do Desenvolvimento Agrário e Agricultura Familiar, de quanto que a Companhia Nacional de Abastecimento-CONAB, repassou do Programa de Aquisição de Alimentos - PAA, para o Município de...",
+      "official_labels": [
+        "Direitos Humanos e Minorias",
+        "Agricultura, Pecuária, Pesca e Extrativismo"
+      ],
+      "predicted_labels": [
+        "Direitos Humanos e Minorias",
+        "Agricultura, Pecuária, Pesca e Extrativismo"
+      ]
+    },
+    {
+      "document_id": "CAMARA:2594590",
+      "ementa": "Institui o Programa “Conecta Amazônia”, destinado à expansão da conectividade digital sustentável em comunidades isoladas da Amazônia Legal, e dá outras providências.",
+      "official_labels": [
+        "Comunicações",
+        "Direitos Humanos e Minorias",
+        "Meio Ambiente e Desenvolvimento Sustentável",
+        "Ciência, Tecnologia e Inovação"
+      ],
+      "predicted_labels": [
+        "Comunicações",
+        "Meio Ambiente e Desenvolvimento Sustentável",
+        "Ciência, Tecnologia e Inovação"
+      ]
+    },
+    {
+      "document_id": "CAMARA:2467006",
+      "ementa": "Requer da Excelentíssima Ministra da Saúde, Senhora Nísia Trindade, informações acerca das 10,9 milhões de doses de vacinas incineradas, por estarem vencidas.",
+      "official_labels": [
+        "Saúde"
+      ],
+      "predicted_labels": [
+        "Saúde"
+      ]
+    }
+  ],
+  "error_analysis": {
+    "false_positive": {
+      "document_id": "CAMARA:2345671",
+      "ementa": "Altera a Lei nº 12.764, de 27 de dezembro de 2012, para permitir à pessoa com Transtorno do Espectro Autista o ingresso e permanência em qualquer local portando utensílios de uso pessoal e alimentos para consumo próprio.",
+      "official_labels": [
+        "Direitos Humanos e Minorias"
+      ],
+      "predicted_labels": [
+        "Direitos Humanos e Minorias",
+        "Saúde"
+      ]
+    },
+    "false_negative": {
+      "document_id": "CAMARA:2345555",
+      "ementa": "Altera a Lei nº 9.069, de 29 de junho de 1995, a Lei nº 9.613, de 3 de março de 1998, e a Lei nº 13.974, de 7 de janeiro de 2020, para dispor sobre o Conselho Monetário Nacional e sobre a vinculação administrativa do...",
+      "official_labels": [
+        "Administração Pública",
+        "Economia"
+      ],
+      "predicted_labels": [
+        "Economia"
+      ]
+    },
+    "partial_multilabel": {
+      "document_id": "CAMARA:2345495",
+      "ementa": "Dispõe sobre a extinção da Fundação Nacional de Saúde - FUNASA, instituída por autorização da Lei nº 8.029, de 12 de abril de 1990, e a absorção de suas competências, patrimônio e pessoal pela administração pública fe...",
+      "official_labels": [
+        "Administração Pública",
+        "Saúde"
+      ],
+      "predicted_labels": [
+        "Administração Pública",
+        "Trabalho e Emprego"
+      ]
+    },
+    "difficult_or_ambiguous": {
+      "document_id": "CAMARA:2347013",
+      "ementa": "Requer ao Senhor Ministro de Estado da Fazenda, Fernando Haddad, informações relativas à renúncia efetiva de receita tributária decorrente da aplicação do art. 4º da Lei nº 14.148, de 3 de maio de 2021, que instituiu...",
+      "official_labels": [
+        "Economia",
+        "Indústria, Comércio e Serviços",
+        "Finanças Públicas e Orçamento"
+      ],
+      "predicted_labels": [
+        "Arte, Cultura e Religião",
+        "Economia",
+        "Indústria, Comércio e Serviços",
+        "Finanças Públicas e Orçamento"
+      ]
+    },
+    "note": "Amostras escolhidas pelo primeiro caso elegível na ordem estável do test; nenhum ground truth foi alterado."
+  },
+  "artifacts": {
+    "model": "artifacts/model.joblib",
+    "vectorizer": "artifacts/vectorizer.joblib",
+    "label_binarizer": "artifacts/label_binarizer.joblib",
+    "metadata": "artifacts/metadata.json",
+    "reload_validated": true,
+    "reload_examples": 5
+  }
+}
