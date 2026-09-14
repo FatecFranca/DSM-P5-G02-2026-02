@@ -1,0 +1,4183 @@
+{
+  "metadata": {
+    "generated_at": "2026-09-09T01:31:02.173765+00:00",
+    "years": [
+      2023,
+      2024,
+      2025
+    ],
+    "window_definition": "partições anuais nominais oficiais",
+    "sources": [
+      "CAMARA",
+      "SENADO"
+    ],
+    "extracted_at": "2026-09-09T01:26:14.956663+00:00",
+    "raw_files": 190,
+    "short_ementa_threshold": 40
+  },
+  "dataset": {
+    "total_documents": 246824,
+    "documents_by_source": {
+      "CAMARA": 231549,
+      "SENADO": 15275
+    },
+    "documents_by_year": {
+      "2003": {
+        "CAMARA": 2,
+        "SENADO": 0
+      },
+      "2004": {
+        "CAMARA": 3,
+        "SENADO": 0
+      },
+      "2007": {
+        "CAMARA": 5,
+        "SENADO": 0
+      },
+      "2009": {
+        "CAMARA": 2,
+        "SENADO": 0
+      },
+      "2011": {
+        "CAMARA": 1,
+        "SENADO": 0
+      },
+      "2013": {
+        "CAMARA": 1,
+        "SENADO": 0
+      },
+      "2014": {
+        "CAMARA": 1,
+        "SENADO": 0
+      },
+      "2015": {
+        "CAMARA": 4,
+        "SENADO": 0
+      },
+      "2016": {
+        "CAMARA": 3,
+        "SENADO": 0
+      },
+      "2022": {
+        "CAMARA": 29,
+        "SENADO": 6
+      },
+      "2023": {
+        "CAMARA": 62249,
+        "SENADO": 5007
+      },
+      "2024": {
+        "CAMARA": 61503,
+        "SENADO": 4731
+      },
+      "2025": {
+        "CAMARA": 107658,
+        "SENADO": 5047
+      },
+      "2026": {
+        "CAMARA": 88,
+        "SENADO": 484
+      }
+    }
+  },
+  "text_quality": {
+    "valid": 239595,
+    "empty": 7229,
+    "missing": 0,
+    "short": 18455,
+    "valid_percentage": 97.0712
+  },
+  "label_coverage": {
+    "with_labels": 49696,
+    "without_labels": 197128,
+    "percentage_labeled": 20.1342,
+    "percentage_unlabeled": 79.8658
+  },
+  "taxonomy": {
+    "number_of_themes": 211,
+    "number_of_official_themes": 211,
+    "number_of_observed_themes": 202,
+    "classes": [
+      {
+        "source": "CAMARA",
+        "code": "44",
+        "name": "Direitos Humanos e Minorias",
+        "documents": 10415,
+        "percentage_of_source_labeled_documents": 23.383,
+        "percentage_of_all_labeled_documents": 20.9574
+      },
+      {
+        "source": "CAMARA",
+        "code": "34",
+        "name": "Administração Pública",
+        "documents": 10263,
+        "percentage_of_source_labeled_documents": 23.0417,
+        "percentage_of_all_labeled_documents": 20.6516
+      },
+      {
+        "source": "CAMARA",
+        "code": "56",
+        "name": "Saúde",
+        "documents": 7756,
+        "percentage_of_source_labeled_documents": 17.4132,
+        "percentage_of_all_labeled_documents": 15.6069
+      },
+      {
+        "source": "CAMARA",
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento",
+        "documents": 5868,
+        "percentage_of_source_labeled_documents": 13.1744,
+        "percentage_of_all_labeled_documents": 11.8078
+      },
+      {
+        "source": "CAMARA",
+        "code": "64",
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+        "documents": 5130,
+        "percentage_of_source_labeled_documents": 11.5175,
+        "percentage_of_all_labeled_documents": 10.3228
+      },
+      {
+        "source": "CAMARA",
+        "code": "57",
+        "name": "Defesa e Segurança",
+        "documents": 4963,
+        "percentage_of_source_labeled_documents": 11.1425,
+        "percentage_of_all_labeled_documents": 9.9867
+      },
+      {
+        "source": "CAMARA",
+        "code": "46",
+        "name": "Educação",
+        "documents": 4689,
+        "percentage_of_source_labeled_documents": 10.5274,
+        "percentage_of_all_labeled_documents": 9.4354
+      },
+      {
+        "source": "CAMARA",
+        "code": "48",
+        "name": "Meio Ambiente e Desenvolvimento Sustentável",
+        "documents": 3781,
+        "percentage_of_source_labeled_documents": 8.4888,
+        "percentage_of_all_labeled_documents": 7.6083
+      },
+      {
+        "source": "CAMARA",
+        "code": "37",
+        "name": "Comunicações",
+        "documents": 3573,
+        "percentage_of_source_labeled_documents": 8.0218,
+        "percentage_of_all_labeled_documents": 7.1897
+      },
+      {
+        "source": "CAMARA",
+        "code": "58",
+        "name": "Trabalho e Emprego",
+        "documents": 3028,
+        "percentage_of_source_labeled_documents": 6.7982,
+        "percentage_of_all_labeled_documents": 6.093
+      },
+      {
+        "source": "CAMARA",
+        "code": "61",
+        "name": "Viação, Transporte e Mobilidade",
+        "documents": 2788,
+        "percentage_of_source_labeled_documents": 6.2594,
+        "percentage_of_all_labeled_documents": 5.6101
+      },
+      {
+        "source": "CAMARA",
+        "code": "40",
+        "name": "Economia",
+        "documents": 2621,
+        "percentage_of_source_labeled_documents": 5.8845,
+        "percentage_of_all_labeled_documents": 5.2741
+      },
+      {
+        "source": "CAMARA",
+        "code": "43",
+        "name": "Direito Penal e Processual Penal",
+        "documents": 2477,
+        "percentage_of_source_labeled_documents": 5.5612,
+        "percentage_of_all_labeled_documents": 4.9843
+      },
+      {
+        "source": "CAMARA",
+        "code": "66",
+        "name": "Indústria, Comércio e Serviços",
+        "documents": 2411,
+        "percentage_of_source_labeled_documents": 5.413,
+        "percentage_of_all_labeled_documents": 4.8515
+      },
+      {
+        "source": "CAMARA",
+        "code": "41",
+        "name": "Cidades e Desenvolvimento Urbano",
+        "documents": 2180,
+        "percentage_of_source_labeled_documents": 4.8944,
+        "percentage_of_all_labeled_documents": 4.3867
+      },
+      {
+        "source": "CAMARA",
+        "code": "52",
+        "name": "Previdência e Assistência Social",
+        "documents": 2052,
+        "percentage_of_source_labeled_documents": 4.607,
+        "percentage_of_all_labeled_documents": 4.1291
+      },
+      {
+        "source": "CAMARA",
+        "code": "54",
+        "name": "Energia, Recursos Hídricos e Minerais",
+        "documents": 1825,
+        "percentage_of_source_labeled_documents": 4.0973,
+        "percentage_of_all_labeled_documents": 3.6723
+      },
+      {
+        "source": "CAMARA",
+        "code": "72",
+        "name": "Homenagens e Datas Comemorativas",
+        "documents": 1522,
+        "percentage_of_source_labeled_documents": 3.4171,
+        "percentage_of_all_labeled_documents": 3.0626
+      },
+      {
+        "source": "CAMARA",
+        "code": "35",
+        "name": "Arte, Cultura e Religião",
+        "documents": 1425,
+        "percentage_of_source_labeled_documents": 3.1993,
+        "percentage_of_all_labeled_documents": 2.8674
+      },
+      {
+        "source": "CAMARA",
+        "code": "55",
+        "name": "Relações Internacionais e Comércio Exterior",
+        "documents": 1282,
+        "percentage_of_source_labeled_documents": 2.8782,
+        "percentage_of_all_labeled_documents": 2.5797
+      },
+      {
+        "source": "CAMARA",
+        "code": "62",
+        "name": "Ciência, Tecnologia e Inovação",
+        "documents": 1226,
+        "percentage_of_source_labeled_documents": 2.7525,
+        "percentage_of_all_labeled_documents": 2.467
+      },
+      {
+        "source": "CAMARA",
+        "code": "67",
+        "name": "Direito e Defesa do Consumidor",
+        "documents": 1220,
+        "percentage_of_source_labeled_documents": 2.739,
+        "percentage_of_all_labeled_documents": 2.4549
+      },
+      {
+        "source": "CAMARA",
+        "code": "42",
+        "name": "Direito Civil e Processual Civil",
+        "documents": 1179,
+        "percentage_of_source_labeled_documents": 2.647,
+        "percentage_of_all_labeled_documents": 2.3724
+      },
+      {
+        "source": "CAMARA",
+        "code": "39",
+        "name": "Esporte e Lazer",
+        "documents": 1128,
+        "percentage_of_source_labeled_documents": 2.5325,
+        "percentage_of_all_labeled_documents": 2.2698
+      },
+      {
+        "source": "SENADO",
+        "code": "33805287",
+        "name": "Rádio e TV",
+        "documents": 948,
+        "percentage_of_source_labeled_documents": 18.3899,
+        "percentage_of_all_labeled_documents": 1.9076
+      },
+      {
+        "source": "CAMARA",
+        "code": "76",
+        "name": "Direito e Justiça",
+        "documents": 741,
+        "percentage_of_source_labeled_documents": 1.6636,
+        "percentage_of_all_labeled_documents": 1.4911
+      },
+      {
+        "source": "CAMARA",
+        "code": "51",
+        "name": "Estrutura Fundiária",
+        "documents": 624,
+        "percentage_of_source_labeled_documents": 1.401,
+        "percentage_of_all_labeled_documents": 1.2556
+      },
+      {
+        "source": "CAMARA",
+        "code": "53",
+        "name": "Processo Legislativo e Atuação Parlamentar",
+        "documents": 493,
+        "percentage_of_source_labeled_documents": 1.1068,
+        "percentage_of_all_labeled_documents": 0.992
+      },
+      {
+        "source": "SENADO",
+        "code": "33805617",
+        "name": "Direito Penal e Penitenciário",
+        "documents": 425,
+        "percentage_of_source_labeled_documents": 8.2444,
+        "percentage_of_all_labeled_documents": 0.8552
+      },
+      {
+        "source": "CAMARA",
+        "code": "74",
+        "name": "Política, Partidos e Eleições",
+        "documents": 377,
+        "percentage_of_source_labeled_documents": 0.8464,
+        "percentage_of_all_labeled_documents": 0.7586
+      },
+      {
+        "source": "CAMARA",
+        "code": "60",
+        "name": "Turismo",
+        "documents": 355,
+        "percentage_of_source_labeled_documents": 0.797,
+        "percentage_of_all_labeled_documents": 0.7143
+      },
+      {
+        "source": "SENADO",
+        "code": "33809408",
+        "name": "Mulheres",
+        "documents": 212,
+        "percentage_of_source_labeled_documents": 4.1125,
+        "percentage_of_all_labeled_documents": 0.4266
+      },
+      {
+        "source": "SENADO",
+        "code": "33809619",
+        "name": "Segurança Pública",
+        "documents": 198,
+        "percentage_of_source_labeled_documents": 3.8409,
+        "percentage_of_all_labeled_documents": 0.3984
+      },
+      {
+        "source": "SENADO",
+        "code": "33805347",
+        "name": "Homenagem",
+        "documents": 186,
+        "percentage_of_source_labeled_documents": 3.6081,
+        "percentage_of_all_labeled_documents": 0.3743
+      },
+      {
+        "source": "SENADO",
+        "code": "33804820",
+        "name": "Fundos Públicos",
+        "documents": 184,
+        "percentage_of_source_labeled_documents": 3.5694,
+        "percentage_of_all_labeled_documents": 0.3703
+      },
+      {
+        "source": "SENADO",
+        "code": "33809393",
+        "name": "Crianças e Adolescentes",
+        "documents": 184,
+        "percentage_of_source_labeled_documents": 3.5694,
+        "percentage_of_all_labeled_documents": 0.3703
+      },
+      {
+        "source": "SENADO",
+        "code": "33805422",
+        "name": "Processo Penal",
+        "documents": 163,
+        "percentage_of_source_labeled_documents": 3.162,
+        "percentage_of_all_labeled_documents": 0.328
+      },
+      {
+        "source": "SENADO",
+        "code": "33769017",
+        "name": "Poder Legislativo",
+        "documents": 162,
+        "percentage_of_source_labeled_documents": 3.1426,
+        "percentage_of_all_labeled_documents": 0.326
+      },
+      {
+        "source": "SENADO",
+        "code": "33804955",
+        "name": "Desoneração Fiscal",
+        "documents": 153,
+        "percentage_of_source_labeled_documents": 2.968,
+        "percentage_of_all_labeled_documents": 0.3079
+      },
+      {
+        "source": "SENADO",
+        "code": "33808942",
+        "name": "Saúde",
+        "documents": 149,
+        "percentage_of_source_labeled_documents": 2.8904,
+        "percentage_of_all_labeled_documents": 0.2998
+      },
+      {
+        "source": "SENADO",
+        "code": "33769062",
+        "name": "Controle Externo",
+        "documents": 147,
+        "percentage_of_source_labeled_documents": 2.8516,
+        "percentage_of_all_labeled_documents": 0.2958
+      },
+      {
+        "source": "SENADO",
+        "code": "33804835",
+        "name": "Operação Financeira",
+        "documents": 137,
+        "percentage_of_source_labeled_documents": 2.6576,
+        "percentage_of_all_labeled_documents": 0.2757
+      },
+      {
+        "source": "SENADO",
+        "code": "33805332",
+        "name": "Data Comemorativa",
+        "documents": 136,
+        "percentage_of_source_labeled_documents": 2.6382,
+        "percentage_of_all_labeled_documents": 0.2737
+      },
+      {
+        "source": "SENADO",
+        "code": "33809423",
+        "name": "Pessoas com Deficiência",
+        "documents": 136,
+        "percentage_of_source_labeled_documents": 2.6382,
+        "percentage_of_all_labeled_documents": 0.2737
+      },
+      {
+        "source": "SENADO",
+        "code": "33804940",
+        "name": "Tributos",
+        "documents": 128,
+        "percentage_of_source_labeled_documents": 2.483,
+        "percentage_of_all_labeled_documents": 0.2576
+      },
+      {
+        "source": "SENADO",
+        "code": "33805062",
+        "name": "Agropecuária e Abastecimento",
+        "documents": 126,
+        "percentage_of_source_labeled_documents": 2.4442,
+        "percentage_of_all_labeled_documents": 0.2535
+      },
+      {
+        "source": "SENADO",
+        "code": "33809288",
+        "name": "Educação Básica",
+        "documents": 123,
+        "percentage_of_source_labeled_documents": 2.386,
+        "percentage_of_all_labeled_documents": 0.2475
+      },
+      {
+        "source": "SENADO",
+        "code": "33808987",
+        "name": "Cultura",
+        "documents": 115,
+        "percentage_of_source_labeled_documents": 2.2308,
+        "percentage_of_all_labeled_documents": 0.2314
+      },
+      {
+        "source": "CAMARA",
+        "code": "68",
+        "name": "Direito Constitucional",
+        "documents": 113,
+        "percentage_of_source_labeled_documents": 0.2537,
+        "percentage_of_all_labeled_documents": 0.2274
+      },
+      {
+        "source": "SENADO",
+        "code": "33809168",
+        "name": "Saúde Pública",
+        "documents": 113,
+        "percentage_of_source_labeled_documents": 2.192,
+        "percentage_of_all_labeled_documents": 0.2274
+      },
+      {
+        "source": "SENADO",
+        "code": "33809453",
+        "name": "Calamidade Pública e Emergência Social",
+        "documents": 110,
+        "percentage_of_source_labeled_documents": 2.1339,
+        "percentage_of_all_labeled_documents": 0.2213
+      },
+      {
+        "source": "SENADO",
+        "code": "33809017",
+        "name": "Desporto e Lazer",
+        "documents": 105,
+        "percentage_of_source_labeled_documents": 2.0369,
+        "percentage_of_all_labeled_documents": 0.2113
+      },
+      {
+        "source": "SENADO",
+        "code": "33769191",
+        "name": "Sistema Financeiro Nacional",
+        "documents": 101,
+        "percentage_of_source_labeled_documents": 1.9593,
+        "percentage_of_all_labeled_documents": 0.2032
+      },
+      {
+        "source": "SENADO",
+        "code": "33809363",
+        "name": "Assistência Social",
+        "documents": 100,
+        "percentage_of_source_labeled_documents": 1.9399,
+        "percentage_of_all_labeled_documents": 0.2012
+      },
+      {
+        "source": "SENADO",
+        "code": "33805587",
+        "name": "Direito do Consumidor",
+        "documents": 96,
+        "percentage_of_source_labeled_documents": 1.8623,
+        "percentage_of_all_labeled_documents": 0.1932
+      },
+      {
+        "source": "SENADO",
+        "code": "33805392",
+        "name": "Processo Civil",
+        "documents": 91,
+        "percentage_of_source_labeled_documents": 1.7653,
+        "percentage_of_all_labeled_documents": 0.1831
+      },
+      {
+        "source": "SENADO",
+        "code": "33809529",
+        "name": "Relações Internacionais",
+        "documents": 91,
+        "percentage_of_source_labeled_documents": 1.7653,
+        "percentage_of_all_labeled_documents": 0.1831
+      },
+      {
+        "source": "SENADO",
+        "code": "33804970",
+        "name": "Imposto de Renda (IR)",
+        "documents": 87,
+        "percentage_of_source_labeled_documents": 1.6877,
+        "percentage_of_all_labeled_documents": 0.1751
+      },
+      {
+        "source": "SENADO",
+        "code": "33685865",
+        "name": "Administração Pública Indireta",
+        "documents": 82,
+        "percentage_of_source_labeled_documents": 1.5907,
+        "percentage_of_all_labeled_documents": 0.165
+      },
+      {
+        "source": "SENADO",
+        "code": "33808972",
+        "name": "Educação",
+        "documents": 79,
+        "percentage_of_source_labeled_documents": 1.5325,
+        "percentage_of_all_labeled_documents": 0.159
+      },
+      {
+        "source": "SENADO",
+        "code": "33809769",
+        "name": "Desenvolvimento Sustentável",
+        "documents": 77,
+        "percentage_of_source_labeled_documents": 1.4937,
+        "percentage_of_all_labeled_documents": 0.1549
+      },
+      {
+        "source": "SENADO",
+        "code": "33805242",
+        "name": "Energia",
+        "documents": 73,
+        "percentage_of_source_labeled_documents": 1.4161,
+        "percentage_of_all_labeled_documents": 0.1469
+      },
+      {
+        "source": "SENADO",
+        "code": "33808927",
+        "name": "Trabalho e Emprego",
+        "documents": 73,
+        "percentage_of_source_labeled_documents": 1.4161,
+        "percentage_of_all_labeled_documents": 0.1469
+      },
+      {
+        "source": "SENADO",
+        "code": "33809243",
+        "name": "Regime Geral de Previdência Social",
+        "documents": 70,
+        "percentage_of_source_labeled_documents": 1.3579,
+        "percentage_of_all_labeled_documents": 0.1409
+      },
+      {
+        "source": "SENADO",
+        "code": "33685880",
+        "name": "Cargos e Funções Públicos",
+        "documents": 68,
+        "percentage_of_source_labeled_documents": 1.3191,
+        "percentage_of_all_labeled_documents": 0.1368
+      },
+      {
+        "source": "SENADO",
+        "code": "33809092",
+        "name": "Regulamentação Profissional",
+        "documents": 68,
+        "percentage_of_source_labeled_documents": 1.3191,
+        "percentage_of_all_labeled_documents": 0.1368
+      },
+      {
+        "source": "SENADO",
+        "code": "33809318",
+        "name": "Educação Superior",
+        "documents": 67,
+        "percentage_of_source_labeled_documents": 1.2997,
+        "percentage_of_all_labeled_documents": 0.1348
+      },
+      {
+        "source": "SENADO",
+        "code": "33805842",
+        "name": "Crédito Extraordinário",
+        "documents": 66,
+        "percentage_of_source_labeled_documents": 1.2803,
+        "percentage_of_all_labeled_documents": 0.1328
+      },
+      {
+        "source": "SENADO",
+        "code": "33685850",
+        "name": "Administração Pública Direta",
+        "documents": 65,
+        "percentage_of_source_labeled_documents": 1.2609,
+        "percentage_of_all_labeled_documents": 0.1308
+      },
+      {
+        "source": "SENADO",
+        "code": "33809378",
+        "name": "Idosos",
+        "documents": 61,
+        "percentage_of_source_labeled_documents": 1.1833,
+        "percentage_of_all_labeled_documents": 0.1227
+      },
+      {
+        "source": "SENADO",
+        "code": "33686045",
+        "name": "Serviços Públicos",
+        "documents": 60,
+        "percentage_of_source_labeled_documents": 1.1639,
+        "percentage_of_all_labeled_documents": 0.1207
+      },
+      {
+        "source": "SENADO",
+        "code": "33809333",
+        "name": "Direitos Humanos e Minorias",
+        "documents": 59,
+        "percentage_of_source_labeled_documents": 1.1445,
+        "percentage_of_all_labeled_documents": 0.1187
+      },
+      {
+        "source": "SENADO",
+        "code": "33686135",
+        "name": "Direito de Trânsito",
+        "documents": 57,
+        "percentage_of_source_labeled_documents": 1.1057,
+        "percentage_of_all_labeled_documents": 0.1147
+      },
+      {
+        "source": "SENADO",
+        "code": "33685955",
+        "name": "Servidores Públicos",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33686030",
+        "name": "Licitação e Contratos",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33686120",
+        "name": "Transparência e Governança Públicas",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33805017",
+        "name": "Fiscalização e Controle da Atividade Econômica",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805032",
+        "name": "Linha de Crédito",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805857",
+        "name": "Execução Financeira e Orçamentária",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805167",
+        "name": "Transporte Terrestre",
+        "documents": 49,
+        "percentage_of_source_labeled_documents": 0.9505,
+        "percentage_of_all_labeled_documents": 0.0986
+      },
+      {
+        "source": "SENADO",
+        "code": "33769077",
+        "name": "Poder Judiciário",
+        "documents": 48,
+        "percentage_of_source_labeled_documents": 0.9311,
+        "percentage_of_all_labeled_documents": 0.0966
+      },
+      {
+        "source": "SENADO",
+        "code": "33805092",
+        "name": "Ciência, Tecnologia e Informática",
+        "documents": 48,
+        "percentage_of_source_labeled_documents": 0.9311,
+        "percentage_of_all_labeled_documents": 0.0966
+      },
+      {
+        "source": "SENADO",
+        "code": "33805827",
+        "name": "Crédito Suplementar",
+        "documents": 47,
+        "percentage_of_source_labeled_documents": 0.9117,
+        "percentage_of_all_labeled_documents": 0.0946
+      },
+      {
+        "source": "SENADO",
+        "code": "33809634",
+        "name": "Meio Ambiente",
+        "documents": 46,
+        "percentage_of_source_labeled_documents": 0.8923,
+        "percentage_of_all_labeled_documents": 0.0926
+      },
+      {
+        "source": "SENADO",
+        "code": "33804790",
+        "name": "Finanças Públicas",
+        "documents": 44,
+        "percentage_of_source_labeled_documents": 0.8535,
+        "percentage_of_all_labeled_documents": 0.0885
+      },
+      {
+        "source": "SENADO",
+        "code": "33804925",
+        "name": "Turismo",
+        "documents": 44,
+        "percentage_of_source_labeled_documents": 0.8535,
+        "percentage_of_all_labeled_documents": 0.0885
+      },
+      {
+        "source": "SENADO",
+        "code": "33805812",
+        "name": "Crédito Especial",
+        "documents": 43,
+        "percentage_of_source_labeled_documents": 0.8341,
+        "percentage_of_all_labeled_documents": 0.0865
+      },
+      {
+        "source": "SENADO",
+        "code": "33805437",
+        "name": "Processo Legislativo",
+        "documents": 41,
+        "percentage_of_source_labeled_documents": 0.7953,
+        "percentage_of_all_labeled_documents": 0.0825
+      },
+      {
+        "source": "SENADO",
+        "code": "33809799",
+        "name": "Crimes e Infrações Ambientais",
+        "documents": 41,
+        "percentage_of_source_labeled_documents": 0.7953,
+        "percentage_of_all_labeled_documents": 0.0825
+      },
+      {
+        "source": "SENADO",
+        "code": "33804865",
+        "name": "Comércio",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805122",
+        "name": "Segurança Digital",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805182",
+        "name": "Transporte Aéreo",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33809438",
+        "name": "População Indígena",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805272",
+        "name": "Telefonia e Internet",
+        "documents": 37,
+        "percentage_of_source_labeled_documents": 0.7177,
+        "percentage_of_all_labeled_documents": 0.0745
+      },
+      {
+        "source": "SENADO",
+        "code": "34999627",
+        "name": "Contribuição Social",
+        "documents": 37,
+        "percentage_of_source_labeled_documents": 0.7177,
+        "percentage_of_all_labeled_documents": 0.0745
+      },
+      {
+        "source": "SENADO",
+        "code": "33809784",
+        "name": "Mudanças Climáticas",
+        "documents": 35,
+        "percentage_of_source_labeled_documents": 0.679,
+        "percentage_of_all_labeled_documents": 0.0704
+      },
+      {
+        "source": "SENADO",
+        "code": "33685970",
+        "name": "Agentes Políticos",
+        "documents": 34,
+        "percentage_of_source_labeled_documents": 0.6596,
+        "percentage_of_all_labeled_documents": 0.0684
+      },
+      {
+        "source": "SENADO",
+        "code": "33804895",
+        "name": "Micro e Pequenas Empresas",
+        "documents": 34,
+        "percentage_of_source_labeled_documents": 0.6596,
+        "percentage_of_all_labeled_documents": 0.0684
+      },
+      {
+        "source": "SENADO",
+        "code": "33686090",
+        "name": "Domínio e Bens Públicos",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805002",
+        "name": "Administração Tributária",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805077",
+        "name": "Política Fundiária e Reforma Agrária",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805602",
+        "name": "Direito Notarial e Registral",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33809694",
+        "name": "Proteção aos Animais",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805047",
+        "name": "Desenvolvimento Regional",
+        "documents": 32,
+        "percentage_of_source_labeled_documents": 0.6208,
+        "percentage_of_all_labeled_documents": 0.0644
+      },
+      {
+        "source": "SENADO",
+        "code": "33805527",
+        "name": "Família e Sucessões",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33805737",
+        "name": "Eleições",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33809062",
+        "name": "Jornada de Trabalho",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33685895",
+        "name": "Terceiro Setor, Parcerias Público-Privadas e Desestatização",
+        "documents": 30,
+        "percentage_of_source_labeled_documents": 0.582,
+        "percentage_of_all_labeled_documents": 0.0604
+      },
+      {
+        "source": "SENADO",
+        "code": "33809153",
+        "name": "Saúde e Segurança do Trabalho",
+        "documents": 30,
+        "percentage_of_source_labeled_documents": 0.582,
+        "percentage_of_all_labeled_documents": 0.0604
+      },
+      {
+        "source": "SENADO",
+        "code": "33809198",
+        "name": "Defesa e Vigilância Sanitária",
+        "documents": 29,
+        "percentage_of_source_labeled_documents": 0.5626,
+        "percentage_of_all_labeled_documents": 0.0584
+      },
+      {
+        "source": "SENADO",
+        "code": "33805482",
+        "name": "Obrigações e Contratos",
+        "documents": 28,
+        "percentage_of_source_labeled_documents": 0.5432,
+        "percentage_of_all_labeled_documents": 0.0563
+      },
+      {
+        "source": "SENADO",
+        "code": "33809122",
+        "name": "Remuneração",
+        "documents": 28,
+        "percentage_of_source_labeled_documents": 0.5432,
+        "percentage_of_all_labeled_documents": 0.0563
+      },
+      {
+        "source": "SENADO",
+        "code": "33805512",
+        "name": "Responsabilidade Civil",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809077",
+        "name": "Fomento ao Trabalho",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809228",
+        "name": "Saúde Suplementar",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809664",
+        "name": "Espaços Especialmente Protegidos",
+        "documents": 26,
+        "percentage_of_source_labeled_documents": 0.5044,
+        "percentage_of_all_labeled_documents": 0.0523
+      },
+      {
+        "source": "SENADO",
+        "code": "33805662",
+        "name": "Direitos Individuais e Coletivos",
+        "documents": 25,
+        "percentage_of_source_labeled_documents": 0.485,
+        "percentage_of_all_labeled_documents": 0.0503
+      },
+      {
+        "source": "SENADO",
+        "code": "33809213",
+        "name": "Saneamento Básico",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809709",
+        "name": "Vegetação Nativa",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809754",
+        "name": "Resíduos Sólidos",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "34951911",
+        "name": "Contribuição Previdenciária",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809679",
+        "name": "Recursos Hídricos",
+        "documents": 23,
+        "percentage_of_source_labeled_documents": 0.4462,
+        "percentage_of_all_labeled_documents": 0.0463
+      },
+      {
+        "source": "SENADO",
+        "code": "33804880",
+        "name": "Indústria",
+        "documents": 21,
+        "percentage_of_source_labeled_documents": 0.4074,
+        "percentage_of_all_labeled_documents": 0.0423
+      },
+      {
+        "source": "SENADO",
+        "code": "33769137",
+        "name": "Advocacia",
+        "documents": 20,
+        "percentage_of_source_labeled_documents": 0.388,
+        "percentage_of_all_labeled_documents": 0.0402
+      },
+      {
+        "source": "SENADO",
+        "code": "33809032",
+        "name": "Proteção Social",
+        "documents": 20,
+        "percentage_of_source_labeled_documents": 0.388,
+        "percentage_of_all_labeled_documents": 0.0402
+      },
+      {
+        "source": "SENADO",
+        "code": "33809137",
+        "name": "Fundo de Garantia por Tempo de Serviço (FGTS)",
+        "documents": 19,
+        "percentage_of_source_labeled_documents": 0.3686,
+        "percentage_of_all_labeled_documents": 0.0382
+      },
+      {
+        "source": "SENADO",
+        "code": "33685910",
+        "name": "Agentes Públicos",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33686075",
+        "name": "Concessão e Permissão de Serviços Públicos",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33804805",
+        "name": "Dívida Pública",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33805197",
+        "name": "Transporte Hidroviário",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33805227",
+        "name": "Mineração",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "CAMARA",
+        "code": "86",
+        "name": "Ciências Sociais e Humanas",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.0382,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33685925",
+        "name": "Militares dos Estados, Distrito Federal e Territórios",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33686015",
+        "name": "Improbidade Administrativa",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33804986",
+        "name": "Imposto sobre Produtos Industrializados (IPI)",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805497",
+        "name": "Direito das Coisas",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805632",
+        "name": "Direitos e Garantias",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805707",
+        "name": "Direito Eleitoral",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33809002",
+        "name": "Habitação",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33809348",
+        "name": "Desenvolvimento Social e Combate à Fome",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33769167",
+        "name": "Economia e Desenvolvimento",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33805467",
+        "name": "Direito Civil",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33809303",
+        "name": "Educação Profissionalizante",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33805212",
+        "name": "Minas e Energia",
+        "documents": 15,
+        "percentage_of_source_labeled_documents": 0.291,
+        "percentage_of_all_labeled_documents": 0.0302
+      },
+      {
+        "source": "SENADO",
+        "code": "33805407",
+        "name": "Processo do Trabalho",
+        "documents": 15,
+        "percentage_of_source_labeled_documents": 0.291,
+        "percentage_of_all_labeled_documents": 0.0302
+      },
+      {
+        "source": "SENADO",
+        "code": "33805542",
+        "name": "Direito Empresarial e Econômico",
+        "documents": 14,
+        "percentage_of_source_labeled_documents": 0.2716,
+        "percentage_of_all_labeled_documents": 0.0282
+      },
+      {
+        "source": "SENADO",
+        "code": "33809604",
+        "name": "Defesa Nacional e Forças Armadas",
+        "documents": 14,
+        "percentage_of_source_labeled_documents": 0.2716,
+        "percentage_of_all_labeled_documents": 0.0282
+      },
+      {
+        "source": "SENADO",
+        "code": "33686105",
+        "name": "Intervenção na Propriedade Privada",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33804850",
+        "name": "Indústria, Comércio e Serviços",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33805137",
+        "name": "Infraestrutura",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33809047",
+        "name": "Desenvolvimento Urbano",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "34246853",
+        "name": "Imposto sobre Circulação de Mercadorias e Prestação de Serviços (ICMS)",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33769107",
+        "name": "Ministério Público",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33805452",
+        "name": "Processo Administrativo",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33809468",
+        "name": "Mobilidade Urbana",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33685789",
+        "name": "Administração Pública",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33685940",
+        "name": "Militares da União",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33809649",
+        "name": "Licenciamento Ambiental",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33809739",
+        "name": "Poluição",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33260515",
+        "name": "Orçamento Público",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33686060",
+        "name": "Agências Reguladoras",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805107",
+        "name": "Pesquisa Científica",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805572",
+        "name": "Propriedade Intelectual",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805722",
+        "name": "Partidos Políticos",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805902",
+        "name": "Alteração da Lei Orçamentária Anual",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33686000",
+        "name": "Crime de Responsabilidade",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "SENADO",
+        "code": "33769152",
+        "name": "Defensoria Pública",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "SENADO",
+        "code": "33809559",
+        "name": "Direito Marítimo, Aeronáutico e Espacial",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "CAMARA",
+        "code": "85",
+        "name": "Ciências Exatas e da Terra",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.018,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33768987",
+        "name": "Organização Federativa",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.1552,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33805872",
+        "name": "Alteração da Lei de Diretrizes Orçamentárias",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.1552,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33805692",
+        "name": "Direitos Políticos",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33808957",
+        "name": "Previdência Social",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809258",
+        "name": "Regimes Próprios de Previdência Social",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809544",
+        "name": "Direito dos Estrangeiros",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809574",
+        "name": "Defesa do Estado e das Instituições Democráticas",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "34246838",
+        "name": "Serviços",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33685985",
+        "name": "Empregados Públicos",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805257",
+        "name": "Comunicações",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805767",
+        "name": "Orçamento Anual",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805887",
+        "name": "Projeto de Lei de Diretrizes Orçamentárias",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805917",
+        "name": "Projeto da Lei Orçamentária Anual",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33685835",
+        "name": "Organização Administrativa",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33805152",
+        "name": "Viação e Transportes",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33809183",
+        "name": "Combate a Epidemias e Pandemias",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33809273",
+        "name": "Previdência Complementar",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33769032",
+        "name": "Fiscalização e Controle",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33805317",
+        "name": "Honorífico",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33805752",
+        "name": "Diretrizes Orçamentárias",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33808912",
+        "name": "Política Social",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33809724",
+        "name": "Patrimônio Genético",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "35190185",
+        "name": "Débitos Fiscais",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33769047",
+        "name": "Controle Interno",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33804910",
+        "name": "Cooperativas",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805647",
+        "name": "Remédios Constitucionais",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33769122",
+        "name": "Advocacia Pública",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805377",
+        "name": "Processo",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805557",
+        "name": "Recuperação Judicial, Extrajudicial e Falência",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805932",
+        "name": "Alteração do Plano Plurianual",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805950",
+        "name": "Projeto de Lei do Plano Plurianual",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      },
+      {
+        "source": "SENADO",
+        "code": "33809107",
+        "name": "Férias",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      },
+      {
+        "source": "SENADO",
+        "code": "33809514",
+        "name": "Soberania, Defesa Nacional e Ordem Pública",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      },
+      {
+        "source": "SENADO",
+        "code": "33768972",
+        "name": "Organização do Estado",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33769002",
+        "name": "Intervenção Federal",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33769092",
+        "name": "Funções Essenciais à Justiça",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805302",
+        "name": "Serviço Postal",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805362",
+        "name": "Jurídico",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805677",
+        "name": "Nacionalidade",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805782",
+        "name": "Plano Plurianual (PPA)",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805797",
+        "name": "Crédito Adicional",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33809589",
+        "name": "Estado de Defesa e de Sítio",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      }
+    ],
+    "largest_class": {
+      "source": "CAMARA",
+      "code": "44",
+      "name": "Direitos Humanos e Minorias",
+      "documents": 10415,
+      "percentage_of_source_labeled_documents": 23.383,
+      "percentage_of_all_labeled_documents": 20.9574
+    },
+    "smallest_class": {
+      "source": "SENADO",
+      "code": "33809589",
+      "name": "Estado de Defesa e de Sítio",
+      "documents": 0,
+      "percentage_of_source_labeled_documents": 0.0,
+      "percentage_of_all_labeled_documents": 0.0
+    },
+    "smallest_observed_class": {
+      "source": "SENADO",
+      "code": "33805950",
+      "name": "Projeto de Lei do Plano Plurianual",
+      "documents": 1,
+      "percentage_of_source_labeled_documents": 0.0194,
+      "percentage_of_all_labeled_documents": 0.002
+    },
+    "mean_documents_per_class": 455.1422,
+    "median_documents_per_class": 31,
+    "rare_classes_under_50": 132,
+    "extremely_rare_classes_under_10": 46,
+    "mean_documents_per_observed_class": 475.4208,
+    "median_documents_per_observed_class": 33.0
+  },
+  "multilabel": {
+    "one_label": 16831,
+    "two_labels": 21775,
+    "three_labels": 9021,
+    "more_than_three_labels": 2069,
+    "average": 1.9324,
+    "maximum": 12
+  },
+  "cooccurrence": [
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "56",
+        "name": "Saúde"
+      },
+      "count": 2321
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "64",
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo"
+      },
+      "count": 1606
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "64",
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo"
+      },
+      "count": 1557
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "count": 1514
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento"
+      },
+      "count": 1364
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "57",
+        "name": "Defesa e Segurança"
+      },
+      "count": 1295
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "46",
+        "name": "Educação"
+      },
+      "count": 1045
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento"
+      },
+      "count": 1018
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "57",
+        "name": "Defesa e Segurança"
+      },
+      "count": 997
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "40",
+        "name": "Economia"
+      },
+      "right": {
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento"
+      },
+      "count": 889
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "43",
+        "name": "Direito Penal e Processual Penal"
+      },
+      "right": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "count": 811
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "46",
+        "name": "Educação"
+      },
+      "count": 798
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "58",
+        "name": "Trabalho e Emprego"
+      },
+      "count": 785
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "56",
+        "name": "Saúde"
+      },
+      "count": 753
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "44",
+        "name": "Direitos Humanos e Minorias"
+      },
+      "right": {
+        "code": "52",
+        "name": "Previdência e Assistência Social"
+      },
+      "count": 730
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "37",
+        "name": "Comunicações"
+      },
+      "count": 705
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "56",
+        "name": "Saúde"
+      },
+      "right": {
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento"
+      },
+      "count": 699
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "46",
+        "name": "Educação"
+      },
+      "right": {
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento"
+      },
+      "count": 696
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "43",
+        "name": "Direito Penal e Processual Penal"
+      },
+      "right": {
+        "code": "57",
+        "name": "Defesa e Segurança"
+      },
+      "count": 695
+    },
+    {
+      "source": "CAMARA",
+      "left": {
+        "code": "34",
+        "name": "Administração Pública"
+      },
+      "right": {
+        "code": "48",
+        "name": "Meio Ambiente e Desenvolvimento Sustentável"
+      },
+      "count": 667
+    }
+  ],
+  "source_analysis": {
+    "CAMARA": {
+      "documents": 231549,
+      "valid_text": 224320,
+      "empty_text": 7229,
+      "missing_text": 0,
+      "short_text": 17915,
+      "with_labels": 44541,
+      "without_labels": 187008,
+      "percentage_labeled": 19.2361,
+      "multilabel": {
+        "one_label": 14041,
+        "two_labels": 20204,
+        "three_labels": 8418,
+        "more_than_three_labels": 1878,
+        "average": 1.9652,
+        "maximum": 12
+      },
+      "cooccurrence": [
+        {
+          "left": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "right": {
+            "code": "56",
+            "name": "Saúde"
+          },
+          "count": 2321
+        },
+        {
+          "left": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "right": {
+            "code": "64",
+            "name": "Agricultura, Pecuária, Pesca e Extrativismo"
+          },
+          "count": 1606
+        },
+        {
+          "left": {
+            "code": "34",
+            "name": "Administração Pública"
+          },
+          "right": {
+            "code": "64",
+            "name": "Agricultura, Pecuária, Pesca e Extrativismo"
+          },
+          "count": 1557
+        },
+        {
+          "left": {
+            "code": "34",
+            "name": "Administração Pública"
+          },
+          "right": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "count": 1514
+        },
+        {
+          "left": {
+            "code": "34",
+            "name": "Administração Pública"
+          },
+          "right": {
+            "code": "70",
+            "name": "Finanças Públicas e Orçamento"
+          },
+          "count": 1364
+        },
+        {
+          "left": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "right": {
+            "code": "57",
+            "name": "Defesa e Segurança"
+          },
+          "count": 1295
+        },
+        {
+          "left": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "right": {
+            "code": "46",
+            "name": "Educação"
+          },
+          "count": 1045
+        },
+        {
+          "left": {
+            "code": "44",
+            "name": "Direitos Humanos e Minorias"
+          },
+          "right": {
+            "code": "70",
+            "name": "Finanças Públicas e Orçamento"
+          },
+          "count": 1018
+        },
+        {
+          "left": {
+            "code": "34",
+            "name": "Administração Pública"
+          },
+          "right": {
+            "code": "57",
+            "name": "Defesa e Segurança"
+          },
+          "count": 997
+        },
+        {
+          "left": {
+            "code": "40",
+            "name": "Economia"
+          },
+          "right": {
+            "code": "70",
+            "name": "Finanças Públicas e Orçamento"
+          },
+          "count": 889
+        }
+      ],
+      "official_themes": 32,
+      "observed_themes": 32,
+      "rare_classes_under_50": 2
+    },
+    "SENADO": {
+      "documents": 15275,
+      "valid_text": 15275,
+      "empty_text": 0,
+      "missing_text": 0,
+      "short_text": 540,
+      "with_labels": 5155,
+      "without_labels": 10120,
+      "percentage_labeled": 33.748,
+      "multilabel": {
+        "one_label": 2790,
+        "two_labels": 1571,
+        "three_labels": 603,
+        "more_than_three_labels": 191,
+        "average": 1.6499,
+        "maximum": 4
+      },
+      "cooccurrence": [
+        {
+          "left": {
+            "code": "33805422",
+            "name": "Processo Penal"
+          },
+          "right": {
+            "code": "33805617",
+            "name": "Direito Penal e Penitenciário"
+          },
+          "count": 60
+        },
+        {
+          "left": {
+            "code": "33804955",
+            "name": "Desoneração Fiscal"
+          },
+          "right": {
+            "code": "33804970",
+            "name": "Imposto de Renda (IR)"
+          },
+          "count": 46
+        },
+        {
+          "left": {
+            "code": "33809408",
+            "name": "Mulheres"
+          },
+          "right": {
+            "code": "33809619",
+            "name": "Segurança Pública"
+          },
+          "count": 42
+        },
+        {
+          "left": {
+            "code": "33805617",
+            "name": "Direito Penal e Penitenciário"
+          },
+          "right": {
+            "code": "33809393",
+            "name": "Crianças e Adolescentes"
+          },
+          "count": 41
+        },
+        {
+          "left": {
+            "code": "33805617",
+            "name": "Direito Penal e Penitenciário"
+          },
+          "right": {
+            "code": "33809408",
+            "name": "Mulheres"
+          },
+          "count": 33
+        },
+        {
+          "left": {
+            "code": "33805422",
+            "name": "Processo Penal"
+          },
+          "right": {
+            "code": "33809408",
+            "name": "Mulheres"
+          },
+          "count": 32
+        },
+        {
+          "left": {
+            "code": "33686045",
+            "name": "Serviços Públicos"
+          },
+          "right": {
+            "code": "33809017",
+            "name": "Desporto e Lazer"
+          },
+          "count": 29
+        },
+        {
+          "left": {
+            "code": "33804820",
+            "name": "Fundos Públicos"
+          },
+          "right": {
+            "code": "33809453",
+            "name": "Calamidade Pública e Emergência Social"
+          },
+          "count": 27
+        },
+        {
+          "left": {
+            "code": "33805032",
+            "name": "Linha de Crédito"
+          },
+          "right": {
+            "code": "33805062",
+            "name": "Agropecuária e Abastecimento"
+          },
+          "count": 26
+        },
+        {
+          "left": {
+            "code": "33804820",
+            "name": "Fundos Públicos"
+          },
+          "right": {
+            "code": "33805062",
+            "name": "Agropecuária e Abastecimento"
+          },
+          "count": 24
+        }
+      ],
+      "official_themes": 179,
+      "observed_themes": 170,
+      "rare_classes_under_50": 130
+    }
+  },
+  "taxonomy_recommendation": {
+    "keep_without_grouping_candidates": [
+      {
+        "source": "CAMARA",
+        "code": "44",
+        "name": "Direitos Humanos e Minorias",
+        "documents": 10415,
+        "percentage_of_source_labeled_documents": 23.383,
+        "percentage_of_all_labeled_documents": 20.9574
+      },
+      {
+        "source": "CAMARA",
+        "code": "34",
+        "name": "Administração Pública",
+        "documents": 10263,
+        "percentage_of_source_labeled_documents": 23.0417,
+        "percentage_of_all_labeled_documents": 20.6516
+      },
+      {
+        "source": "CAMARA",
+        "code": "56",
+        "name": "Saúde",
+        "documents": 7756,
+        "percentage_of_source_labeled_documents": 17.4132,
+        "percentage_of_all_labeled_documents": 15.6069
+      },
+      {
+        "source": "CAMARA",
+        "code": "70",
+        "name": "Finanças Públicas e Orçamento",
+        "documents": 5868,
+        "percentage_of_source_labeled_documents": 13.1744,
+        "percentage_of_all_labeled_documents": 11.8078
+      },
+      {
+        "source": "CAMARA",
+        "code": "64",
+        "name": "Agricultura, Pecuária, Pesca e Extrativismo",
+        "documents": 5130,
+        "percentage_of_source_labeled_documents": 11.5175,
+        "percentage_of_all_labeled_documents": 10.3228
+      },
+      {
+        "source": "CAMARA",
+        "code": "57",
+        "name": "Defesa e Segurança",
+        "documents": 4963,
+        "percentage_of_source_labeled_documents": 11.1425,
+        "percentage_of_all_labeled_documents": 9.9867
+      },
+      {
+        "source": "CAMARA",
+        "code": "46",
+        "name": "Educação",
+        "documents": 4689,
+        "percentage_of_source_labeled_documents": 10.5274,
+        "percentage_of_all_labeled_documents": 9.4354
+      },
+      {
+        "source": "CAMARA",
+        "code": "48",
+        "name": "Meio Ambiente e Desenvolvimento Sustentável",
+        "documents": 3781,
+        "percentage_of_source_labeled_documents": 8.4888,
+        "percentage_of_all_labeled_documents": 7.6083
+      },
+      {
+        "source": "CAMARA",
+        "code": "37",
+        "name": "Comunicações",
+        "documents": 3573,
+        "percentage_of_source_labeled_documents": 8.0218,
+        "percentage_of_all_labeled_documents": 7.1897
+      },
+      {
+        "source": "CAMARA",
+        "code": "58",
+        "name": "Trabalho e Emprego",
+        "documents": 3028,
+        "percentage_of_source_labeled_documents": 6.7982,
+        "percentage_of_all_labeled_documents": 6.093
+      },
+      {
+        "source": "CAMARA",
+        "code": "61",
+        "name": "Viação, Transporte e Mobilidade",
+        "documents": 2788,
+        "percentage_of_source_labeled_documents": 6.2594,
+        "percentage_of_all_labeled_documents": 5.6101
+      },
+      {
+        "source": "CAMARA",
+        "code": "40",
+        "name": "Economia",
+        "documents": 2621,
+        "percentage_of_source_labeled_documents": 5.8845,
+        "percentage_of_all_labeled_documents": 5.2741
+      },
+      {
+        "source": "CAMARA",
+        "code": "43",
+        "name": "Direito Penal e Processual Penal",
+        "documents": 2477,
+        "percentage_of_source_labeled_documents": 5.5612,
+        "percentage_of_all_labeled_documents": 4.9843
+      },
+      {
+        "source": "CAMARA",
+        "code": "66",
+        "name": "Indústria, Comércio e Serviços",
+        "documents": 2411,
+        "percentage_of_source_labeled_documents": 5.413,
+        "percentage_of_all_labeled_documents": 4.8515
+      },
+      {
+        "source": "CAMARA",
+        "code": "41",
+        "name": "Cidades e Desenvolvimento Urbano",
+        "documents": 2180,
+        "percentage_of_source_labeled_documents": 4.8944,
+        "percentage_of_all_labeled_documents": 4.3867
+      },
+      {
+        "source": "CAMARA",
+        "code": "52",
+        "name": "Previdência e Assistência Social",
+        "documents": 2052,
+        "percentage_of_source_labeled_documents": 4.607,
+        "percentage_of_all_labeled_documents": 4.1291
+      },
+      {
+        "source": "CAMARA",
+        "code": "54",
+        "name": "Energia, Recursos Hídricos e Minerais",
+        "documents": 1825,
+        "percentage_of_source_labeled_documents": 4.0973,
+        "percentage_of_all_labeled_documents": 3.6723
+      },
+      {
+        "source": "CAMARA",
+        "code": "72",
+        "name": "Homenagens e Datas Comemorativas",
+        "documents": 1522,
+        "percentage_of_source_labeled_documents": 3.4171,
+        "percentage_of_all_labeled_documents": 3.0626
+      },
+      {
+        "source": "CAMARA",
+        "code": "35",
+        "name": "Arte, Cultura e Religião",
+        "documents": 1425,
+        "percentage_of_source_labeled_documents": 3.1993,
+        "percentage_of_all_labeled_documents": 2.8674
+      },
+      {
+        "source": "CAMARA",
+        "code": "55",
+        "name": "Relações Internacionais e Comércio Exterior",
+        "documents": 1282,
+        "percentage_of_source_labeled_documents": 2.8782,
+        "percentage_of_all_labeled_documents": 2.5797
+      },
+      {
+        "source": "CAMARA",
+        "code": "62",
+        "name": "Ciência, Tecnologia e Inovação",
+        "documents": 1226,
+        "percentage_of_source_labeled_documents": 2.7525,
+        "percentage_of_all_labeled_documents": 2.467
+      },
+      {
+        "source": "CAMARA",
+        "code": "67",
+        "name": "Direito e Defesa do Consumidor",
+        "documents": 1220,
+        "percentage_of_source_labeled_documents": 2.739,
+        "percentage_of_all_labeled_documents": 2.4549
+      },
+      {
+        "source": "CAMARA",
+        "code": "42",
+        "name": "Direito Civil e Processual Civil",
+        "documents": 1179,
+        "percentage_of_source_labeled_documents": 2.647,
+        "percentage_of_all_labeled_documents": 2.3724
+      },
+      {
+        "source": "CAMARA",
+        "code": "39",
+        "name": "Esporte e Lazer",
+        "documents": 1128,
+        "percentage_of_source_labeled_documents": 2.5325,
+        "percentage_of_all_labeled_documents": 2.2698
+      },
+      {
+        "source": "SENADO",
+        "code": "33805287",
+        "name": "Rádio e TV",
+        "documents": 948,
+        "percentage_of_source_labeled_documents": 18.3899,
+        "percentage_of_all_labeled_documents": 1.9076
+      },
+      {
+        "source": "CAMARA",
+        "code": "76",
+        "name": "Direito e Justiça",
+        "documents": 741,
+        "percentage_of_source_labeled_documents": 1.6636,
+        "percentage_of_all_labeled_documents": 1.4911
+      },
+      {
+        "source": "CAMARA",
+        "code": "51",
+        "name": "Estrutura Fundiária",
+        "documents": 624,
+        "percentage_of_source_labeled_documents": 1.401,
+        "percentage_of_all_labeled_documents": 1.2556
+      },
+      {
+        "source": "CAMARA",
+        "code": "53",
+        "name": "Processo Legislativo e Atuação Parlamentar",
+        "documents": 493,
+        "percentage_of_source_labeled_documents": 1.1068,
+        "percentage_of_all_labeled_documents": 0.992
+      },
+      {
+        "source": "SENADO",
+        "code": "33805617",
+        "name": "Direito Penal e Penitenciário",
+        "documents": 425,
+        "percentage_of_source_labeled_documents": 8.2444,
+        "percentage_of_all_labeled_documents": 0.8552
+      },
+      {
+        "source": "CAMARA",
+        "code": "74",
+        "name": "Política, Partidos e Eleições",
+        "documents": 377,
+        "percentage_of_source_labeled_documents": 0.8464,
+        "percentage_of_all_labeled_documents": 0.7586
+      },
+      {
+        "source": "CAMARA",
+        "code": "60",
+        "name": "Turismo",
+        "documents": 355,
+        "percentage_of_source_labeled_documents": 0.797,
+        "percentage_of_all_labeled_documents": 0.7143
+      },
+      {
+        "source": "SENADO",
+        "code": "33809408",
+        "name": "Mulheres",
+        "documents": 212,
+        "percentage_of_source_labeled_documents": 4.1125,
+        "percentage_of_all_labeled_documents": 0.4266
+      },
+      {
+        "source": "SENADO",
+        "code": "33809619",
+        "name": "Segurança Pública",
+        "documents": 198,
+        "percentage_of_source_labeled_documents": 3.8409,
+        "percentage_of_all_labeled_documents": 0.3984
+      },
+      {
+        "source": "SENADO",
+        "code": "33805347",
+        "name": "Homenagem",
+        "documents": 186,
+        "percentage_of_source_labeled_documents": 3.6081,
+        "percentage_of_all_labeled_documents": 0.3743
+      },
+      {
+        "source": "SENADO",
+        "code": "33804820",
+        "name": "Fundos Públicos",
+        "documents": 184,
+        "percentage_of_source_labeled_documents": 3.5694,
+        "percentage_of_all_labeled_documents": 0.3703
+      },
+      {
+        "source": "SENADO",
+        "code": "33809393",
+        "name": "Crianças e Adolescentes",
+        "documents": 184,
+        "percentage_of_source_labeled_documents": 3.5694,
+        "percentage_of_all_labeled_documents": 0.3703
+      },
+      {
+        "source": "SENADO",
+        "code": "33805422",
+        "name": "Processo Penal",
+        "documents": 163,
+        "percentage_of_source_labeled_documents": 3.162,
+        "percentage_of_all_labeled_documents": 0.328
+      },
+      {
+        "source": "SENADO",
+        "code": "33769017",
+        "name": "Poder Legislativo",
+        "documents": 162,
+        "percentage_of_source_labeled_documents": 3.1426,
+        "percentage_of_all_labeled_documents": 0.326
+      },
+      {
+        "source": "SENADO",
+        "code": "33804955",
+        "name": "Desoneração Fiscal",
+        "documents": 153,
+        "percentage_of_source_labeled_documents": 2.968,
+        "percentage_of_all_labeled_documents": 0.3079
+      },
+      {
+        "source": "SENADO",
+        "code": "33808942",
+        "name": "Saúde",
+        "documents": 149,
+        "percentage_of_source_labeled_documents": 2.8904,
+        "percentage_of_all_labeled_documents": 0.2998
+      },
+      {
+        "source": "SENADO",
+        "code": "33769062",
+        "name": "Controle Externo",
+        "documents": 147,
+        "percentage_of_source_labeled_documents": 2.8516,
+        "percentage_of_all_labeled_documents": 0.2958
+      },
+      {
+        "source": "SENADO",
+        "code": "33804835",
+        "name": "Operação Financeira",
+        "documents": 137,
+        "percentage_of_source_labeled_documents": 2.6576,
+        "percentage_of_all_labeled_documents": 0.2757
+      },
+      {
+        "source": "SENADO",
+        "code": "33805332",
+        "name": "Data Comemorativa",
+        "documents": 136,
+        "percentage_of_source_labeled_documents": 2.6382,
+        "percentage_of_all_labeled_documents": 0.2737
+      },
+      {
+        "source": "SENADO",
+        "code": "33809423",
+        "name": "Pessoas com Deficiência",
+        "documents": 136,
+        "percentage_of_source_labeled_documents": 2.6382,
+        "percentage_of_all_labeled_documents": 0.2737
+      },
+      {
+        "source": "SENADO",
+        "code": "33804940",
+        "name": "Tributos",
+        "documents": 128,
+        "percentage_of_source_labeled_documents": 2.483,
+        "percentage_of_all_labeled_documents": 0.2576
+      },
+      {
+        "source": "SENADO",
+        "code": "33805062",
+        "name": "Agropecuária e Abastecimento",
+        "documents": 126,
+        "percentage_of_source_labeled_documents": 2.4442,
+        "percentage_of_all_labeled_documents": 0.2535
+      },
+      {
+        "source": "SENADO",
+        "code": "33809288",
+        "name": "Educação Básica",
+        "documents": 123,
+        "percentage_of_source_labeled_documents": 2.386,
+        "percentage_of_all_labeled_documents": 0.2475
+      },
+      {
+        "source": "SENADO",
+        "code": "33808987",
+        "name": "Cultura",
+        "documents": 115,
+        "percentage_of_source_labeled_documents": 2.2308,
+        "percentage_of_all_labeled_documents": 0.2314
+      },
+      {
+        "source": "CAMARA",
+        "code": "68",
+        "name": "Direito Constitucional",
+        "documents": 113,
+        "percentage_of_source_labeled_documents": 0.2537,
+        "percentage_of_all_labeled_documents": 0.2274
+      },
+      {
+        "source": "SENADO",
+        "code": "33809168",
+        "name": "Saúde Pública",
+        "documents": 113,
+        "percentage_of_source_labeled_documents": 2.192,
+        "percentage_of_all_labeled_documents": 0.2274
+      },
+      {
+        "source": "SENADO",
+        "code": "33809453",
+        "name": "Calamidade Pública e Emergência Social",
+        "documents": 110,
+        "percentage_of_source_labeled_documents": 2.1339,
+        "percentage_of_all_labeled_documents": 0.2213
+      },
+      {
+        "source": "SENADO",
+        "code": "33809017",
+        "name": "Desporto e Lazer",
+        "documents": 105,
+        "percentage_of_source_labeled_documents": 2.0369,
+        "percentage_of_all_labeled_documents": 0.2113
+      },
+      {
+        "source": "SENADO",
+        "code": "33769191",
+        "name": "Sistema Financeiro Nacional",
+        "documents": 101,
+        "percentage_of_source_labeled_documents": 1.9593,
+        "percentage_of_all_labeled_documents": 0.2032
+      },
+      {
+        "source": "SENADO",
+        "code": "33809363",
+        "name": "Assistência Social",
+        "documents": 100,
+        "percentage_of_source_labeled_documents": 1.9399,
+        "percentage_of_all_labeled_documents": 0.2012
+      },
+      {
+        "source": "SENADO",
+        "code": "33805587",
+        "name": "Direito do Consumidor",
+        "documents": 96,
+        "percentage_of_source_labeled_documents": 1.8623,
+        "percentage_of_all_labeled_documents": 0.1932
+      },
+      {
+        "source": "SENADO",
+        "code": "33805392",
+        "name": "Processo Civil",
+        "documents": 91,
+        "percentage_of_source_labeled_documents": 1.7653,
+        "percentage_of_all_labeled_documents": 0.1831
+      },
+      {
+        "source": "SENADO",
+        "code": "33809529",
+        "name": "Relações Internacionais",
+        "documents": 91,
+        "percentage_of_source_labeled_documents": 1.7653,
+        "percentage_of_all_labeled_documents": 0.1831
+      },
+      {
+        "source": "SENADO",
+        "code": "33804970",
+        "name": "Imposto de Renda (IR)",
+        "documents": 87,
+        "percentage_of_source_labeled_documents": 1.6877,
+        "percentage_of_all_labeled_documents": 0.1751
+      },
+      {
+        "source": "SENADO",
+        "code": "33685865",
+        "name": "Administração Pública Indireta",
+        "documents": 82,
+        "percentage_of_source_labeled_documents": 1.5907,
+        "percentage_of_all_labeled_documents": 0.165
+      },
+      {
+        "source": "SENADO",
+        "code": "33808972",
+        "name": "Educação",
+        "documents": 79,
+        "percentage_of_source_labeled_documents": 1.5325,
+        "percentage_of_all_labeled_documents": 0.159
+      },
+      {
+        "source": "SENADO",
+        "code": "33809769",
+        "name": "Desenvolvimento Sustentável",
+        "documents": 77,
+        "percentage_of_source_labeled_documents": 1.4937,
+        "percentage_of_all_labeled_documents": 0.1549
+      },
+      {
+        "source": "SENADO",
+        "code": "33805242",
+        "name": "Energia",
+        "documents": 73,
+        "percentage_of_source_labeled_documents": 1.4161,
+        "percentage_of_all_labeled_documents": 0.1469
+      },
+      {
+        "source": "SENADO",
+        "code": "33808927",
+        "name": "Trabalho e Emprego",
+        "documents": 73,
+        "percentage_of_source_labeled_documents": 1.4161,
+        "percentage_of_all_labeled_documents": 0.1469
+      },
+      {
+        "source": "SENADO",
+        "code": "33809243",
+        "name": "Regime Geral de Previdência Social",
+        "documents": 70,
+        "percentage_of_source_labeled_documents": 1.3579,
+        "percentage_of_all_labeled_documents": 0.1409
+      },
+      {
+        "source": "SENADO",
+        "code": "33685880",
+        "name": "Cargos e Funções Públicos",
+        "documents": 68,
+        "percentage_of_source_labeled_documents": 1.3191,
+        "percentage_of_all_labeled_documents": 0.1368
+      },
+      {
+        "source": "SENADO",
+        "code": "33809092",
+        "name": "Regulamentação Profissional",
+        "documents": 68,
+        "percentage_of_source_labeled_documents": 1.3191,
+        "percentage_of_all_labeled_documents": 0.1368
+      },
+      {
+        "source": "SENADO",
+        "code": "33809318",
+        "name": "Educação Superior",
+        "documents": 67,
+        "percentage_of_source_labeled_documents": 1.2997,
+        "percentage_of_all_labeled_documents": 0.1348
+      },
+      {
+        "source": "SENADO",
+        "code": "33805842",
+        "name": "Crédito Extraordinário",
+        "documents": 66,
+        "percentage_of_source_labeled_documents": 1.2803,
+        "percentage_of_all_labeled_documents": 0.1328
+      },
+      {
+        "source": "SENADO",
+        "code": "33685850",
+        "name": "Administração Pública Direta",
+        "documents": 65,
+        "percentage_of_source_labeled_documents": 1.2609,
+        "percentage_of_all_labeled_documents": 0.1308
+      },
+      {
+        "source": "SENADO",
+        "code": "33809378",
+        "name": "Idosos",
+        "documents": 61,
+        "percentage_of_source_labeled_documents": 1.1833,
+        "percentage_of_all_labeled_documents": 0.1227
+      },
+      {
+        "source": "SENADO",
+        "code": "33686045",
+        "name": "Serviços Públicos",
+        "documents": 60,
+        "percentage_of_source_labeled_documents": 1.1639,
+        "percentage_of_all_labeled_documents": 0.1207
+      },
+      {
+        "source": "SENADO",
+        "code": "33809333",
+        "name": "Direitos Humanos e Minorias",
+        "documents": 59,
+        "percentage_of_source_labeled_documents": 1.1445,
+        "percentage_of_all_labeled_documents": 0.1187
+      },
+      {
+        "source": "SENADO",
+        "code": "33686135",
+        "name": "Direito de Trânsito",
+        "documents": 57,
+        "percentage_of_source_labeled_documents": 1.1057,
+        "percentage_of_all_labeled_documents": 0.1147
+      },
+      {
+        "source": "SENADO",
+        "code": "33685955",
+        "name": "Servidores Públicos",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33686030",
+        "name": "Licitação e Contratos",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33686120",
+        "name": "Transparência e Governança Públicas",
+        "documents": 54,
+        "percentage_of_source_labeled_documents": 1.0475,
+        "percentage_of_all_labeled_documents": 0.1087
+      },
+      {
+        "source": "SENADO",
+        "code": "33805017",
+        "name": "Fiscalização e Controle da Atividade Econômica",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805032",
+        "name": "Linha de Crédito",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805857",
+        "name": "Execução Financeira e Orçamentária",
+        "documents": 50,
+        "percentage_of_source_labeled_documents": 0.9699,
+        "percentage_of_all_labeled_documents": 0.1006
+      }
+    ],
+    "rare_classes_to_review": [
+      {
+        "source": "SENADO",
+        "code": "33805167",
+        "name": "Transporte Terrestre",
+        "documents": 49,
+        "percentage_of_source_labeled_documents": 0.9505,
+        "percentage_of_all_labeled_documents": 0.0986
+      },
+      {
+        "source": "SENADO",
+        "code": "33769077",
+        "name": "Poder Judiciário",
+        "documents": 48,
+        "percentage_of_source_labeled_documents": 0.9311,
+        "percentage_of_all_labeled_documents": 0.0966
+      },
+      {
+        "source": "SENADO",
+        "code": "33805092",
+        "name": "Ciência, Tecnologia e Informática",
+        "documents": 48,
+        "percentage_of_source_labeled_documents": 0.9311,
+        "percentage_of_all_labeled_documents": 0.0966
+      },
+      {
+        "source": "SENADO",
+        "code": "33805827",
+        "name": "Crédito Suplementar",
+        "documents": 47,
+        "percentage_of_source_labeled_documents": 0.9117,
+        "percentage_of_all_labeled_documents": 0.0946
+      },
+      {
+        "source": "SENADO",
+        "code": "33809634",
+        "name": "Meio Ambiente",
+        "documents": 46,
+        "percentage_of_source_labeled_documents": 0.8923,
+        "percentage_of_all_labeled_documents": 0.0926
+      },
+      {
+        "source": "SENADO",
+        "code": "33804790",
+        "name": "Finanças Públicas",
+        "documents": 44,
+        "percentage_of_source_labeled_documents": 0.8535,
+        "percentage_of_all_labeled_documents": 0.0885
+      },
+      {
+        "source": "SENADO",
+        "code": "33804925",
+        "name": "Turismo",
+        "documents": 44,
+        "percentage_of_source_labeled_documents": 0.8535,
+        "percentage_of_all_labeled_documents": 0.0885
+      },
+      {
+        "source": "SENADO",
+        "code": "33805812",
+        "name": "Crédito Especial",
+        "documents": 43,
+        "percentage_of_source_labeled_documents": 0.8341,
+        "percentage_of_all_labeled_documents": 0.0865
+      },
+      {
+        "source": "SENADO",
+        "code": "33805437",
+        "name": "Processo Legislativo",
+        "documents": 41,
+        "percentage_of_source_labeled_documents": 0.7953,
+        "percentage_of_all_labeled_documents": 0.0825
+      },
+      {
+        "source": "SENADO",
+        "code": "33809799",
+        "name": "Crimes e Infrações Ambientais",
+        "documents": 41,
+        "percentage_of_source_labeled_documents": 0.7953,
+        "percentage_of_all_labeled_documents": 0.0825
+      },
+      {
+        "source": "SENADO",
+        "code": "33804865",
+        "name": "Comércio",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805122",
+        "name": "Segurança Digital",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805182",
+        "name": "Transporte Aéreo",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33809438",
+        "name": "População Indígena",
+        "documents": 38,
+        "percentage_of_source_labeled_documents": 0.7371,
+        "percentage_of_all_labeled_documents": 0.0765
+      },
+      {
+        "source": "SENADO",
+        "code": "33805272",
+        "name": "Telefonia e Internet",
+        "documents": 37,
+        "percentage_of_source_labeled_documents": 0.7177,
+        "percentage_of_all_labeled_documents": 0.0745
+      },
+      {
+        "source": "SENADO",
+        "code": "34999627",
+        "name": "Contribuição Social",
+        "documents": 37,
+        "percentage_of_source_labeled_documents": 0.7177,
+        "percentage_of_all_labeled_documents": 0.0745
+      },
+      {
+        "source": "SENADO",
+        "code": "33809784",
+        "name": "Mudanças Climáticas",
+        "documents": 35,
+        "percentage_of_source_labeled_documents": 0.679,
+        "percentage_of_all_labeled_documents": 0.0704
+      },
+      {
+        "source": "SENADO",
+        "code": "33685970",
+        "name": "Agentes Políticos",
+        "documents": 34,
+        "percentage_of_source_labeled_documents": 0.6596,
+        "percentage_of_all_labeled_documents": 0.0684
+      },
+      {
+        "source": "SENADO",
+        "code": "33804895",
+        "name": "Micro e Pequenas Empresas",
+        "documents": 34,
+        "percentage_of_source_labeled_documents": 0.6596,
+        "percentage_of_all_labeled_documents": 0.0684
+      },
+      {
+        "source": "SENADO",
+        "code": "33686090",
+        "name": "Domínio e Bens Públicos",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805002",
+        "name": "Administração Tributária",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805077",
+        "name": "Política Fundiária e Reforma Agrária",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805602",
+        "name": "Direito Notarial e Registral",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33809694",
+        "name": "Proteção aos Animais",
+        "documents": 33,
+        "percentage_of_source_labeled_documents": 0.6402,
+        "percentage_of_all_labeled_documents": 0.0664
+      },
+      {
+        "source": "SENADO",
+        "code": "33805047",
+        "name": "Desenvolvimento Regional",
+        "documents": 32,
+        "percentage_of_source_labeled_documents": 0.6208,
+        "percentage_of_all_labeled_documents": 0.0644
+      },
+      {
+        "source": "SENADO",
+        "code": "33805527",
+        "name": "Família e Sucessões",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33805737",
+        "name": "Eleições",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33809062",
+        "name": "Jornada de Trabalho",
+        "documents": 31,
+        "percentage_of_source_labeled_documents": 0.6014,
+        "percentage_of_all_labeled_documents": 0.0624
+      },
+      {
+        "source": "SENADO",
+        "code": "33685895",
+        "name": "Terceiro Setor, Parcerias Público-Privadas e Desestatização",
+        "documents": 30,
+        "percentage_of_source_labeled_documents": 0.582,
+        "percentage_of_all_labeled_documents": 0.0604
+      },
+      {
+        "source": "SENADO",
+        "code": "33809153",
+        "name": "Saúde e Segurança do Trabalho",
+        "documents": 30,
+        "percentage_of_source_labeled_documents": 0.582,
+        "percentage_of_all_labeled_documents": 0.0604
+      },
+      {
+        "source": "SENADO",
+        "code": "33809198",
+        "name": "Defesa e Vigilância Sanitária",
+        "documents": 29,
+        "percentage_of_source_labeled_documents": 0.5626,
+        "percentage_of_all_labeled_documents": 0.0584
+      },
+      {
+        "source": "SENADO",
+        "code": "33805482",
+        "name": "Obrigações e Contratos",
+        "documents": 28,
+        "percentage_of_source_labeled_documents": 0.5432,
+        "percentage_of_all_labeled_documents": 0.0563
+      },
+      {
+        "source": "SENADO",
+        "code": "33809122",
+        "name": "Remuneração",
+        "documents": 28,
+        "percentage_of_source_labeled_documents": 0.5432,
+        "percentage_of_all_labeled_documents": 0.0563
+      },
+      {
+        "source": "SENADO",
+        "code": "33805512",
+        "name": "Responsabilidade Civil",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809077",
+        "name": "Fomento ao Trabalho",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809228",
+        "name": "Saúde Suplementar",
+        "documents": 27,
+        "percentage_of_source_labeled_documents": 0.5238,
+        "percentage_of_all_labeled_documents": 0.0543
+      },
+      {
+        "source": "SENADO",
+        "code": "33809664",
+        "name": "Espaços Especialmente Protegidos",
+        "documents": 26,
+        "percentage_of_source_labeled_documents": 0.5044,
+        "percentage_of_all_labeled_documents": 0.0523
+      },
+      {
+        "source": "SENADO",
+        "code": "33805662",
+        "name": "Direitos Individuais e Coletivos",
+        "documents": 25,
+        "percentage_of_source_labeled_documents": 0.485,
+        "percentage_of_all_labeled_documents": 0.0503
+      },
+      {
+        "source": "SENADO",
+        "code": "33809213",
+        "name": "Saneamento Básico",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809709",
+        "name": "Vegetação Nativa",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809754",
+        "name": "Resíduos Sólidos",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "34951911",
+        "name": "Contribuição Previdenciária",
+        "documents": 24,
+        "percentage_of_source_labeled_documents": 0.4656,
+        "percentage_of_all_labeled_documents": 0.0483
+      },
+      {
+        "source": "SENADO",
+        "code": "33809679",
+        "name": "Recursos Hídricos",
+        "documents": 23,
+        "percentage_of_source_labeled_documents": 0.4462,
+        "percentage_of_all_labeled_documents": 0.0463
+      },
+      {
+        "source": "SENADO",
+        "code": "33804880",
+        "name": "Indústria",
+        "documents": 21,
+        "percentage_of_source_labeled_documents": 0.4074,
+        "percentage_of_all_labeled_documents": 0.0423
+      },
+      {
+        "source": "SENADO",
+        "code": "33769137",
+        "name": "Advocacia",
+        "documents": 20,
+        "percentage_of_source_labeled_documents": 0.388,
+        "percentage_of_all_labeled_documents": 0.0402
+      },
+      {
+        "source": "SENADO",
+        "code": "33809032",
+        "name": "Proteção Social",
+        "documents": 20,
+        "percentage_of_source_labeled_documents": 0.388,
+        "percentage_of_all_labeled_documents": 0.0402
+      },
+      {
+        "source": "SENADO",
+        "code": "33809137",
+        "name": "Fundo de Garantia por Tempo de Serviço (FGTS)",
+        "documents": 19,
+        "percentage_of_source_labeled_documents": 0.3686,
+        "percentage_of_all_labeled_documents": 0.0382
+      },
+      {
+        "source": "SENADO",
+        "code": "33685910",
+        "name": "Agentes Públicos",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33686075",
+        "name": "Concessão e Permissão de Serviços Públicos",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33804805",
+        "name": "Dívida Pública",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33805197",
+        "name": "Transporte Hidroviário",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "SENADO",
+        "code": "33805227",
+        "name": "Mineração",
+        "documents": 18,
+        "percentage_of_source_labeled_documents": 0.3492,
+        "percentage_of_all_labeled_documents": 0.0362
+      },
+      {
+        "source": "CAMARA",
+        "code": "86",
+        "name": "Ciências Sociais e Humanas",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.0382,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33685925",
+        "name": "Militares dos Estados, Distrito Federal e Territórios",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33686015",
+        "name": "Improbidade Administrativa",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33804986",
+        "name": "Imposto sobre Produtos Industrializados (IPI)",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805497",
+        "name": "Direito das Coisas",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805632",
+        "name": "Direitos e Garantias",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33805707",
+        "name": "Direito Eleitoral",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33809002",
+        "name": "Habitação",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33809348",
+        "name": "Desenvolvimento Social e Combate à Fome",
+        "documents": 17,
+        "percentage_of_source_labeled_documents": 0.3298,
+        "percentage_of_all_labeled_documents": 0.0342
+      },
+      {
+        "source": "SENADO",
+        "code": "33769167",
+        "name": "Economia e Desenvolvimento",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33805467",
+        "name": "Direito Civil",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33809303",
+        "name": "Educação Profissionalizante",
+        "documents": 16,
+        "percentage_of_source_labeled_documents": 0.3104,
+        "percentage_of_all_labeled_documents": 0.0322
+      },
+      {
+        "source": "SENADO",
+        "code": "33805212",
+        "name": "Minas e Energia",
+        "documents": 15,
+        "percentage_of_source_labeled_documents": 0.291,
+        "percentage_of_all_labeled_documents": 0.0302
+      },
+      {
+        "source": "SENADO",
+        "code": "33805407",
+        "name": "Processo do Trabalho",
+        "documents": 15,
+        "percentage_of_source_labeled_documents": 0.291,
+        "percentage_of_all_labeled_documents": 0.0302
+      },
+      {
+        "source": "SENADO",
+        "code": "33805542",
+        "name": "Direito Empresarial e Econômico",
+        "documents": 14,
+        "percentage_of_source_labeled_documents": 0.2716,
+        "percentage_of_all_labeled_documents": 0.0282
+      },
+      {
+        "source": "SENADO",
+        "code": "33809604",
+        "name": "Defesa Nacional e Forças Armadas",
+        "documents": 14,
+        "percentage_of_source_labeled_documents": 0.2716,
+        "percentage_of_all_labeled_documents": 0.0282
+      },
+      {
+        "source": "SENADO",
+        "code": "33686105",
+        "name": "Intervenção na Propriedade Privada",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33804850",
+        "name": "Indústria, Comércio e Serviços",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33805137",
+        "name": "Infraestrutura",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33809047",
+        "name": "Desenvolvimento Urbano",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "34246853",
+        "name": "Imposto sobre Circulação de Mercadorias e Prestação de Serviços (ICMS)",
+        "documents": 13,
+        "percentage_of_source_labeled_documents": 0.2522,
+        "percentage_of_all_labeled_documents": 0.0262
+      },
+      {
+        "source": "SENADO",
+        "code": "33769107",
+        "name": "Ministério Público",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33805452",
+        "name": "Processo Administrativo",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33809468",
+        "name": "Mobilidade Urbana",
+        "documents": 12,
+        "percentage_of_source_labeled_documents": 0.2328,
+        "percentage_of_all_labeled_documents": 0.0241
+      },
+      {
+        "source": "SENADO",
+        "code": "33685789",
+        "name": "Administração Pública",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33685940",
+        "name": "Militares da União",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33809649",
+        "name": "Licenciamento Ambiental",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33809739",
+        "name": "Poluição",
+        "documents": 11,
+        "percentage_of_source_labeled_documents": 0.2134,
+        "percentage_of_all_labeled_documents": 0.0221
+      },
+      {
+        "source": "SENADO",
+        "code": "33260515",
+        "name": "Orçamento Público",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33686060",
+        "name": "Agências Reguladoras",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805107",
+        "name": "Pesquisa Científica",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805572",
+        "name": "Propriedade Intelectual",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805722",
+        "name": "Partidos Políticos",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33805902",
+        "name": "Alteração da Lei Orçamentária Anual",
+        "documents": 10,
+        "percentage_of_source_labeled_documents": 0.194,
+        "percentage_of_all_labeled_documents": 0.0201
+      },
+      {
+        "source": "SENADO",
+        "code": "33686000",
+        "name": "Crime de Responsabilidade",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "SENADO",
+        "code": "33769152",
+        "name": "Defensoria Pública",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "SENADO",
+        "code": "33809559",
+        "name": "Direito Marítimo, Aeronáutico e Espacial",
+        "documents": 9,
+        "percentage_of_source_labeled_documents": 0.1746,
+        "percentage_of_all_labeled_documents": 0.0181
+      },
+      {
+        "source": "CAMARA",
+        "code": "85",
+        "name": "Ciências Exatas e da Terra",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.018,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33768987",
+        "name": "Organização Federativa",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.1552,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33805872",
+        "name": "Alteração da Lei de Diretrizes Orçamentárias",
+        "documents": 8,
+        "percentage_of_source_labeled_documents": 0.1552,
+        "percentage_of_all_labeled_documents": 0.0161
+      },
+      {
+        "source": "SENADO",
+        "code": "33805692",
+        "name": "Direitos Políticos",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33808957",
+        "name": "Previdência Social",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809258",
+        "name": "Regimes Próprios de Previdência Social",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809544",
+        "name": "Direito dos Estrangeiros",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33809574",
+        "name": "Defesa do Estado e das Instituições Democráticas",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "34246838",
+        "name": "Serviços",
+        "documents": 7,
+        "percentage_of_source_labeled_documents": 0.1358,
+        "percentage_of_all_labeled_documents": 0.0141
+      },
+      {
+        "source": "SENADO",
+        "code": "33685985",
+        "name": "Empregados Públicos",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805257",
+        "name": "Comunicações",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805767",
+        "name": "Orçamento Anual",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805887",
+        "name": "Projeto de Lei de Diretrizes Orçamentárias",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33805917",
+        "name": "Projeto da Lei Orçamentária Anual",
+        "documents": 6,
+        "percentage_of_source_labeled_documents": 0.1164,
+        "percentage_of_all_labeled_documents": 0.0121
+      },
+      {
+        "source": "SENADO",
+        "code": "33685835",
+        "name": "Organização Administrativa",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33805152",
+        "name": "Viação e Transportes",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33809183",
+        "name": "Combate a Epidemias e Pandemias",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33809273",
+        "name": "Previdência Complementar",
+        "documents": 5,
+        "percentage_of_source_labeled_documents": 0.097,
+        "percentage_of_all_labeled_documents": 0.0101
+      },
+      {
+        "source": "SENADO",
+        "code": "33769032",
+        "name": "Fiscalização e Controle",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33805317",
+        "name": "Honorífico",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33805752",
+        "name": "Diretrizes Orçamentárias",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33808912",
+        "name": "Política Social",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33809724",
+        "name": "Patrimônio Genético",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "35190185",
+        "name": "Débitos Fiscais",
+        "documents": 4,
+        "percentage_of_source_labeled_documents": 0.0776,
+        "percentage_of_all_labeled_documents": 0.008
+      },
+      {
+        "source": "SENADO",
+        "code": "33769047",
+        "name": "Controle Interno",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33804910",
+        "name": "Cooperativas",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33805647",
+        "name": "Remédios Constitucionais",
+        "documents": 3,
+        "percentage_of_source_labeled_documents": 0.0582,
+        "percentage_of_all_labeled_documents": 0.006
+      },
+      {
+        "source": "SENADO",
+        "code": "33769122",
+        "name": "Advocacia Pública",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805377",
+        "name": "Processo",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805557",
+        "name": "Recuperação Judicial, Extrajudicial e Falência",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805932",
+        "name": "Alteração do Plano Plurianual",
+        "documents": 2,
+        "percentage_of_source_labeled_documents": 0.0388,
+        "percentage_of_all_labeled_documents": 0.004
+      },
+      {
+        "source": "SENADO",
+        "code": "33805950",
+        "name": "Projeto de Lei do Plano Plurianual",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      },
+      {
+        "source": "SENADO",
+        "code": "33809107",
+        "name": "Férias",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      },
+      {
+        "source": "SENADO",
+        "code": "33809514",
+        "name": "Soberania, Defesa Nacional e Ordem Pública",
+        "documents": 1,
+        "percentage_of_source_labeled_documents": 0.0194,
+        "percentage_of_all_labeled_documents": 0.002
+      }
+    ],
+    "classes_without_examples": [
+      {
+        "source": "SENADO",
+        "code": "33768972",
+        "name": "Organização do Estado",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33769002",
+        "name": "Intervenção Federal",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33769092",
+        "name": "Funções Essenciais à Justiça",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805302",
+        "name": "Serviço Postal",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805362",
+        "name": "Jurídico",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805677",
+        "name": "Nacionalidade",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805782",
+        "name": "Plano Plurianual (PPA)",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33805797",
+        "name": "Crédito Adicional",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      },
+      {
+        "source": "SENADO",
+        "code": "33809589",
+        "name": "Estado de Defesa e de Sítio",
+        "documents": 0,
+        "percentage_of_source_labeled_documents": 0.0,
+        "percentage_of_all_labeled_documents": 0.0
+      }
+    ],
+    "same_names_across_sources_to_review": [
+      {
+        "name": "Direitos Humanos e Minorias",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "44"
+          },
+          {
+            "source": "SENADO",
+            "code": "33809333"
+          }
+        ]
+      },
+      {
+        "name": "Administração Pública",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "34"
+          },
+          {
+            "source": "SENADO",
+            "code": "33685789"
+          }
+        ]
+      },
+      {
+        "name": "Saúde",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "56"
+          },
+          {
+            "source": "SENADO",
+            "code": "33808942"
+          }
+        ]
+      },
+      {
+        "name": "Educação",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "46"
+          },
+          {
+            "source": "SENADO",
+            "code": "33808972"
+          }
+        ]
+      },
+      {
+        "name": "Comunicações",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "37"
+          },
+          {
+            "source": "SENADO",
+            "code": "33805257"
+          }
+        ]
+      },
+      {
+        "name": "Trabalho e Emprego",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "58"
+          },
+          {
+            "source": "SENADO",
+            "code": "33808927"
+          }
+        ]
+      },
+      {
+        "name": "Indústria, Comércio e Serviços",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "66"
+          },
+          {
+            "source": "SENADO",
+            "code": "33804850"
+          }
+        ]
+      },
+      {
+        "name": "Turismo",
+        "classes": [
+          {
+            "source": "CAMARA",
+            "code": "60"
+          },
+          {
+            "source": "SENADO",
+            "code": "33804925"
+          }
+        ]
+      }
+    ],
+    "note": "As listas são evidências para revisão futura; nenhum label foi agrupado, removido ou convertido nesta fase."
+  },
+  "duplicates": {
+    "raw_document_rows": 246824,
+    "unique_documents": 246824,
+    "invalid_id_rows": 0,
+    "duplicate_id_rows": 0,
+    "conflicting_duplicate_identities": 0,
+    "duplicate_label_assignments": 0,
+    "invalid_label_assignments": 0,
+    "label_name_conflicts": 0,
+    "orphan_label_assignments": 0,
+    "duplicate_ementa_groups": 21994,
+    "duplicate_ementa_documents": 100789,
+    "duplicate_ementa_conflicting_label_groups": 4232,
+    "senado_class_assignments_outside_window": 33967
+  },
+  "training_dataset": {
+    "documents": 49696
+  },
+  "viability": {
+    "CAMARA": {
+      "level": "ALTA",
+      "documents": 231549,
+      "training_candidates": 44541,
+      "label_coverage_percentage": 19.2361,
+      "valid_text_percentage": 96.878
+    },
+    "SENADO": {
+      "level": "MÉDIA",
+      "documents": 15275,
+      "training_candidates": 5155,
+      "label_coverage_percentage": 33.748,
+      "valid_text_percentage": 100.0
+    },
+    "general": {
+      "level": "ALTA",
+      "documents": 246824,
+      "training_candidates": 49696,
+      "label_coverage_percentage": 20.1342,
+      "valid_text_percentage": 97.0712
+    }
+  }
+}
