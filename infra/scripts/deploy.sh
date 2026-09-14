@@ -12,7 +12,7 @@ flock -n 9 || {
   exit 1
 }
 
-if [[ ! -f "$BACKEND_ENV" ]]; then
+if ! sudo test -s "$BACKEND_ENV"; then
   echo "Missing $BACKEND_ENV." >&2
   exit 1
 fi
