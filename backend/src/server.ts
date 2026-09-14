@@ -46,7 +46,7 @@ try {
 }
 
 try {
-  await app.listen({ host: '0.0.0.0', port: config.port });
+  await app.listen({ host: config.host, port: config.port });
 } catch {
   app.log.error('Não foi possível iniciar o servidor.');
   process.exitCode = 1;

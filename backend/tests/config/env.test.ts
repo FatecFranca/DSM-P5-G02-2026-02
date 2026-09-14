@@ -6,6 +6,7 @@ describe('loadConfig', () => {
   it('aplica valores seguros por padrão', () => {
     expect(loadConfig({ MONGODB_URI: 'mongodb://example.invalid' })).toEqual({
       nodeEnv: 'development',
+      host: '127.0.0.1',
       port: 3000,
       logLevel: 'info',
       corsOrigins: ['http://localhost:5173', 'http://localhost:8081'],

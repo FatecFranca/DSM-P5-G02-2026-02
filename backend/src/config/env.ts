@@ -14,6 +14,7 @@ type LogLevel = (typeof logLevels)[number];
 
 export interface AppConfig {
   nodeEnv: NodeEnvironment;
+  host: '127.0.0.1';
   port: number;
   logLevel: LogLevel;
   corsOrigins: string[];
@@ -114,6 +115,7 @@ export function loadConfig(env: NodeJS.ProcessEnv): AppConfig {
 
   return {
     nodeEnv: nodeEnv as NodeEnvironment,
+    host: '127.0.0.1',
     port,
     logLevel: logLevel as LogLevel,
     corsOrigins,
