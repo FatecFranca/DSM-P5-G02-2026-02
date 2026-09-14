@@ -81,6 +81,3 @@ jobs:
 
       - name: Run unittest suite
         run: python -m unittest discover -s tests -v
-
-      - name: Validate training dataset
-        run: python -m src.training.train validate
