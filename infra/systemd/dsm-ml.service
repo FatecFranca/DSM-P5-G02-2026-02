@@ -1,0 +1,23 @@
+[Unit]
+Description=DSM thematic classification service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=dsmapp
+Group=dsmapp
+WorkingDirectory=/opt/dsm-p5-g02/ml
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/opt/dsm-p5-g02/ml/.venv/bin/uvicorn src.api.app:app --host 127.0.0.1 --port 8001 --workers 1
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target

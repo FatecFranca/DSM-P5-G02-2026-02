@@ -1,0 +1,27 @@
+[Unit]
+Description=DSM Parliamentary API backend
+After=network-online.target dsm-ml.service
+Wants=network-online.target dsm-ml.service
+
+[Service]
+Type=simple
+User=dsmapp
+Group=dsmapp
+WorkingDirectory=/opt/dsm-p5-g02/backend
+Environment=NODE_ENV=production
+Environment=PORT=3000
+Environment=LOG_LEVEL=info
+Environment=ML_SERVICE_URL=http://127.0.0.1:8001
+EnvironmentFile=/etc/dsm-p5-g02/backend.env
+ExecStart=/usr/bin/node dist/server.js
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=30
+UMask=0027
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectSystem=full
+
+[Install]
+WantedBy=multi-user.target
