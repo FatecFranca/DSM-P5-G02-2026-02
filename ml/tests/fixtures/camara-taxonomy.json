@@ -1,0 +1,7 @@
+{
+  "dados": [
+    {"cod": "34", "sigla": "", "nome": "Administração Pública", "descricao": ""},
+    {"cod": "46", "sigla": "", "nome": "Educação", "descricao": ""},
+    {"cod": "56", "sigla": "", "nome": "Saúde", "descricao": ""}
+  ]
+}

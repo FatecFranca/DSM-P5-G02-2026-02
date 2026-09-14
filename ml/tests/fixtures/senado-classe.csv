@@ -1,0 +1,2 @@
+id,codigoMateria,identificacao,apelido,objetivo,casaIdentificadora,enteIdentificador,tipoConteudo,ementa,tipoDocumento,dataApresentacao,autoria,urlDocumento,tramitando,dataDeliberacao,siglaTipoDeliberacao,normaGerada,ultimaInformacaoAtualizada,dataUltimaAtualizacao,situacaoAtual,dataSituacaoAtual
+201,1001,PL 64/2025,,Iniciadora,SF,Senado Federal,Norma Geral,Protege os animais.,Projeto de Lei Ordinária,2025-03-01,Senador Exemplo,https://example.invalid/201,Sim,,,,Situação,2025-03-02,Em tramitação,2025-03-02

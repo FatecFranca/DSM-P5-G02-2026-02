@@ -1,0 +1,13 @@
+[
+  {
+    "codigo": 10,
+    "nome": "Política Social",
+    "filhos": [
+      {
+        "codigo": 11,
+        "nome": "Saúde",
+        "filhos": []
+      }
+    ]
+  }
+]

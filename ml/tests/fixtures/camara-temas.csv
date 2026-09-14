@@ -1,0 +1,6 @@
+uriProposicao;siglaTipo;numero;ano;codTema;tema;relevancia
+https://dadosabertos.camara.leg.br/api/v2/proposicoes/101;PL;1;2025;34;Administração Pública;0
+https://dadosabertos.camara.leg.br/api/v2/proposicoes/101;PL;1;2025;46;Educação;0
+https://dadosabertos.camara.leg.br/api/v2/proposicoes/103;PL;3;2025;46;Educação;0
+https://dadosabertos.camara.leg.br/api/v2/proposicoes/104;PL;4;2025;56;Saúde;0
+https://dadosabertos.camara.leg.br/api/v2/proposicoes/999;PL;999;2025;40;Economia;0

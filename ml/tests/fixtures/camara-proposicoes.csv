@@ -1,0 +1,6 @@
+id;uri;siglaTipo;numero;ano;codTipo;descricaoTipo;ementa;ementaDetalhada;keywords;dataApresentacao;uriOrgaoNumerador;uriPropAnterior;uriPropPrincipal;uriPropPosterior;urlInteiroTeor;urnFinal;ultimoStatus_dataHora;ultimoStatus_sequencia;ultimoStatus_uriRelator;ultimoStatus_idOrgao;ultimoStatus_siglaOrgao;ultimoStatus_uriOrgao;ultimoStatus_regime;ultimoStatus_descricaoTramitacao;ultimoStatus_idTipoTramitacao;ultimoStatus_descricaoSituacao;ultimoStatus_idSituacao;ultimoStatus_despacho;ultimoStatus_apreciacao;ultimoStatus_url
+101;https://dadosabertos.camara.leg.br/api/v2/proposicoes/101;PL;1;2025;139;Projeto de Lei;Dispõe  sobre\n educação e não retira 2 direitos.;;;2025-02-01;;;;;;;;;;;;;;;;;;;;
+101;https://dadosabertos.camara.leg.br/api/v2/proposicoes/101;PL;1;2025;139;Projeto de Lei;Dispõe  sobre\n educação e não retira 2 direitos.;;;2025-02-01;;;;;;;;;;;;;;;;;;;;
+102;https://dadosabertos.camara.leg.br/api/v2/proposicoes/102;REQ;2;2025;310;Requerimento;;;;2025-02-02;;;;;;;;;;;;;;;;;;;;
+103;https://dadosabertos.camara.leg.br/api/v2/proposicoes/103;PL;3;2025;139;Projeto de Lei;Texto repetido.;;;2025-02-03;;;;;;;;;;;;;;;;;;;;
+104;https://dadosabertos.camara.leg.br/api/v2/proposicoes/104;PL;4;2025;139;Projeto de Lei;Texto repetido.;;;2025-02-04;;;;;;;;;;;;;;;;;;;;
