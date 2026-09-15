@@ -43,6 +43,7 @@ fi
 sudo install -m 0644 infra/systemd/dsm-backend.service /etc/systemd/system/dsm-backend.service
 sudo install -m 0644 infra/systemd/dsm-ml.service /etc/systemd/system/dsm-ml.service
 sudo install -m 0644 infra/nginx/dsm-p5-g02.conf /etc/nginx/sites-available/dsm-p5-g02
+sudo install -m 0755 infra/scripts/ssh-deploy-command.sh /usr/local/sbin/dsm-deploy-command
 sudo ln -sfn /etc/nginx/sites-available/dsm-p5-g02 /etc/nginx/sites-enabled/dsm-p5-g02
 if [[ -L /etc/nginx/sites-enabled/default ]]; then
   sudo unlink /etc/nginx/sites-enabled/default

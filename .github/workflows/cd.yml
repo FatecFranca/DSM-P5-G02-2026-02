@@ -1,0 +1,48 @@
+name: CD
+
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-deployment
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy production
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_branch == 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      DEPLOY_HOST: 158.158.48.119
+      DEPLOY_USER: fatec
+
+    steps:
+      - name: Configure deployment SSH key
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_PRIVATE_KEY }}
+        run: |
+          install -d -m 0700 ~/.ssh
+          printf '%s\n' "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+          chmod 0600 ~/.ssh/id_ed25519
+          printf '%s\n' '158.158.48.119 ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIB3Jeb2mM4caSzUIlNqsl1CuEd0BZlhq5Cee3KsyXIXM' > ~/.ssh/known_hosts
+          chmod 0644 ~/.ssh/known_hosts
+
+      - name: Deploy tested revision
+        env:
+          REVISION: ${{ github.event.workflow_run.head_sha }}
+        run: >-
+          ssh -o BatchMode=yes -o IdentitiesOnly=yes
+          -o StrictHostKeyChecking=yes
+          "$DEPLOY_USER@$DEPLOY_HOST" "deploy $REVISION"
+
+      - name: Verify public health
+        run: curl --fail --show-error --silent --retry 5 --retry-delay 2 "http://$DEPLOY_HOST/health"
