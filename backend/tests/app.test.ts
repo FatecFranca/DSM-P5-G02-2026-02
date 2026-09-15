@@ -30,6 +30,22 @@ afterEach(async () => {
 });
 
 describe('aplicação HTTP', () => {
+  it('informa os pontos de entrada da API na raiz', async () => {
+    const response = await createApp().inject({
+      method: 'GET',
+      url: '/',
+    });
+
+    expect(response.statusCode).toBe(200);
+    expect(response.headers['content-type']).toMatch(/^application\/json\b/);
+    expect(response.json()).toEqual({
+      service: 'API do Projeto Integrador',
+      status: 'online',
+      documentation: '/docs',
+      health: '/health',
+    });
+  });
+
   it('informa que a API e o banco estão disponíveis', async () => {
     const response = await createApp().inject({
       method: 'GET',

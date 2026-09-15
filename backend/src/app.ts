@@ -149,6 +149,37 @@ export function buildApp(
     routePrefix: '/docs',
   });
 
+  app.get(
+    '/',
+    {
+      schema: {
+        tags: ['Health'],
+        summary: 'Apresenta os pontos de entrada da API',
+        description:
+          'Confirma que a API está online e informa os caminhos de documentação e health check.',
+        response: {
+          200: {
+            type: 'object',
+            additionalProperties: false,
+            required: ['service', 'status', 'documentation', 'health'],
+            properties: {
+              service: { type: 'string', enum: ['API do Projeto Integrador'] },
+              status: { type: 'string', enum: ['online'] },
+              documentation: { type: 'string', enum: ['/docs'] },
+              health: { type: 'string', enum: ['/health'] },
+            },
+          },
+        },
+      },
+    },
+    () => ({
+      service: 'API do Projeto Integrador',
+      status: 'online',
+      documentation: '/docs',
+      health: '/health',
+    }),
+  );
+
   void app.register(healthRoutes, {
     getDatabaseStatus: dependencies.getDatabaseStatus ?? getDatabaseStatus,
   });
