@@ -4,7 +4,7 @@ The Ubuntu VM runs both application processes behind Nginx without Docker:
 
 - Backend: `127.0.0.1:3000`
 - ML API: `127.0.0.1:8001`
-- Nginx: public port 80, preserving the static site at `/`
+- Nginx: public port 80, proxying API requests to the Backend
 
 The Backend reads secrets from `/etc/dsm-p5-g02/backend.env`. This file must be
 owned by `root:dsmapp`, have mode `0640`, and define at least `MONGODB_URI`.
