@@ -5,6 +5,9 @@ set -Eeuo pipefail
 readonly APP_DIR=/opt/dsm-p5-g02
 readonly BACKEND_ENV=/etc/dsm-p5-g02/backend.env
 readonly ML_VENV=/opt/dsm-p5-g02-venv
+readonly FRONT_RELEASES_DIR=/var/www/dsm-p5-g02/releases
+readonly FRONT_CURRENT_LINK=/var/www/dsm-p5-g02/current
+readonly FRONT_KEEP_RELEASES=5
 readonly REVISION="${1:?usage: deploy.sh <git-revision>}"
 
 exec 9>/tmp/dsm-p5-g02-deploy.lock
@@ -71,6 +74,42 @@ for _ in {1..30}; do
 done
 curl --fail --silent --show-error http://127.0.0.1:3000/health >/dev/null
 
+npm ci --prefix front
+npm run build --prefix front
+
+if [[ ! -f front/dist/index.html ]]; then
+  echo "Frontend build did not produce front/dist/index.html." >&2
+  exit 1
+fi
+if [[ -z "$(ls -A front/dist/assets 2>/dev/null)" ]]; then
+  echo "Frontend build did not produce front/dist/assets." >&2
+  exit 1
+fi
+
+sudo install -d -m 0755 -o root -g www-data /var/www/dsm-p5-g02 "$FRONT_RELEASES_DIR"
+STAGE_DIR="$(mktemp -d)"
+cp -a front/dist/. "$STAGE_DIR"/
+sudo rm -rf "$FRONT_RELEASES_DIR/$REVISION"
+sudo cp -a "$STAGE_DIR" "$FRONT_RELEASES_DIR/$REVISION"
+rm -rf "$STAGE_DIR"
+sudo chown -R root:www-data "$FRONT_RELEASES_DIR/$REVISION"
+sudo find "$FRONT_RELEASES_DIR/$REVISION" -type d -exec chmod 0755 {} +
+sudo find "$FRONT_RELEASES_DIR/$REVISION" -type f -exec chmod 0644 {} +
+sudo ln -sfn "$FRONT_RELEASES_DIR/$REVISION" "$FRONT_CURRENT_LINK"
+
+current_target="$(readlink "$FRONT_CURRENT_LINK")"
+kept=0
+while IFS= read -r candidate; do
+  candidate_path="$FRONT_RELEASES_DIR/$candidate"
+  if [[ "$candidate_path" == "$current_target" ]]; then
+    continue
+  fi
+  kept=$((kept + 1))
+  if ((kept >= FRONT_KEEP_RELEASES)); then
+    sudo rm -rf "$candidate_path"
+  fi
+done < <(ls -1t "$FRONT_RELEASES_DIR")
+
 sudo systemctl reload nginx.service
 for _ in {1..15}; do
   if curl --fail --silent --show-error http://127.0.0.1/health >/dev/null; then
@@ -79,5 +118,20 @@ for _ in {1..15}; do
   sleep 1
 done
 curl --fail --silent --show-error http://127.0.0.1/health >/dev/null
+
+front_body="$(curl --fail --silent --show-error http://127.0.0.1/)"
+front_content_type="$(curl --fail --silent --show-error -o /dev/null -w '%{content_type}' http://127.0.0.1/)"
+if [[ "$front_content_type" != text/html* ]]; then
+  echo "Frontend root did not return text/html (got $front_content_type)." >&2
+  exit 1
+fi
+if ! grep -q 'id="root"' <<<"$front_body"; then
+  echo "Frontend root did not return the React application." >&2
+  exit 1
+fi
+while IFS= read -r front_asset; do
+  [[ -n "$front_asset" ]] || continue
+  curl --fail --silent --show-error -o /dev/null "http://127.0.0.1$front_asset"
+done < <(grep -o '/assets/[^"]*' <<<"$front_body" | sort -u)
 
 printf 'Deployed revision %s\n' "$(git rev-parse HEAD)"
