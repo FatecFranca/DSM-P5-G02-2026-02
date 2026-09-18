@@ -30,6 +30,8 @@ Linguagem neutra por princípio: o sistema informa **compatibilidade** e **proxi
 | Compatibilidade | Ranking por similaridade temática com cobertura e evidências |
 | Sync administrativo | Importação controlada das APIs oficiais (rotas `/api/sync/*` com Bearer token) |
 
+O código e o nome de cada tema seguem a taxonomia oficial da Câmara; descrições e exemplos são explicações em linguagem acessível elaboradas pelo projeto, não texto oficial do órgão.
+
 ## Arquitetura
 
 ```mermaid
