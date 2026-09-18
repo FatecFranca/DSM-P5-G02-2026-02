@@ -15,7 +15,7 @@ export const themesRoutes: FastifyPluginCallback = (app, _options, done) => {
         tags: ['Temas'],
         summary: 'Lista os temas disponíveis para preferências',
         description:
-          'Retorna a taxonomia oficial da Câmara suportada pelo perfil e pela compatibilidade temática. Não mistura códigos do Senado.',
+          'Retorna a taxonomia oficial da Câmara suportada pelo perfil e pela compatibilidade temática. Não mistura códigos do Senado. As descrições e os exemplos são explicações em linguagem cidadã elaboradas pelo projeto.',
         querystring: {
           type: 'object',
           additionalProperties: false,
@@ -36,11 +36,28 @@ export const themesRoutes: FastifyPluginCallback = (app, _options, done) => {
                 items: {
                   type: 'object',
                   additionalProperties: false,
-                  required: ['code', 'name'],
-                  example: { code: 46, name: 'Educação' },
+                  required: ['code', 'name', 'description', 'examples'],
+                  example: {
+                    code: 46,
+                    name: 'Educação',
+                    description:
+                      'Trata das políticas públicas de ensino e acesso à aprendizagem.',
+                    examples: [
+                      'Financiamento de escolas e universidades',
+                      'Formação e carreira de professores',
+                      'Acesso e permanência de estudantes',
+                    ],
+                  },
                   properties: {
                     code: { type: 'integer', example: 46 },
                     name: { type: 'string', example: 'Educação' },
+                    description: { type: 'string' },
+                    examples: {
+                      type: 'array',
+                      minItems: 3,
+                      maxItems: 3,
+                      items: { type: 'string' },
+                    },
                   },
                 },
               },

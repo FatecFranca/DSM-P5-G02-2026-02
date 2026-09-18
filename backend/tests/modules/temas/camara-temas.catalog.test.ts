@@ -15,9 +15,25 @@ describe('catálogo temático da Câmara', () => {
     ).toBe(true);
   });
 
+  it('explica todos os temas em linguagem cidadã com exemplos concretos', () => {
+    expect(
+      CAMARA_THEMES.every(
+        ({ description, examples }) =>
+          description.length >= 60 &&
+          examples.length === 3 &&
+          examples.every((example) => example.length >= 12),
+      ),
+    ).toBe(true);
+  });
+
   it('preserva a taxonomia oficial sem confundir Economia e Educação', () => {
-    expect(getCamaraTheme(40)).toEqual({ code: 40, name: 'Economia' });
-    expect(getCamaraTheme(46)).toEqual({ code: 46, name: 'Educação' });
+    expect(getCamaraTheme(40)).toMatchObject({ code: 40, name: 'Economia' });
+    const education = getCamaraTheme(46);
+    expect(education?.code).toBe(46);
+    expect(education?.name).toBe('Educação');
+    expect(education?.examples).toContain(
+      'Financiamento de escolas e universidades',
+    );
     expect(getCamaraTheme(999)).toBeUndefined();
   });
 });
