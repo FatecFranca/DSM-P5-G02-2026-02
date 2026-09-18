@@ -118,6 +118,25 @@ describe("portal público", () => {
     expect(heading).toHaveFocus();
   });
 
+  it("marca o link ativo da navegação com estado de página atual", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    const navigation = within(
+      screen.getByRole("navigation", { name: "Navegação principal" }),
+    );
+    await user.click(navigation.getByRole("link", { name: "Temas" }));
+
+    const activeLink = navigation.getByRole("link", { name: "Temas" });
+    await waitFor(() =>
+      expect(activeLink).toHaveAttribute("aria-current", "page"),
+    );
+    expect(activeLink).toHaveClass("active");
+    expect(
+      navigation.getByRole("link", { name: "Início" }),
+    ).not.toHaveAttribute("aria-current");
+  });
+
   it("normaliza hash inválido e acompanha Back e Forward", async () => {
     const user = userEvent.setup();
     window.history.replaceState(null, "", "#/nao-existe");

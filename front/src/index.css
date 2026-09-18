@@ -19,6 +19,7 @@
   --display:
     "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
   --body: "Avenir Next", Aptos, "Segoe UI", Arial, sans-serif;
+  --nav: "Inter", "Avenir Next", Aptos, "Segoe UI", Arial, sans-serif;
   --utility: "Cascadia Mono", Consolas, monospace;
   --shadow: 0 24px 70px rgba(9, 35, 58, 0.12);
   --shadow-soft: 0 12px 34px rgba(9, 35, 58, 0.07);
@@ -154,7 +155,7 @@ p {
 .brand small {
   display: block;
   margin-top: 5px;
-  font-family: var(--body);
+  font-family: var(--nav);
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.2em;
@@ -194,21 +195,28 @@ p {
   align-items: center;
   gap: 4px;
 }
+.main-nav a,
 .main-nav button {
   min-height: 44px;
+  display: inline-flex;
+  align-items: center;
   border: 0;
   border-radius: 8px;
   padding: 10px 13px;
   color: var(--muted);
   background: transparent;
   cursor: pointer;
+  font-family: var(--nav);
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
 }
+.main-nav a:hover,
 .main-nav button:hover {
   color: var(--navy);
   background: rgba(16, 47, 77, 0.06);
 }
+.main-nav a.active,
 .main-nav button.active {
   color: white;
   background: var(--navy);
@@ -2315,6 +2323,7 @@ textarea {
   .header-inner {
     width: min(100% - 32px, 1240px);
   }
+  .main-nav a,
   .main-nav button {
     padding: 9px 8px;
     font-size: 12px;
@@ -2385,6 +2394,7 @@ textarea {
     display: grid;
     animation: rise-in 180ms ease;
   }
+  .main-nav a,
   .main-nav button {
     text-align: left;
     font-size: 14px;

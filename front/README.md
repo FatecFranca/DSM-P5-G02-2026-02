@@ -54,5 +54,5 @@ npm run build
 npm run preview
 ```
 
-O preview fica em `http://127.0.0.1:4173` e usa o mesmo proxy local.
+O preview fica em `http://127.0.0.1:4173` e usa o mesmo proxy configurado.
 Os relatórios HTML de cobertura são gravados em `coverage/` e não são versionados.
