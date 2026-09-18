@@ -102,7 +102,8 @@ export function buildComparableThemeProfile(
         : documentsWithEnrichedThemes / documentsAnalyzed,
     themes: counts
       .map(({ theme, documentCount }) => ({
-        ...theme,
+        code: theme.code,
+        name: theme.name,
         documentCount,
         share:
           totalThemeOccurrences === 0
