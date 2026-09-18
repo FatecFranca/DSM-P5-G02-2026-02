@@ -19,7 +19,8 @@ ainda não possui autenticação. Elas não devem ser expostas em uma interface 
 ## Execução local
 
 No desenvolvimento, o Vite encaminha `/api` e `/health` para a API configurada no
-proxy. O alvo padrão é o backend local em `http://127.0.0.1:3000`.
+proxy. O alvo padrão é a API Azure em `http://158.158.48.119`, sem necessidade
+de `.env` (`.env.example` é apenas documentação e não é carregado em runtime).
 
 Para instalar exatamente as dependências registradas e iniciar:
 
@@ -32,11 +33,18 @@ npm run dev
 Abra `http://127.0.0.1:5173`. O backend deve permitir essa origem em
 `CORS_ORIGINS`.
 
-Defina `VITE_PROXY_TARGET` em `.env.local` ou na sessão do terminal. Para validar com
-a API integrada no Azure, use:
+Defina `VITE_PROXY_TARGET` em `.env.local` ou na sessão do terminal apenas se
+precisar sobrescrever o padrão. Para usar o backend local, crie `.env.local`
+com:
 
 ```powershell
-$env:VITE_PROXY_TARGET="http://158.158.48.119"
+VITE_PROXY_TARGET=http://127.0.0.1:3000
+```
+
+Ou na sessão do terminal:
+
+```powershell
+$env:VITE_PROXY_TARGET="http://127.0.0.1:3000"
 npm run dev
 ```
 
