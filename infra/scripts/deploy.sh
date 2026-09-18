@@ -32,6 +32,14 @@ git fetch --prune origin main
 git cat-file -e "${REVISION}^{commit}"
 git checkout --detach "$REVISION"
 
+# The running copy is the previous revision's script (the open file
+# descriptor survives checkout), so re-execute the checked-out revision's own
+# script to guarantee the deployed logic governs this deploy.
+if [[ -z "${DSM_DEPLOY_REEXECED:-}" ]]; then
+  export DSM_DEPLOY_REEXECED=1
+  exec "$0" "$REVISION"
+fi
+
 npm ci --prefix backend
 npm run build --prefix backend
 npm prune --omit=dev --prefix backend
