@@ -6,9 +6,3 @@ coverage/
 dist/
 node_modules/
 *.log
-
-# Local agent and editor tooling
-.agents/
-.opencode/
-opencode.json
-skills-lock.json
